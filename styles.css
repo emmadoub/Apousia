@@ -1,0 +1,535 @@
+body {
+    text-align: center;
+    font-family: "Manrope", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, .btn {
+  font-family: "Manrope", sans-serif;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+/* Navigation bar */
+
+
+.topnav {
+    background-color: #ffffff;
+    overflow: hidden;
+    padding-top: 1.8%;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: rgb(17, 8, 8);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .logo {
+    width: 146px;   
+    height: 123px; 
+  }
+
+  .heading  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .carousel-image {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+  /* Services */
+
+  .bg-img-1 {
+    background-image: url('ApousiaPhotos/1-kids.png')
+  }
+
+.bg-img-2 {
+    background-image: url('ApousiaPhotos/2-nature.JPG');
+}
+
+.bg-img-3 {
+    background-image: url('ApousiaPhotos/3-books.jpg');
+}
+
+.bg-img-4 {
+    background-image: url('ApousiaPhotos/4-playground.jpg');
+}
+
+.bg-img-5 {
+    background-image: url('ApousiaPhotos/5-routes.jpg');
+}
+
+
+.nature {
+    background-color:#c0d332;
+}
+
+.fairytale {
+    background-color: rgb(17, 173, 235);
+}
+
+.trainer {
+    background-color: rgb(209, 17, 226);
+}
+
+.experience {
+    background-color: #ffcc00;
+}
+
+.party {
+    background-color: blueviolet;
+}
+
+.services {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 7%;
+}
+
+.container-service {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.section-service{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 2%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.image-service {
+    width: 100px;
+    height: 100px;
+    color: aliceblue;
+    display: block;
+    margin: 0 auto;
+    align-self: center;
+}
+
+.top {
+    position: relative;
+    padding-top:0 !important;
+    margin-top:0;
+}
+
+.bottom {
+    position: relative;
+    padding-top:10%;
+}
+
+.div-services {
+  margin-bottom: 3%;
+}
+
+/*Balloons*/
+
+.balloons {
+  background:  url("ApousiaPhotos/balloons-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  padding: 200px 0;
+  text-align: center; position: relative;
+
+}
+
+.btn-draseis1 {
+  background-color: #d6cabcc0  !important;
+  border-color:  #d6cabc ! important;
+  color:white !important;
+  padding: 10px !important;
+  font-family:  "Manrope", sans-serif !important ;
+  font-size: 18px !important;
+}
+
+.btn-draseis2 {
+  background-color: #b22dd3b9!important;
+  border-color: #b22dd3b9! important;
+  color:white !important;
+  padding: 10px !important;
+  font-family:  "Manrope", sans-serif !important ;
+  font-size: 18px !important;
+}
+
+/* Current Events */
+
+.current {
+  padding: 0 5%;
+  margin-bottom: 2%;
+}
+
+.card-title-section {
+  padding: 10px 5px;
+  background-color: #e7eef8;
+
+  display: flex;
+}
+
+.image-service-card{
+  width: 25px;
+  height: 25px;
+  display: block;
+  margin: auto;
+  align-self: center;
+}
+
+.section-service-card {
+  width: 48px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 18rem; margin-left: 25%;
+}
+
+
+
+.card-date {
+  margin-left: 1%;
+  margin-top: 2%;
+  position: absolute; 
+  top: 5%; 
+  left: 10%; 
+  transform: translate(-50%, -50%);
+  background-color:  #e7eef8c5;
+  width: 50px;
+  height: 50px;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  text-align: center;
+}
+
+.card-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.details {
+  padding: 1%;
+  margin: 0;
+}
+
+.card-details{
+  text-align: left;
+  margin-top: 1%;
+  padding-left: 2px;
+}
+
+.btn-details {
+  margin: 4%;
+}
+
+/* Bees */
+
+.synergates-bees {
+  /* background:  url("ApousiaPhotos/markus-spiske-6dY9cFY-qTo-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #e48faa9c;
+  position: relative;
+  width: 100%;
+  padding: 0 100px; /* add some padding to the left and right */
+  box-sizing: border-box; /* include padding in the width calculation */
+  --h2-width: 0;
+  --div-width: 100%;
+}
+
+
+
+.synergates-bees img {
+  position: absolute;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+
+}
+
+.synergates-bees.animate-bees img:first-child {
+  --bee1-end-pos: calc((var(--div-width) - var(--h2-width)) * 0.5 - 235px);
+  left: 0;
+  animation-name: move-from-left;
+}
+
+.synergates-bees.animate-bees img:last-child {
+  --bee2-end-pos: calc(-1 * ((var(--div-width) - var(--h2-width)) * 0.5 - 214px));
+  right: 0;
+  animation-name: move-from-right;
+}
+
+@keyframes move-from-left {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(var(--bee1-end-pos));
+  }
+}
+
+@keyframes move-from-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(var(--bee2-end-pos));
+  }
+}
+
+/* Synergates */
+
+.container {
+  padding-top: 10px;
+}
+
+.synergates {
+  padding: 3% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+}
+
+.synergates img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Contact */
+
+.contact {
+  background:  url("ApousiaPhotos/nechama-lock-u0rHsWGUmPc-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  height: 45vh;
+}
+
+.contact-container {
+  position: absolute;
+  left: 10%;
+  bottom: 0;
+  width: 80%;
+  padding: 3% 0;
+}
+
+
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  font-size: 40px;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: rgba(200, 202, 113, 0.918);
+  color: white;
+}
+
+
+/* Responsive */
+
+
+@media screen and (max-width: 600px) {
+    .topnav a {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+
+    .services {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .current {
+      margin: 0 auto;
+      text-align: center;
+      padding: 2% 0;
+    }
+
+    .card {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .current-events {
+      margin-bottom: 5%;
+    }
+
+.synergates {
+  flex-wrap: wrap;
+}
+
+.synergates > div {
+  flex-basis: 50%;
+}
+
+.contact {
+  background:  url("ApousiaPhotos/nechama-lock-u0rHsWGUmPc-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  height: 20vh;
+}
+
+.synergates-bees img {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+
+}
+
+.synergates-bees.animate-bees img:first-child {
+  --bee1-end-pos: calc((var(--div-width) - var(--h2-width)) * 0.5 - 120px);
+  left: 0;
+  animation-name: move-from-left;
+}
+
+.synergates-bees.animate-bees img:last-child {
+  --bee2-end-pos: calc(-1 * ((var(--div-width) - var(--h2-width)) * 0.5 - 120px));
+  right: 0;
+  animation-name: move-from-right;
+}
+
+@keyframes move-from-left {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(var(--bee1-end-pos));
+  }
+}
+
+@keyframes move-from-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(var(--bee2-end-pos));
+  }
+}
+
+
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 10%;
+    }
+  }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
