@@ -21,24 +21,22 @@
     <img src="apousia_logo2.png" class="logo">
     <div class="topnav" id="myTopnav">
       <div class="dropdown">
-        <button class="dropbtn">Απ'Ουσία
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="#">Η Ομάδα μας</a>
-          <a href="#">Ποιές Είμαστε</a>
-        </div>
+          <button class="dropbtn" id="dropbtn" onclick="showOptions()">Απ'Ουσία 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="dropdown-content">
+            <a href="#">Η Ομάδα μας</a>
+            <a href="#">Ποιές Είμαστε</a>
+          </div>
+        </div> 
+        <a href="#home">Υπηρεσίες</a>
+        <a href="#news">Προηγούμενες Δράσεις</a>
+        <a href="#contact">Επικοινωνία</a>
+        <a href="javascript:void(0);" class="nav-icon" onclick="myFunction()">&#9776;</a>
       </div>
-      <a href="#news">Υπηρεσίες</a>
-      <a href="#contact">Προηγούμενες Δράσεις</a>
-      <a href="#about">Επικοινωνία</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-      </a>
-    </div>
     </div>
     <div class="carousel-container">
-        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -47,7 +45,18 @@
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
           </div>
           <div class="carousel-inner">
-            <div class="carousel-item carousel-image bg-img-1 active" data-bs-interval="4000">
+              <div class="carousel-item active" data-bs-interval="17500">
+              <video class="img-fluid" autoplay loop muted>
+                <source src="ApousiaPhotos/TaVivliaTaksidevoun.mp4" type="video/mp4" />
+              </video>
+              <div class="carousel-caption d-none d-md-block">
+                <h4>Τα βιβλία Ταξιδεύουν</h4>
+                <h5>2, 9 και 30 Απριλίου.</h5>
+                <p>Μια σειρά δράσεων αφιερωμένες στην παιδική λογοτεχνία, στον δημόσιο χώρο.</p>
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item carousel-image bg-img-1" data-bs-interval="8500">
               <div class="carousel-caption d-none d-md-block">
                 <h4>Απoυσία</h4>
                 <h5 class="italic">Oυσιαστικό, γένους θηλυκού</h5>
@@ -58,29 +67,29 @@
                 <p>Ό,τι προκύπτει από αληθινό περιεχόμενο, από τον πυρήνα ή το σημαντικότερο στοιχείο μιας συζήτησης, μιας κατάστασης ή ενός πράγματος. </p>
               </div>
             </div>
-            <div class="carousel-item carousel-image bg-img-2" data-bs-interval="3000">
+            <div class="carousel-item carousel-image bg-img-2" data-bs-interval="5000">
               <div class="carousel-caption d-none d-md-block">
                 <h4>Περιβαλλοντική εκπαίδευση</h4>
                 <p>6 αυτοτελή εργαστήρια | 6 διαφορετικές θεματικές</p>
                 </p>
               </div>
             </div>
-            <div class="carousel-item carousel-image bg-img-3" data-bs-interval="3000">
+            <div class="carousel-item carousel-image bg-img-3" data-bs-interval="5000">
               <div class="carousel-caption d-none d-md-block">
                 <h4>Παιδική λογοτεχνία</h4>
                 <p>Συνεργασία με εκδοτικούς οίκους και σχεδιασμός εργαστηρίων βασισμένα σε παιδικά βιβλία.</p>
               </div>
             </div>
-          <div class="carousel-item carousel-image bg-img-4" data-bs-interval="3000">
+          <!-- <div class="carousel-item carousel-image bg-img-4" data-bs-interval="3000">
               <div class="carousel-caption d-none d-md-block">
                 <h4>Διοργάνωση εκδηλώσεων</h4>
                 <p>Εκδηλώσεις και φεστιβάλ σε δημόσιους και ιδιωτικούς χώρους σε συνεργασία με δήμους σε όλη την Ελλάδα και ιδιώτες φορείς.</p>
               </div>
-            </div>
-          <div class="carousel-item carousel-image bg-img-5" data-bs-interval="3000">
+            </div> -->
+          <div class="carousel-item carousel-image bg-img-5" data-bs-interval="6000">
               <div class="carousel-caption d-none d-md-block">
                 <h4>Custom Εργαστήρια</h4>
-                <p>Προτότυπα βιωματικά προγράμματα!</p>
+                <p>Πρωτότυπα βιωματικά προγράμματα!</p>
               </div>
             </div>
           </div>
@@ -95,35 +104,35 @@
         </div>
       </div>
       <div class="div-services">
-        <h2 style="padding-bottom:0"><span><i class="fa-solid fa-circle" style="font-size: 10px; color: rgba(216, 200, 52, 0.808); position:relative; bottom:7px;"></i>Yπηρεσίες</span><i class="fa-solid fa-circle" style="font-size: 10px; color: blueviolet; position:relative; bottom:5px; left:2px;"></i></h2>
+        <h2><span><i class="fa-solid fa-circle" style="font-size: 10px; color: rgba(216, 200, 52, 0.808); position:relative; bottom:7px;"></i>Yπηρεσίες</span><i class="fa-solid fa-circle" style="font-size: 10px; color: blueviolet; position:relative; bottom:5px; left:2px;"></i></h2>
         
         <div class="services">
           
-        <div class="container-service">
+        <div class="container-service left">
         <div class="section-service nature">
           <img src="nature.png" class="image-service" alt="">
         </div>
         <p>Περιβαλλοντική Εκπαίδευση</p>
       </div>
-      <div class="container-service bottom">
+      <div class="container-service bottom right">
           <div class="section-service party">
             <img src="party.png" class="image-service" alt="">
           </div>
           <p>Διοργάνωση Εκδηλώσεων</p>
         </div>
-        <div class="container-service">
+        <div class="container-service left">
           <div class="section-service experience">
             <img src="experience.png" class="image-service" alt="">
           </div>
           <p>Custom Εργαστήρια</p>
         </div>
-        <div class="container-service bottom">
+        <div class="container-service bottom right">
           <div class="section-service fairytale">
             <img src="fairytale.png" class="image-service" alt="">
           </div>
           <p>Παιδική Λογοτεχνία</p>
         </div>
-        <div class="container-service">
+        <div class="container-service left">
           <div class="section-service trainer">
             <img src="trainer.png" class="image-service" alt="">
           </div>
@@ -219,38 +228,35 @@
     </div>
 
     <div class="synergates-bees">
-      <img src="ApousiaPhotos/bee1.png" alt=""><h2>Οι συνεργάτες μας</h2>
-      <img src="ApousiaPhotos/bee2.png" alt="">
+      <img src="ApousiaPhotos/bee1.png" class="beeNo1" alt=""><h2>Οι συνεργάτες μας</h2>
+      <img src="ApousiaPhotos/bee2.png" class="beeNo2" alt="">
     </div>
 
-    <div class="container" style="margin-top: 50px;">
+    <div class="container">
       <div class="row synergates"> 
         
-        <div class="col-sm-6 col-md-3"><img src="ApousiaPhotos/synergates/agistri.png" alt="Dimos Agkistriou"></div>
-        <div class="col-sm-6 col-md-3"><img src="ApousiaPhotos/synergates/larisa.jpg" alt="goethe Intitute"></div>
-        <div class="col-sm-6 col-md-3"><img src="ApousiaPhotos/synergates/TINOS.jpg" alt="goethe Intitute"></div>
-        <div class="col-sm-6 col-md-3"><img src="ApousiaPhotos/synergates/paiania.jpg" alt="Dimos Paianias"></div>
-        
+        <div class="col-sm-6 col-md-3 flex"><img src="ApousiaPhotos/synergates/agistri.png" class="synergates-img" alt="Dimos Agkistriou"></div>
+        <div class="col-sm-6 col-md-3 flex"><img src="ApousiaPhotos/synergates/larisa.jpg" alt="Dimos Larisas"></div>
+        <div class="col-sm-6 col-md-3 flex"><img src="ApousiaPhotos/synergates/TINOS.jpg" alt="Dimos Tinou"></div>
+        <div class="col-sm-6 col-md-3 flex"><img src="ApousiaPhotos/synergates/paiania.jpg" alt="Dimos Paianias"></div>
       </div>
       <div class="row synergates">
-        <div class="col-sm-6 col-md-3"><img src="ApousiaPhotos/synergates/metaixmio.jpg" alt="goethe Intitute"></div>
-        <div class="col-sm-6 col-md-3"><img src="ApousiaPhotos/synergates/kedros.png" alt="goethe Intitute"></div>
-        
-        <div class="col-sm-6 col-md-3"><img src="ApousiaPhotos/synergates/mikri_selini.png" alt="goethe Intitute"></div>
-        
-        <div class="col-sm-6 col-md-3"><img src="ApousiaPhotos/synergates/kaleidoskopio.jpg" alt="goethe Intitute"></div>
+        <div class="col-sm-6 col-md-3 flex"><img src="ApousiaPhotos/synergates/metaixmio.jpg" class="synergates-img" alt="Metaixmio"></div>
+        <div class="col-sm-6 col-md-3 flex"><img src="ApousiaPhotos/synergates/kedros.png" alt="Kedros"></div>
+        <div class="col-sm-6 col-md-3 flex"><img src="ApousiaPhotos/synergates/mikri_selini.png" class="synergates-img" alt="Mikri Selini"></div>
+        <div class="col-sm-6 col-md-3 flex"><img src="ApousiaPhotos/synergates/kaleidoskopio.jpg" alt="Keleidoskopio"></div>
       </div>
       <div class="row synergates">
-        <div class="col-sm-6 col-md-3"><img src="ApousiaPhotos/synergates/250px-Logo_GoetheInstitut_2011.svg.png" alt="goethe Intitute"></div>
-        <div class="col-sm-6 col-md-3"><img src="ApousiaPhotos/synergates/agoni-logo.jpg" alt="goethe Intitute"></div>
-        <div class="col-sm-6 col-md-3"><img src="ApousiaPhotos/synergates/Impact-Hub-Athens.png" alt="goethe Intitute"></div>
-        <div class="col-sm-6 col-md-3"><img src="ApousiaPhotos/synergates/karpos.jpg" alt="goethe Intitute"></div>
+        <div class="col-sm-6 col-md-3 flex"><img src="ApousiaPhotos/synergates/250px-Logo_GoetheInstitut_2011.svg.png" alt="Goethe Intitute"></div>
+        <div class="col-sm-6 col-md-3 flex"><img src="ApousiaPhotos/synergates/agoni-logo.jpg" alt="Agoni Grammi Gonimi"></div>
+        <div class="col-sm-6 col-md-3 flex"><img src="ApousiaPhotos/synergates/Impact-Hub-Athens.png" alt="Impact Hub Athens"></div>
+        <div class="col-sm-6 col-md-3 flex"><img src="ApousiaPhotos/synergates/karpos.jpg" class="synergates-img" alt="Karpos"></div>
       </div>
       <div class="row synergates">
-        <div class="col-sm-6 col-md-3"><img src="ApousiaPhotos/synergates/Mimiandmou.jpg" alt="goethe Intitute"></div>
-        <div class="col-sm-6 col-md-3"><img src="ApousiaPhotos/synergates/ludd.png" alt="goethe Intitute"></div>
-        <div class="col-sm-6 col-md-3"><img src="ApousiaPhotos/synergates/meet_and_code.png" alt="goethe Intitute"></div>
-        <div class="col-sm-6 col-md-3"><img src="ApousiaPhotos/synergates/coop_immaginaria.jpg" alt="goethe Intitute"></div>
+        <div class="col-sm-6 col-md-3 flex"><img src="ApousiaPhotos/synergates/Mimiandmou.jpg" class="synergates-img" alt="Mimi and mou"></div>
+        <div class="col-sm-6 col-md-3 flex"><img src="ApousiaPhotos/synergates/ludd.png" alt="Ludd"></div>
+        <div class="col-sm-6 col-md-3 flex"><img src="ApousiaPhotos/synergates/meet_and_code.png" alt="Meet and Code"></div>
+        <div class="col-sm-6 col-md-3 flex"><img src="ApousiaPhotos/synergates/coop_immaginaria.jpg" alt="Imaginaria"></div>
       </div>
       </div>
 
@@ -267,12 +273,12 @@
           apousia.koinsep@gmail.com
         </h6>
         <h6 class="contact-text details" style="white-space: nowrap">
-          <i class="fa-solid fa-phone-volume icon"></i> 6947306183
+          <i class="fa-solid fa-phone-volume icon-tel"></i> 6947306183
         </h6>
         </div>
         <div class="contact-details">
         <h6 class="contact-text details" style="white-space: nowrap">
-          <a href="https://www.facebook.com/apousia.koinsep" target="_blank"><i class="fab fa-facebook icon"></i> ΚοινΣεπ
+          <a href="https://www.facebook.com/apousia.koinsep" target="_blank"><i class="fab fa-facebook icon"></i>ΚοινΣεπ
             "απ'ουσία"</a>
         </h6>
         <h6 class="contact-text details" style="white-space: nowrap">
@@ -282,7 +288,7 @@
     </div>
     </div>
     <footer>
-      <p style="margin-bottom: 0;">Copyright ApOusia 2023. Made by E.D. with <i class="fa-solid fa-heart"></i></p>
+      <p style="margin-bottom: 0; color:white;">Copyright ApOusia 2023. Made by E.D. with <i class="fa-solid fa-heart"></i></p>
     </footer>
   </body>
   </html>

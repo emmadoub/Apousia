@@ -6,6 +6,13 @@ function myFunction() {
       x.className = "topnav";
     }
   }
+
+ 
+  function showOptions() {
+    console.log("clicked");
+    document.getElementById("dropdown-content").style = 'display: block';
+  };
+
     document.addEventListener("DOMContentLoaded", function(event) {
 
       const synergatesBees = document.querySelector('.synergates-bees');
