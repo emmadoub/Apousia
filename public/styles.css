@@ -495,14 +495,14 @@ footer {
   padding: 5px;
   background-color: rgba(200, 202, 113, 0.918);
   color: white;
+  width: 100%;
 }
 
 /* Events Page */
 
-.current-events {
-  z-index: 1;
-  padding: 3% 2%;
-}
+
+
+
 /* .literature h1 {
   background: url('ApousiaPhotos/backround-pink.png');
     position:relative;
@@ -512,8 +512,6 @@ footer {
     height:50px;
     width: auto;
 } */
-
-
 
 
 
@@ -553,6 +551,13 @@ footer {
       justify-content: center;
       align-items: center;
       text-align: center;
+  }
+
+  .balloons {
+    
+    padding: 100px 0;
+    
+  
   }
 
   .container-service {
@@ -649,6 +654,10 @@ footer {
   --bee2-end-pos: calc(-1 * ((var(--div-width) - var(--h2-width)) * 0.5 - 110px));
   right: 0;
   animation-name: move-from-right;
+}
+
+.synergates-bees {
+  padding: 15px 0;
 }
 
 .icon {

@@ -9,8 +9,12 @@ function myFunction() {
 
  
   function showOptions() {
-    console.log("clicked");
-    document.getElementById("dropdown-content").style = 'display: block';
+    var content = document.getElementById("dropdown-content");
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
   };
 
     document.addEventListener("DOMContentLoaded", function(event) {
