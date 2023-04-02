@@ -119,6 +119,8 @@
       flex-direction: row;
       justify-content: space-between;
       z-index: 1000;
+      
+      padding: 1% 1%;
     }  
 
     .title {

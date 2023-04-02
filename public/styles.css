@@ -155,7 +155,7 @@ a:active {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    z-index: 1000;
+    padding: 0.5% 1% 0;
   }
 
   .carousel-container {
@@ -269,7 +269,7 @@ a:active {
 /*Balloons*/
 
 .balloons {
-  background:  url("ApousiaPhotos/balloons-unsplash.jpg");
+  background:  url("ApousiaPhotos/less\ balloons.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -376,7 +376,12 @@ a:active {
 /* Bees */
 
 .synergates-bees {
-  /* background:  url("ApousiaPhotos/markus-spiske-6dY9cFY-qTo-unsplash.jpg");
+  /* background: 
+  linear-gradient(
+    #e48faac4, 
+    #e48faac4
+  ),
+  url("ApousiaPhotos/shekoofeh-azizi-Yy5q2Qwk1to-unsplash.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;  */
@@ -399,7 +404,6 @@ a:active {
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-
 }
 
 .synergates-bees.animate-bees img:first-child {
@@ -462,6 +466,7 @@ a:active {
   background-attachment: fixed;
   background-size: cover;
   position: relative;
+  background-position-y: 10%;
   height: 45vh;
 }
 
@@ -534,7 +539,7 @@ footer {
     .heading  {
       display: flex;
       flex-direction: row;
-      z-index: 1000;
+      padding: 0.5% 1% 0;
     }
 
     .services {
@@ -671,6 +676,7 @@ footer {
 .contact-container {
   bottom: 7%;
 }
+
 
 .contact-details {
   display: flex;
