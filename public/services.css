@@ -27,7 +27,7 @@
 .marker {
     display: inline-block;
     position: relative;
-    background: #C8BFE7;
+    background:  #ecd98ca9;
     border-radius: 5%;
   }
 
@@ -40,7 +40,7 @@
     display: inline-block;
     position: absolute;
     
-    background: #C8BFE7;
+    background: #ecd98ca9;
     content: "";
     opacity: .5;
     height: 70%;
@@ -152,6 +152,11 @@
     .logo {
       width: 120px !important;   
       height: 101px !important; 
+    }
+
+    .body {
+      background-image: none !important;
+      background-color: #fefefe;
     }
     .service-row {
         display: flex;

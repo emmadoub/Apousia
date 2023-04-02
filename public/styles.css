@@ -39,7 +39,7 @@ a:active {
 
 
 .topnav {
-  background-color: #ffffff;
+  background-color: transparent;
   padding-top: 2%;
   z-index: 1000;
 }
@@ -161,6 +161,7 @@ a:active {
   .carousel-container {
     z-index: 0;
     color: white  !important;
+    background-color: white !important;
   }
 
 
