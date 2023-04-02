@@ -27,7 +27,7 @@
 .marker {
     display: inline-block;
     position: relative;
-    background:  #ecd98ca9;
+    background:  #b4fbf4;
     border-radius: 5%;
   }
 
@@ -40,7 +40,7 @@
     display: inline-block;
     position: absolute;
     
-    background: #ecd98ca9;
+    background: #b4fbf4;
     content: "";
     opacity: .5;
     height: 70%;
@@ -184,6 +184,10 @@
   }
   
   @media screen and (max-width: 600px) {
+
+    .exp-padding {
+      padding: 0 !important;
+    }
     .topnav.responsive {position: relative;}
     .topnav.responsive .nav-icon {
       position: absolute;
@@ -372,9 +376,13 @@
         text-align: center;
     }
 
-    .service-description p {
-        margin-top: 2%;
+    .exp-padding {
+      padding: 0 10%;
     }
+
+    /* .service-description p {
+        margin-top: 2%;
+    } */
 
     footer {
         text-align: center;
