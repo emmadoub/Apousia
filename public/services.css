@@ -138,6 +138,11 @@
     background-color: #faf9f9a9;
     color: rgb(12, 6, 6);
   }
+
+  .icon-title {
+    font-size: 20px; color: linear-gradient( red, orange, yellow, green, blue, indigo, violet, red);
+        ; position:relative; bottom:7px; right: 2px;
+  }
   
   .dropdown-content a:hover {
     background-color: #ddd;
