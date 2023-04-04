@@ -158,6 +158,22 @@ a:active {
         max-width: 50%;
       }
 
+      .contact-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .contact {
+        position: fixed;
+        left: 10%;
+        top: 55%;
+      }
+
+      .contact h2 {
+        display: none;
+      }
+
       .icon {
         font-size: 30px;
       }
@@ -295,6 +311,14 @@ a:active {
         width: 120px;   
         height: 101px; 
     }
+
+    body {
+      font-family: "Manrope", sans-serif;
+      background-image: url("ApousiaPhotos/nechama-lock-u0rHsWGUmPc-unsplash-bigger-contact.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: 75%;
+  }
 
 
 
