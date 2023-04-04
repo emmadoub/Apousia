@@ -551,6 +551,10 @@ footer {
     height: 50vh;
   }
 
+  .carousel-item {
+    height: 110vh;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
