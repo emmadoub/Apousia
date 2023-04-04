@@ -462,3 +462,10 @@ a:active {
     padding-bottom: 10%;
 }
   }
+
+  @media screen and (min-width: 600px) and (max-width: 1600px) {
+    body {
+      zoom: 70% !important;
+    }
+  
+  }
