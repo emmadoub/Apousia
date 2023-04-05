@@ -420,13 +420,13 @@ a:active {
 }
 
 .synergates-bees.animate-bees img:first-child {
-  --bee1-end-pos: calc((var(--div-width) - var(--h2-width)) * 0.5 - 630px);
+  --bee1-end-pos: calc((var(--div-width) - var(--h2-width)) * 0.5 - 235px);
   left: 0;
   animation-name: move-from-left;
 }
 
 .synergates-bees.animate-bees img:last-child {
-  --bee2-end-pos: calc(-1 * ((var(--div-width) - var(--h2-width)) * 0.5 - 656px));
+  --bee2-end-pos: calc(-1 * ((var(--div-width) - var(--h2-width)) * 0.5 - 214px));
   right: 0;
   animation-name: move-from-right;
 }
@@ -537,11 +537,40 @@ footer {
   margin-bottom: 7%;
 }
 
+.beesmall1 {
+  display:none;
+}
+
 /* Responsive */
 @media screen and (min-width: 600px) and (max-width: 1600px) {
   body {
     zoom: 70% !important;
   }
+
+  /* .beeNo1, .beeNo2 {
+    display:none
+  } */
+
+  .synergates-bees.animate-bees img:first-child {
+    --bee1-end-pos: calc((var(--div-width*0.7) - var(--h2-width)) * 0.5 - 115px);
+    left: 0;
+    animation-name: move-from-left;
+  }
+  
+  .synergates-bees.animate-bees img:last-child {
+    --bee2-end-pos: calc(-1 * ((var(--div-width*0.7) - var(--h2-width)) * 0.5 - 110px));
+    right: 0;
+    animation-name: move-from-right;
+  }
+
+  /* @keyframes move-from-right {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(var(--bee2-end-pos));
+    }
+  } */
 
   .contact {
     background:  url("ApousiaPhotos/nechama-lock-u0rHsWGUmPc-unsplash.jpg");
@@ -680,13 +709,13 @@ footer {
 }
 
 .beeNo1 {
-  width: 270px;
+  width: 120px;
   height: 103px;
 }
 
 .beeNo2 {
-  width: 275px;
-  height: 105px;
+  width: 110px;
+  height: 115px;
 }
 
 .synergates-bees img {
@@ -697,17 +726,21 @@ footer {
 
 }
 
-.synergates-bees.animate-bees img:first-child {
-  --bee1-end-pos: calc((var(--div-width) - var(--h2-width)) * 0.5 - 270px);
+.beeNo1, .beeNo2 {
+  display:none
+} 
+
+/* .synergates-bees.animate-bees img:first-child {
+  --bee1-end-pos: calc((var(--div-width) - var(--h2-width)) * 0.5 - 115px);
   left: 0;
   animation-name: move-from-left;
 }
 
 .synergates-bees.animate-bees img:last-child {
-  --bee2-end-pos: calc(-1 * ((var(--div-width) - var(--h2-width)) * 0.5 - 275px));
+  --bee2-end-pos: calc(-1 * ((var(--div-width) - var(--h2-width)) * 0.5 - 110px));
   right: 0;
   animation-name: move-from-right;
-}
+} */
 
 .synergates-bees {
   padding: 15px 0;
