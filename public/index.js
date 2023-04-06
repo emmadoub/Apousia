@@ -7,6 +7,14 @@ function myFunction() {
     }
   }
 
+  function getwidth(){
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+
+var x = document.getElementById("width");
+x.innerHTML = "Browser width: " + w + ", height: " + h + ".";
+  }
+
  
   function showOptions() {
     var content = document.getElementById("dropdown-content");
