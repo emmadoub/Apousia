@@ -537,9 +537,11 @@ footer {
   margin-bottom: 7%;
 }
 
-.beesmall1 {
-  display:none;
-}
+@media screen and (min-width: 1360px) and (max-width: 1600px) {
+ .video {
+  padding: 0 5%;
+ }
+} 
 
 /* Responsive */
 @media screen and (min-width: 600px) and (max-width: 1600px) {
@@ -583,8 +585,9 @@ footer {
   .carousel-item {
     height: 110vh;
   }
-
 }
+
+
 
 @media screen and (max-width: 600px) {
     .topnav a {display: none;}
@@ -727,8 +730,20 @@ footer {
 }
 
 .beeNo1, .beeNo2 {
-  display:none
+  position: relative;
 } 
+
+.beeNo1 {
+  left: -2% !important;
+}
+
+.beeNo2 {
+  right: 2% !important; 
+}
+
+.synergates-bees.animate-bees img:first-child, .synergates-bees.animate-bees img:last-child {
+  animation-name:none;
+}
 
 /* .synergates-bees.animate-bees img:first-child {
   --bee1-end-pos: calc((var(--div-width) - var(--h2-width)) * 0.5 - 115px);

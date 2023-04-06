@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ap'Ousia</title>
+    <title>ΚοινΣεπ Απ'Ουσία</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -16,9 +16,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="index.js"></script>
   </head>
-  <body>
+  <body onload="getwidth()">
     <div class="heading">
     <a href="index.html"><img src="apousia_logo2.png" class="logo"></a>
+    <!-- <h4 id="width"></h4> -->
     <div class="topnav" id="myTopnav">
       <div class="dropdown">
           <button class="dropbtn" style="color: #707070;" id="dropbtn" onclick="showOptions()">Απ'Ουσία 
@@ -46,7 +47,7 @@
           </div>
           <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="17500" style="background-color: #ebedeb65;">
-              <video class="img-fluid" autoplay loop muted>
+              <video class="img-fluid video" autoplay loop muted>
                 <source src="ApousiaPhotos/TaVivliaTaksidevoun.mp4" type="video/mp4" class="ratio ratio-21x9"/>
               </video>
               <div class="carousel-caption d-none d-md-block">
