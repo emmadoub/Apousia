@@ -7,6 +7,10 @@
       background-image: url("ApousiaPhotos/n-n-flipped-copy2.png");
       background-attachment: fixed;
   }
+
+  p{
+    font-size: 18px;
+  }
   
   h1, h2, h3, h4, h5, h6, p, a, .btn, li {
     font-family: "Manrope", sans-serif;
@@ -155,7 +159,7 @@ a:active {
    .bio-m{
     display: flex;
     flex-direction: row;
-    padding: 0 10% 2% 10%;
+    padding: 0 10% 2% 12%;
    }
 
    .bio-verse {

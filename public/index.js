@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   const h2 = synergatesBees.querySelector('h2');
   const h2Width = h2.offsetWidth;
   const divWidth = synergatesBees.clientWidth;
-  console.log("H2 width:" + h2Width + "div width" + divWidth)
   
   // create an observer instance
   const observer = new IntersectionObserver((entries) => {

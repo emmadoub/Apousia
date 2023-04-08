@@ -11,6 +11,10 @@ h1, h2, h3, h4, h5, h6, p, a, .btn {
   font-family: "Manrope", sans-serif;
 }
 
+
+p{
+  font-size: 18px;
+}
 h2 {
   text-align: center;
   padding-top: 2%;
@@ -723,7 +727,7 @@ footer {
 
 .synergates-bees img {
   position: absolute;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 

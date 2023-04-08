@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Light the city</title>
+<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge" /> -->
+    <link rel="stylesheet" href="pastevent.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Inter+Tight:wght@200;300;500;600&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/1480679c4a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="heading">
+      <a href="index.html"><img src="apousia_logo2.png" class="logo"></a>
+      <div class="topnav" id="myTopnav">
+        <div class="dropdown">
+            <button class="dropbtn" id="dropbtn" onclick="showOptions()">Απ'Ουσία 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="dropdown-content">
+              <a href="apousia.html">Η Ομάδα μας</a>
+              <a href="theteam.html">Ποιές Είμαστε</a>
+            </div>
+          </div> 
+          <a href="services.html">Υπηρεσίες</a>
+          <a href="pastevents.html">Προηγούμενες Δράσεις</a>
+          <a href="contact.html">Επικοινωνία</a>
+          <a href="javascript:void(0);" style="font-size:15px;" class="nav-icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        </div>
+   <div class="omada">
+   
+      <div class="title">
+    <h2><span style="font-weight: 800;">Light the city</span>
+    </h2>
+    <h3 style="font-weight: 800;">Σε συνεργασία με το Impact Hub και το meet and code
+    </h3>
+    <h5>Ένα βιωματικό εργαστήριο που συνδυάζει τις νέες τεχνολογίες με τις εικαστικές δημιουργίες για παιδιά Λυκείου. </h5>
+    <h5 style="font-style:italic">Πώς θα θέλαμε να είναι η πόλη που ζούμε; Πώς είναι τα πάρκα, οι δρόμοι και τα σπίτια;  Πώς ζουν οι κάτοικοί ; </h5>
+  </div>
+  <div class="details">
+ <p>Το συγκεκριμένο εργαστήριο είχε ως στόχο να δημιουργήσει ένα πλαίσιο συζήτησης με τους μαθητές/τριες σχετικά με τον δημόσιο χώρο και τις γειτονιές τους, συνδυάζοντας  τις νέες τεχνολογίες με την εικαστική δημιουργία. </p>
+<p>Με αφετηρία μας το βιβλίο του Ιτάλο Καλβίνο “Οι αόρατες πόλεις”, εμπνευστήκαμε και σχεδιάσαμε με τα παιδιά την φανταστική μας πόλη σε μακέτα με ανακυκλώσιμα υλικά και όχι μόνο. Φτιάξαμε τα μέρη της πόλης που φανταστήκαμε, σπίτια, δρόμους, πάρκα, δημόσια κτίρια κλπ. και συζητήσαμε όλοι/ες μαζί ποιά στοιχεία είναι απαραίτητα σε μια ιδανική πόλη και άμεσα συνδεδεμένα με τα δικαιώματά μας. </p> 
+<p>Στη συνέχεια, με τη βοήθεια της ανοικτού κώδικα πλατφόρμας arduino ζωντανέψαμε την πόλη μας με ποικίλους φωτισμούς και μοτέρ που δίνουν κίνηση στα αντικείμενα που κατασκευάσαμε. 
+  Έγινε μια εισαγωγή στον κώδικα, από εξειδικευμένο συνεργάτη,  και προετοιμάσαμε τη συνδεσμολογία των λαμπτήρων και των μοτέρ κίνησης σε δοκιμαστικές πλακέτες. 
+  </p>
+</div>
+
+</div>
+  
+<div class="div-photos">
+  <div class="photos">
+    <img src="ApousiaPhotos/Past Events/light the city/251761500_599919214389880_6255640498431596503_n.jpg"  onclick="openModal();currentSlide(1)" class="hover-shadow cursor photo">
+    <img src="ApousiaPhotos/Past Events/light the city/251723182_1336918906727124_2695431907689597096_n.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor photo">
+  </div>
+  <div class="photos">
+    <img src="ApousiaPhotos/Past Events/light the city/light-the-city.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor photo">
+    <img src="ApousiaPhotos/Past Events/light the city/252470390_299060812065451_8164691043950875374_n.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor photo">
+  </div>
+</div> 
+
+<div id="ModalApousia" class="modal">
+  <span class="close cursor" onclick="closeModal()"><i class="fa-solid fa-circle-xmark"></i></span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="ApousiaPhotos/Past Events/light the city/251761500_599919214389880_6255640498431596503_n.jpg"  class="image-modal">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="ApousiaPhotos/Past Events/light the city/251723182_1336918906727124_2695431907689597096_n.jpg" class="image-modal">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="ApousiaPhotos/Past Events/light the city/light-the-city.jpg" class="image-modal">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="ApousiaPhotos/Past Events/light the city/252470390_299060812065451_8164691043950875374_n.jpg" class="image-modal">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i></a>
+    <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></a>
+  </div>
+</div>
+  
+  
+    <footer>
+      <p style="margin-bottom: 0; color:white;  font-size: 14px;">Copyright ApOusia 2023. Made by E.D. with <i class="fa-solid fa-heart" style="color:white"></i></p>
+    </footer>
+  </body>
+</html>

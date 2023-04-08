@@ -8,7 +8,12 @@
       background-size: cover;
       background-attachment: fixed;
   }
+
   
+  p{
+    font-size: 18px;
+  }
+
   h1, h2, h3, h4, h5, h6, p, a, .btn, li {
     font-family: "Manrope", sans-serif;
   }
@@ -194,6 +199,10 @@ a:active {
       .title {
         padding-top: 15%;
         padding-bottom: 10%;
+      }
+
+      .details {
+        padding: 0% !important;
       }
     }
 

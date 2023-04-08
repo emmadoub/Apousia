@@ -12,6 +12,10 @@
     font-family: "Manrope", sans-serif;
   }
 
+  p, li{
+    font-size: 18px;
+  }
+
   h2 {
     padding: 0 5px;
   }
@@ -161,7 +165,7 @@ a:active {
 
     ::marker { 
       color: rgba(206, 16, 89, 0.836);
-      
+      font-size: 23px;
     }
 
 .marker {

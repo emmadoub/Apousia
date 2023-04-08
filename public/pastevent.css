@@ -8,6 +8,9 @@
       background-attachment: fixed;
   }
   
+  p, li{
+    font-size: 18px;
+  }
   h1, h2, h3, h4, h5, h6, p, a, .btn, li {
     font-family: "Manrope", sans-serif;
   }
@@ -168,9 +171,20 @@ a:active {
       height: 500px;
     }
 
+    .photo-landscape {
+      width: 1020px;
+      height: 450px;
+    }
+
     .image-modal {
       height: 800px;
       width: 100%;
+    }
+
+    .image-landscape-modal {
+      height: auto;
+      width: 1200px;
+      position: relative;
     }
 
     .modal-portrait {
@@ -203,7 +217,8 @@ a:active {
     }
 
     ::marker { 
-      color: rgba(206, 16, 89, 0.836);
+      color: rgba(200, 202, 113, 0.918);
+      font-size: 23px;
       
     }
 
@@ -323,6 +338,14 @@ a:active {
     width: 90%;
     max-width: 1200px;
     --bs-modal-bg: rgba(128, 128, 128, 0.548);
+  }
+
+  .fa-circle-xmark {
+    color: rgba(185, 18, 82, 0.89);
+  }
+
+  .fa-circle-xmark:hover {
+    color: rgba(210, 211, 128, 0.76);
   }
   
   /* The Close Button */
@@ -444,6 +467,11 @@ a:active {
       align-items: center;
       justify-content: center;
       gap: 20px;
+    }
+
+    .photo-landscape {
+      width: 300px;
+      height: auto;
     }
 
 

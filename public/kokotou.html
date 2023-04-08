@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Βιβλιοφάγοι - Κτήμα Κοκοτού</title>
+<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge" /> -->
+    <link rel="stylesheet" href="pastevent.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Inter+Tight:wght@200;300;500;600&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/1480679c4a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="heading">
+      <a href="index.html"><img src="apousia_logo2.png" class="logo"></a>
+      <div class="topnav" id="myTopnav">
+        <div class="dropdown">
+            <button class="dropbtn" id="dropbtn" onclick="showOptions()">Απ'Ουσία 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="dropdown-content">
+              <a href="apousia.html">Η Ομάδα μας</a>
+              <a href="theteam.html">Ποιές Είμαστε</a>
+            </div>
+          </div> 
+          <a href="services.html">Υπηρεσίες</a>
+          <a href="pastevents.html">Προηγούμενες Δράσεις</a>
+          <a href="contact.html">Επικοινωνία</a>
+          <a href="javascript:void(0);" style="font-size:15px;" class="nav-icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        </div>
+   <div class="omada">
+   
+      <div class="title">
+    <h2><span style="font-weight: 800;">Βιβλιοφάγοι</span>
+    </h2>
+    <h3 style="font-weight: 800;">Σε συνεργασία με το κτήμα Κοκοτού 
+
+    </h3>
+    <h5>Τρείς μέρες αφιερωμένες στο παιδικό βιβλίο και την περιβαλλοντική εκπαίδευση!
+    </h5>
+    <h5 style="font-style:italic">Βιωματικά εργαστήρια για μικρούς και μεγάλους, θεατρικά παιχνίδια, δημιουργική γραφή και ομαδικά παιχνίδια.
+    </h5>
+  </div>
+  <div class="details">
+ <p>Μικροί και μεγάλες παρακολούθησαν καθημερινά εργαστήρια αφήγησης, θεατρικού παιχνιδιού και εικαστικών μέσα στο καταπράσινο κτήμα Κοκοτού. Διαβάσαμε βιβλία που αφορούν τα σπίτια των ζώων. Δημιουργήσαμε φωλιές από ανακυκλώσιμα και φυσικά υλικά και συζητήσαμε τους κινδύνους που διατρέχουν τα ζώα.</p>
+<p>Αναρωτηθήκαμε ποια υλικά χρησιμοποιούν τα ζώα για την κατασκευή των φωλιών. Γιατί κάθε ζώο φτιάχνουν διαφορετικές φωλιές; Και περιπλανηθήκαμε στο μαγευτικό κτήμα Κοκοτού, παίξαμε και αναζητήσαμε σημεία-φωλιές του κτήματος. </p>
+</div>
+
+</div>
+  
+<div class="div-photos">
+  <div class="photos">
+    <img src="ApousiaPhotos/Past Events/kokoutou/kokoutou.JPG"  onclick="openModal();currentSlide(1)" class="hover-shadow cursor photo">
+    <img src="ApousiaPhotos/2-nature.JPG" onclick="openModal();currentSlide(2)" class="hover-shadow cursor photo">
+  </div>
+  <div class="photos">
+    <img src="ApousiaPhotos/Past Events/kokoutou/IMG_4419.JPG" onclick="openModal();currentSlide(3)" class="hover-shadow cursor photo">
+    <img src="ApousiaPhotos/Past Events/kokoutou/IMG_4380.JPG" onclick="openModal();currentSlide(4)" class="hover-shadow cursor photo">
+  </div>
+</div> 
+
+<div id="ModalApousia" class="modal">
+  <span class="close cursor" onclick="closeModal()"><i class="fa-solid fa-circle-xmark"></i></span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="ApousiaPhotos/Past Events/kokoutou/kokoutou.JPG"  class="image-modal">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="ApousiaPhotos/2-nature.JPG" class="image-modal">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="ApousiaPhotos/Past Events/kokoutou/IMG_4419.JPG" class="image-modal">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="ApousiaPhotos/Past Events/kokoutou/IMG_4380.JPG" class="image-modal">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i></a>
+    <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></a>
+  </div>
+</div>
+  
+  
+    <footer>
+      <p style="margin-bottom: 0; color:white;  font-size: 14px;">Copyright ApOusia 2023. Made by E.D. with <i class="fa-solid fa-heart" style="color:white"></i></p>
+    </footer>
+  </body>
+</html>
