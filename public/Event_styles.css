@@ -5,9 +5,15 @@
       text-align: center;
       font-family: "Manrope", sans-serif;
       
-      background-image: url("ApousiaPhotos/n-n-flipped.jpg");
+      background-image: url("ApousiaPhotos/n-n-flipped.png");
       background-attachment: fixed;
   
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 1900px) {
+    body {
+      background-size: cover;
+    }
   }
 
   p{
@@ -291,6 +297,9 @@
 
   @media screen and (max-width: 600px) {
 
+    p, li{
+      font-size: 16px;
+    }
     .logo {
         width: 120px;   
         height: 101px; 

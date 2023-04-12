@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Μήνας του Καρυδιού</title>
+<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge" /> -->
+    <link rel="stylesheet" href="pastevent.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Inter+Tight:wght@200;300;500;600&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/1480679c4a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="heading">
+      <a href="index.html"><img src="apousia_logo2.png" class="logo"></a>
+      <div class="topnav" id="myTopnav">
+        <div class="dropdown">
+            <button class="dropbtn" id="dropbtn" onclick="showOptions()">απ'Ουσία 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="dropdown-content">
+              <a href="apousia.html">Η Ομάδα μας</a>
+              <a href="theteam.html">Ποιές Είμαστε</a>
+            </div>
+          </div> 
+          <a href="services.html">Υπηρεσίες</a>
+          <a href="pastevents.html">Προηγούμενες Δράσεις</a>
+          <a href="contact.html">Επικοινωνία</a>
+          <a href="javascript:void(0);" style="font-size:15px;" class="nav-icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        </div>
+   <div class="omada">
+   
+      <div class="title">
+    
+    <h2 style="font-weight: 600;"><i class="fa-solid fa-circle circle-left nature"></i>Μήνας Καρυδιού<i class="fa-solid fa-circle circle-right nature"></i>
+    </h2>
+    <h4 style="font-weight: 500;">Σε συνεργασία με τη Vamvakou Revival
+    </h4>
+    <h5>Η απ’Ουσία ταξίδεψε στη μαγευτική Βαμβακού και υλοποίησε διασκεδαστικά εργαστήρια με στόχο την περιβαλλοντική ευαισθητοποίηση. </h5>
+  </div>
+  <div class="details">
+    <p>Η παιδαγωγική ομάδα απ’Όυσία υλοποίησε διαδραστικά εργαστήρια δημιουργικής γραφής και κινητικών παιχνιδιών αφιερωμένο στο “ταξίδι” του καρυδιού, από την καλλιέργεια του σπόρου μέχρι να φτάσει στο τραπέζι μας.
+      </p>
+      <p>Παίξαμε κινητικά παιχνίδια, σκυταλοδρομίες, παιχνίδια μνήμης. <br>
+        Διαβάσαμε  βιβλία από την Βιβλιοθήκη της Βαμβακού καθώς από τη δική μας βιβλιοθήκη, αφιερωμένα στη φύση και στο περιβάλλον. Τέλος, όλοι και όλες μαζί παίξαμε ένα παιχνίδι δημιουργικής γραφής και φτιάχνουμε ιστορίες για τον κύκλο ζωής του καρυδιού. 
+        </p>
+</div>
+
+</div>
+  
+<div class="div-photos">
+
+  <div class="photos">
+    <img  src="ApousiaPhotos/Past Events/minas-tou-karidiou/248347407_403626054654653_2227943178078168270_n.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor photo-portrait">
+    
+    <img src="ApousiaPhotos/Past Events/minas-tou-karidiou/minas-tou-karidiou.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor photo photo-land-end">
+   
+  </div>
+  <div class="photos">
+    <img src="ApousiaPhotos/Past Events/minas-tou-karidiou/247639042_4653816501344817_957217000732590592_n.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor photo photo-land-start">
+    <img src="ApousiaPhotos/Past Events/minas-tou-karidiou/248295199_278535977469751_3907723497388189432_n.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor photo-portrait">
+    
+  </div>
+</div>
+
+<div id="ModalApousia" class="modal">
+  <span class="close cursor" onclick="closeModal()"><i class="fa-solid fa-circle-xmark"></i></span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="ApousiaPhotos/Past Events/minas-tou-karidiou/248347407_403626054654653_2227943178078168270_n.jpg"  class="modal-portrait">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="ApousiaPhotos/Past Events/minas-tou-karidiou/minas-tou-karidiou.jpg" class="image-modal">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="ApousiaPhotos/Past Events/minas-tou-karidiou/247639042_4653816501344817_957217000732590592_n.jpg" class="image-modal">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="ApousiaPhotos/Past Events/minas-tou-karidiou/248295199_278535977469751_3907723497388189432_n.jpg" class="modal-portrait">
+    </div>
+
+    
+    <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i></a>
+    <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></a>
+  </div>
+</div>
+  
+  
+    <footer>
+      <p style="margin-bottom: 0; color:white;  font-size: 14px;">Copyright ApOusia 2023. Made by E.D. with <i class="fa-solid fa-heart" style="color:white"></i></p>
+    </footer>
+  </body>
+</html>

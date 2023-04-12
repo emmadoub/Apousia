@@ -4,10 +4,14 @@
   body {
       text-align: center;
       font-family: "Manrope", sans-serif;
-      background-image: url("ApousiaPhotos/n-n-flipped-copy2.png");
+      background-image: url("ApousiaPhotos/n-n-flipped-copy2\ copy.png");
       background-attachment: fixed;
   }
-
+  @media screen and (min-width: 600px) and (max-width: 1900px) {
+    body {
+      background-size: cover;
+    }
+  }
   p{
     font-size: 18px;
   }
@@ -346,6 +350,10 @@ a:active {
       position: absolute;
       right: 0;
       top: 0;
+    }
+
+    p, li{
+      font-size: 16px;
     }
 
     .justify, .justify-m {

@@ -192,7 +192,9 @@
   }
   
   @media screen and (max-width: 600px) {
-
+    p, li{
+      font-size: 16px;
+    }
     .exp-padding {
       padding: 0 !important;
     }

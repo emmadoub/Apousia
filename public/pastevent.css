@@ -4,16 +4,38 @@
   body {
       text-align: center;
       font-family: "Manrope", sans-serif;
-      background-image: url("ApousiaPhotos/n-n-flipped.jpg");
+      background-image: url("ApousiaPhotos/n-n-flipped.png");
       background-attachment: fixed;
   }
   
   p, li{
     font-size: 18px;
   }
-  h1, h2, h3, h4, h5, h6, p, a, .btn, li {
+  h1, h2, h3, h4, h5, h6, p, a, .btn, li, span {
     font-family: "Manrope", sans-serif;
   }
+
+  .nature {
+    color:#c0d332d2;
+}
+.fairytale {
+   color: rgba(17, 173, 235, 0.877);
+}
+
+.trainer {
+   color: rgba(209, 17, 226, 0.822);
+    
+}
+
+.experience {
+   color: #ffcc00d7;
+}
+
+.party {
+  color: rgba(137, 43, 226, 0.795);
+}
+
+
 
   h2 {
     padding: 0 5px;
@@ -25,6 +47,14 @@
  a:link {
   color: #707070;
   text-decoration: none;
+}
+
+.circle-left {
+  font-size: 10px; position:relative; bottom:7px; right: 2px;
+}
+
+.circle-right {
+  font-size: 10px; position:relative; bottom:6px; left:3px;
 }
 
 a:visited {
@@ -156,6 +186,11 @@ a:active {
       width: 500px;
       height: 333px;
     } 
+
+    .photo-square {
+      width: 500px;
+      height: 500px;
+    }
 
     
     .photo-land-end {
@@ -326,7 +361,7 @@ a:active {
     height: 100%;
     overflow: auto;
     background-color: transparent;
-    --bs-modal-bg: rgba(128, 128, 128, 0.548);
+    --bs-modal-bg: rgba(211, 209, 209, 0.548);
   }
   
   /* Modal Content */
@@ -337,7 +372,7 @@ a:active {
     padding: 0;
     width: 90%;
     max-width: 1200px;
-    --bs-modal-bg: rgba(128, 128, 128, 0.548);
+    --bs-modal-bg: rgba(211, 209, 209, 0.705);
   }
 
   .fa-circle-xmark {
@@ -405,12 +440,13 @@ a:active {
   
   /* Number text (1/3 etc) */
   .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
+    color: white;
+    font-size: 14px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
     font-family: "Manrope", sans-serif;
+    font-weight: 600;
   }
   
   img {
@@ -480,6 +516,11 @@ a:active {
       height: 210px;
     }
 
+    .photo-square {
+      width: 300px;
+      height: 300px;
+    }
+
     .div-photos {
       padding-bottom: 15%;
     }
@@ -511,6 +552,10 @@ a:active {
       width: 100%;
       text-align: left;
     }
+
+    p, li{
+      font-size: 16px;
+    }
   }
 
   @media screen and (max-width: 600px) {
@@ -518,6 +563,14 @@ a:active {
     .logo {
         width: 120px;   
         height: 101px; 
+      }
+
+      .circle-left {
+        font-size: 7px;position:relative; bottom:5px;
+      }
+      
+      .circle-right {
+        font-size: 7px; position:relative; bottom:4px; left:1px;
       }
     .description {
         margin-top: 10% !important;
