@@ -339,7 +339,7 @@ a:active {
     }
 
     .footer-image{
-      width: 90%;
+      width: 70% !important;
     }
   }
 
