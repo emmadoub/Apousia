@@ -266,9 +266,6 @@ a:active {
     text-align: center;
 }
 
-/* .container-nature:hover > .nature {
-
-} */
 
 .image-service {
     width: 100px;
@@ -616,8 +613,12 @@ footer {
       font-size: 7px; color: rgb(168, 43, 226); position:relative; bottom:4px; left:1px;
     }
 
-    p, li{
+    p, li, a, h2{
       font-size: 16px;
+    }
+
+    h5 {
+      font-size: 18px !important;
     }
 
     .carousel-image {
@@ -630,10 +631,43 @@ footer {
     height: 25.5vh;
   }
 
+  .p-services {
+    padding: 0 5%;
+    font-size: 14px;
+  }
+
+  .p-services-p {
+    padding: 0 5%;
+    font-size: 13px;
+  }
+
     .resp-image {
       background-position: 0 20%;
     }
-  
+  .btn-draseis1, .btn-draseis2 {
+    font-size: 16px !important;
+    padding: 7px !important;
+  }
+
+  .service-party {
+    order:1;
+  }
+
+  .service-nature {
+    order:3;
+  }
+
+  .service-experience {
+    order:2;
+  }
+
+  .service-fairytale {
+    order: 4;
+  }
+
+  .service-trainer {
+    order:5;
+  }
 
     .logo {
       width: 120px;   
@@ -647,13 +681,16 @@ footer {
     }
 
     .services {
+      padding-top: 5%;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px;
     }
 
     .section-service{
-      width: 100px;
-      height: 100px;
+      width: 85px;
+      height: 85px;
       margin-bottom: 2%;
       border-radius: 50%;
       display: flex;
@@ -664,7 +701,7 @@ footer {
 
   .balloons {
     
-    padding: 100px 0;
+    padding: 90px 0;
     
   
   }
@@ -674,8 +711,8 @@ footer {
   }
   
   .image-service {
-      width: 50px;
-      height: 50px;
+      width: 42.5px;
+      height: 42.5px;
       color: aliceblue;
       display: block;
       margin: 0 auto;

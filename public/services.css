@@ -195,6 +195,10 @@
     p, li{
       font-size: 16px;
     }
+
+  h3 {
+    font-size: 22px !important;
+  }
     .exp-padding {
       padding: 0 !important;
     }
