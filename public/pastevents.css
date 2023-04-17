@@ -358,7 +358,9 @@ a:active {
         height: 101px; 
     }
 
-
+.text {
+  font-size: 16px !important;
+}
 
     .details h4{
         text-align: center;
