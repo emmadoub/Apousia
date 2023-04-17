@@ -37,6 +37,13 @@
     text-decoration: none;
   }
   
+  .left-circle {
+    bottom: 7px !important;
+  }
+
+  .right-circle {
+    bottom: 5px !important;
+  }
   
   .topnav {
     background-color: transparent;
@@ -197,7 +204,15 @@
     }
 
   h3 {
-    font-size: 22px !important;
+    font-size: 19px !important;
+  }
+
+  .left-circle {
+    bottom: 4px !important;
+  }
+
+  .right-circle {
+    bottom: 3px !important;
   }
     .exp-padding {
       padding: 0 !important;
