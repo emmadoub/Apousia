@@ -39,7 +39,7 @@ a:visited {
 }
 
 a:hover {
-  color: #E6B549;
+  color: rgba(200, 202, 113, 0.918);
   text-decoration: none;
 }
 
