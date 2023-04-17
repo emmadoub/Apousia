@@ -499,7 +499,9 @@ a:active {
   width: 80%;
   padding: 3% 0;
 }
-
+.tinos {
+  padding-top: 10%;
+}
 
 
 
@@ -514,7 +516,11 @@ a:active {
   .icon-tel{
     font-size: 34px;
   }
-
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
 
 /* Footer */
 
@@ -757,15 +763,45 @@ footer {
 .flex {
   display: flex;
   justify-content: center;
+  align-self: center;
+  padding: 12px 10px;
 }
 
+.tinos {
+  padding-top: 10% !important;
+}
+
+.poua {
+  width: 120px;
+  height: 78px;
+  padding-top: 7% !important;
+}
+
+.epimelitirio {
+  width: 150px;
+  height: 90px;
+}
+
+.ludd {
+  width:120px;
+  height: 120px;
+}
+
+.meetandcode {
+  width: 120px;
+  height: 51px;
+}
+.Athens-festival {
+  width: 150px;
+  height: 95px;
+}
 .synergates > div {
   flex-basis: 50%;
 }
 
 .synergates-img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
 }
 
 .contact {
