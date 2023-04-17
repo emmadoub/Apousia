@@ -783,8 +783,8 @@ footer {
 }
 
 .ludd {
-  width:120px;
-  height: 120px;
+  width:125px;
+  height: 125px;
 }
 
 .meetandcode {
@@ -794,6 +794,14 @@ footer {
 .Athens-festival {
   width: 150px;
   height: 95px;
+}
+.votaniko {
+  width: 120px;
+  height: 114px;
+}
+.psihogios {
+  width: 115px;
+  height: 115px;
 }
 .synergates > div {
   flex-basis: 50%;
