@@ -219,6 +219,8 @@ a:active {
       display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 350px;
+  height: 153px;
     }
 
     .title {
@@ -340,6 +342,7 @@ a:active {
 
     .footer-image{
       width: 70% !important;
+      height: 70% !important;
     }
   }
 
