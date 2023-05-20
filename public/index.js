@@ -24,6 +24,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
   
 });
 
+// var lang = 'GR';
+
+// if (window.innerWidth < 600) {
+  
+// }
+
+// document.getElementsByClassName("en").style.display='none';
 document.addEventListener('keydown', function(event) {
   if (event.code === 'ArrowLeft') {
     plusSlides(-1);
@@ -59,6 +66,63 @@ x.innerHTML = "Browser width: " + w + ", height: " + h + ".";
     }
   };
 
+  function showOptionsLang() {
+    var content = document.getElementById("dropdown-content-lang");
+    var caret_en = document.getElementById("caret-down-en");
+    var caret_gr = document.getElementById("caret-down-gr");
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  //   if (document.getElementById("dropbtn2").innerHTML==='GR'){
+  //   if (caret_en.style.display === "block") {
+  //     caret_en.style.display = "none";
+  //   } else {
+  //     caret_en.style.display = "block";
+  //   }
+  //   if (caret_gr.style.display === "block") {
+  //     caret_gr.style.display = "none";
+  //   } else {
+  //     caret_gr.style.display = "block";
+  //   }
+  // }
+  };
+
+    function EN_selected() {
+    var drop = document.getElementById("dropbtn2");
+    var drop2 = document.getElementById("en");
+    class_el = document.getElementsByClassName("el");
+    class_en = document.getElementsByClassName("en");
+    if (lang==='GR'){
+    drop.innerHTML = 'EN <i class="fa fa-caret-down" id="caret-down-en"></i>';
+    drop2.innerHTML='GR';
+    lang='EN';
+    
+
+  for (let i = 0; i < class_el.length; i++) {
+      class_el[i].style.display='none';
+  }
+
+  for (let i = 0; i < class_en.length; i++) {
+    class_en[i].style.display='block';
+  }
+  }
+  else {
+    drop.innerHTML = 'GR <i class="fa fa-caret-down" id="caret-down-en"></i>';
+    drop2.innerHTML='EN';
+    lang='GR';
+    for (let i = 0; i < class_el.length; i++) {
+      class_el[i].style.display='block';
+    }
+
+  for (let i = 0; i < class_en.length; i++) {
+    class_en[i].style.display='none';
+  }
+  }
+  }
+
+  ;
   function openModal() {
     if (window.matchMedia("(min-width: 600px)").matches) {
     document.getElementById("ModalApousia").style.display = "block";

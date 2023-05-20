@@ -193,6 +193,12 @@ a:active {
   background-position: 0 15%;
 }
 
+/* no current */
+.current-description {
+  padding: 3%;
+  text-align: center;
+}
+
 .carousel-item {
   height: 90vh;
 }
@@ -309,12 +315,21 @@ a:active {
   background-color: #d6cabcc0  !important;
   border-color:  #d6cabc ! important;
   color:white !important;
-  padding: 10px !important;
+  padding: 10px 20px!important;
   font-family:  "Manrope", sans-serif !important ;
   font-size: 18px !important;
 }
 
 .btn-draseis2 {
+  background-color: #b22dd3b9!important;
+  border-color: #b22dd3b9! important;
+  color:white !important;
+  padding: 10px 20px!important;
+  font-family:  "Manrope", sans-serif !important ;
+  font-size: 18px !important;
+}
+
+.btn-draseis3 {
   background-color: #b22dd3b9!important;
   border-color: #b22dd3b9! important;
   color:white !important;
@@ -599,7 +614,7 @@ footer {
 
   .carousel-item {
     height: 110vh;
-  }
+  } 
 }
 
 @media screen and (max-width: 359px) {
@@ -644,9 +659,9 @@ footer {
       background-repeat: no-repeat;
   }
 
-  .carousel-item {
+   .carousel-item {
     height: 25.5vh;
-  }
+  } 
 
   .p-services {
     padding: 0 5%;
@@ -658,32 +673,32 @@ footer {
     font-size: 13px;
   }
 
-    .resp-image {
+   .resp-image {
       background-position: 0 20%;
-    }
-  .btn-draseis1, .btn-draseis2 {
+    } 
+  .btn-draseis1, .btn-draseis2, .btn-draseis3 {
     font-size: 16px !important;
     padding: 7px !important;
   }
 
   .service-party {
-    order:1;
+    order:1 !important;
   }
 
   .service-nature {
-    order:3;
+    order:3 !important;
   }
 
   .service-experience {
-    order:2;
+    order:2 !important;
   }
 
   .service-fairytale {
-    order: 4;
+    order: 4 !important;
   }
 
   .service-trainer {
-    order:5;
+    order:5 !important;
   }
 
     .logo {
@@ -850,11 +865,13 @@ footer {
 } 
 
 .beeNo1 {
-  left: -2% !important;
+  /* left: -2% !important; */
+  left: -5% !important;
 }
 
 .beeNo2 {
-  right: 2% !important; 
+  right: 0% !important; 
+  /* right: 2% !important; */
 }
 
 .synergates-bees.animate-bees img:first-child, .synergates-bees.animate-bees img:last-child {
@@ -887,6 +904,11 @@ footer {
 
 .contact-container {
   bottom: 7%;
+}
+
+/* no current */
+.current {
+  padding: 10% 5%;
 }
 
 
