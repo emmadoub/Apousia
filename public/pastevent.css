@@ -490,7 +490,20 @@ a:active {
   }
 
   @media screen and (max-width: 600px) {
-    .topnav a, .dropdown .dropbtn {
+  
+  }
+
+
+
+  @media screen and (max-width: 600px) {
+    .topnav:not(.responsive) .el,
+    .topnav:not(.responsive) .en {
+      display: none !important;
+    }
+  }
+  @media screen and (max-width: 600px) {
+
+      .topnav a, .dropdown .dropbtn {
       display: none;
     }
     .topnav a.nav-icon {
@@ -542,12 +555,6 @@ a:active {
     .modal {
       display: none;
     }
-  }
-
-
-
-  
-  @media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive .nav-icon {
       position: absolute;
