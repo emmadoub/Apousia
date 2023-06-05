@@ -16,49 +16,83 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="index.js"></script>
   </head>
-  <body>
+  <body onload="getLang()">
     <div class="heading">
       <a href="index.html"><img src="apousia_logo2.png" class="logo"></a>
+      <!-- <h4 id="width"></h4> -->
       <div class="topnav" id="myTopnav">
         <div class="dropdown">
-            <button class="dropbtn" id="dropbtn" onclick="showOptions()">απ'Ουσία 
+            <button class="el dropbtn" style="color: #707070;" id="dropbtn_el" onclick="showOptions()">απ'Ουσία 
               <i class="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content" id="dropdown-content">
-              <a href="apousia.html">Η Ομάδα μας</a>
-              <a href="theteam.html">Ποιές Είμαστε</a>
+            <button class="en dropbtn" style="color: #707070; display: none;" id="dropbtn_en" onclick="showOptions()">ap'Ousia
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content menu" id="dropdown-content">
+              <a href="apousia.html" class="el">Η Ομάδα μας</a>
+              <a href="theteam.html" class="el">Ποιές Είμαστε</a>
+              <a href="apousia.html" class="en" style="display: none;">Our Team</a>
+              <a href="theteam.html" class="en" style="display: none;">About Us</a>
             </div>
           </div> 
-          <a href="services.html">Υπηρεσίες</a>
-          <a href="pastevents.html">Προηγούμενες Δράσεις</a>
-          <a href="contact.html">Επικοινωνία</a>
-          <a href="javascript:void(0);" style="font-size:15px;" class="nav-icon" onclick="myFunction()">&#9776;</a>
+          <a href="services.html" class="el">Υπηρεσίες</a>
+          <a href="pastevents.html"  class="el">Προηγούμενες Δράσεις</a>
+          <a href="contact.html"  class="el">Επικοινωνία</a>
+          <a href="services.html" class="en" style="display: none;">Services</a>
+          <a href="pastevents.html"  class="en" style="display: none;">Past Events</a>
+          <a href="contact.html"  class="en" style="display: none;">Contact</a>
+          <div class="dropdown">
+          <button class="dropbtn" style="color: #707070;" id="dropbtn2" onclick="showOptionsLang()">GR 
+          <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content lang" id="dropdown-content-lang">
+            <a href="javascript:void(0);" id="en" onclick="changeLanguage()">EN</a>
+            
+          </div>
+        </div> 
+          <a href="javascript:void(0);" class="nav-icon" onclick="myFunction()">&#9776;</a>
         </div>
-        </div>
+      </div>
    <div class="omada">
     <div>
       <div class="title">
-    <h2 class="marker under" style="color:#eff0eb">Η Ομάδα μας</h2>
+    <h2 class="marker under el">Η Ομάδα μας</h2>
+    <h2 class="marker under en" style="display: none;">Our Team</h2>
   </div>
   <div class="details">
-    <p>Η απ’Ουσία ασχολείται με τον σχεδιασμό και την υλοποίηση εκπαιδευτικών και πολιτιστικών προγραμμάτων βιωματικού χαρακτήρα για παιδια από 3 έως 103 ετών.</p>
-    <p>Ταυτοχρόνως, στοχεύει στη δημιουργία εκπαιδευτικών κοινοτήτων παιδιών και ενηλίκων με στόχο την προώθηση του δημιουργικού διαλόγου και την εξερεύνηση νέων μεθόδων μάθησης και εναλλακτικής προσέγγισης των τεχνών.</p>
+    <p class="el">Η απ’Ουσία ασχολείται με τον σχεδιασμό και την υλοποίηση εκπαιδευτικών και πολιτιστικών προγραμμάτων βιωματικού χαρακτήρα για παιδια από 3 έως 103 ετών.</p>
+    <p class="el">Ταυτοχρόνως, στοχεύει στη δημιουργία εκπαιδευτικών κοινοτήτων παιδιών και ενηλίκων με στόχο την προώθηση του δημιουργικού διαλόγου και την εξερεύνηση νέων μεθόδων μάθησης και εναλλακτικής προσέγγισης των τεχνών.</p>
+    <p class="en" style="display: none;">Ap'Ousia is engaged in designing and implementing experiential educational and cultural programs for children aged 3 to 103. At the same time, it aims to create educational communities for children and adults with the goal of promoting creative dialogue and exploring new methods of learning and alternative approaches to the arts.</p>
+
     <img src="ApousiaPhotos/line-separator-removebg-preview.png" style="display: block;
     margin-left: auto;
     margin-right: auto;"alt="">
-    <p>​Κοινή αφετηρία των μελών της ομάδας απ’Ουσία, είναι το ενδιαφέρον για τη βιωματική και τη μη τυπική μάθηση καθώς και η πεποίθηση πως  το παιχνίδι και η αυτορρύθμιση έχουν πρωταρχικό ρόλο στην εκπαιδευτική διαδικασία. Θεωρώντας τα παιδιά ισότιμα μέλη μιας ομάδας με αυτόβουλη σκέψη και ικανότητα διαμόρφωσης απόψεων και εξεύρεσης λύσεων στα προβλήματα που συνθέτουν, σκοπός είναι να αντιληφθούν με τα δικά τους μέσα και βιώματα τον κόσμο γύρω τους.</p>
-    <p>Μερικά από τα πολλαπλά οφέλη της βιωματικής μάθησης είναι, η κατανόηση και αποδοχή της διαφορετικότητας από όλα τα μέλη της εκάστοτε εκπαιδευτικής ομάδας ή σχολικής τάξης, η ενίσχυση της συμμετοχικότητας εντός της ομάδας, η δημιουργία ευνοϊκού κλίματος και ασφαλούς χώρου έκφρασης για τα παιδιά, η εξοικείωση των παιδιών με συλλογικές διαδικασίες και την έννοια της κοινότητας, η σύνδεση του εκάστοτε εκπαιδευτικού υλικού με τις υπάρχουσες κοινωνικές συνθήκες, καθώς και η ενδυνάμωση των ίδιων των εκπαιδευτικών και εμψυχωτών.</p>
+    <p class="el">​Κοινή αφετηρία των μελών της ομάδας απ’Ουσία, είναι το ενδιαφέρον για τη βιωματική και τη μη τυπική μάθηση καθώς και η πεποίθηση πως  το παιχνίδι και η αυτορρύθμιση έχουν πρωταρχικό ρόλο στην εκπαιδευτική διαδικασία. Θεωρώντας τα παιδιά ισότιμα μέλη μιας ομάδας με αυτόβουλη σκέψη και ικανότητα διαμόρφωσης απόψεων και εξεύρεσης λύσεων στα προβλήματα που συνθέτουν, σκοπός είναι να αντιληφθούν με τα δικά τους μέσα και βιώματα τον κόσμο γύρω τους.</p>
+    <p class="el">Μερικά από τα πολλαπλά οφέλη της βιωματικής μάθησης είναι, η κατανόηση και αποδοχή της διαφορετικότητας από όλα τα μέλη της εκάστοτε εκπαιδευτικής ομάδας ή σχολικής τάξης, η ενίσχυση της συμμετοχικότητας εντός της ομάδας, η δημιουργία ευνοϊκού κλίματος και ασφαλούς χώρου έκφρασης για τα παιδιά, η εξοικείωση των παιδιών με συλλογικές διαδικασίες και την έννοια της κοινότητας, η σύνδεση του εκάστοτε εκπαιδευτικού υλικού με τις υπάρχουσες κοινωνικές συνθήκες, καθώς και η ενδυνάμωση των ίδιων των εκπαιδευτικών και εμψυχωτών.</p>
+    <p class="en" style="display: none;">A common starting point for the members of the Ap'Ousia team is an interest in experiential and non-formal learning, with the belief that play and self-regulation have a fundamental role in the educational process. Considering children as equal members of a group with autonomous thinking and the ability to form opinions and find solutions to the problems they encounter, the purpose is for them to perceive the world around them through their own means and experiences.</p>
+    <p class="en" style="display: none;">Some of the many benefits of experiential learning include understanding and accepting diversity among all members of the educational group or classroom, enhancing participation within the group, creating a favorable climate and a safe space for children to express themselves, familiarizing children with collective processes and the concept of community, connecting the educational material with existing social conditions, and empowering educators and facilitators themselves.</p>
+
     <img src="ApousiaPhotos/line-separator-removebg-preview.png" style="display: block;
     margin-left: auto;
     margin-right: auto;"alt="">
-    <p>Με βασικό άξονα λοιπόν τη βιωματική μάθηση ως βασική μέθοδο σε όλα τα προγράμματα που υλοποιούμε, χρησιμοποιούμε ποικίλα χρήσιμα εργαλεία και μορφές έκφρασης, όπως για παράδειγμα διαφορετικά είδη τέχνης (θεατρικό παιχνίδι, εικαστική έκφραση, κινηματογράφος, φωτογραφία κ.α.), την παιδική λογοτεχνία και τη δημιουργική γραφή και φυσικά πολύ πολύ παιχνίδι και φαντασία!</p>
-    <p>Πιο συγκεκριμένα, η ομάδα μας αναλαμβάνει:</p>
-      <ul>
+    <p class="el">Με βασικό άξονα λοιπόν τη βιωματική μάθηση ως βασική μέθοδο σε όλα τα προγράμματα που υλοποιούμε, χρησιμοποιούμε ποικίλα χρήσιμα εργαλεία και μορφές έκφρασης, όπως για παράδειγμα διαφορετικά είδη τέχνης (θεατρικό παιχνίδι, εικαστική έκφραση, κινηματογράφος, φωτογραφία κ.α.), την παιδική λογοτεχνία και τη δημιουργική γραφή και φυσικά πολύ πολύ παιχνίδι και φαντασία!</p>
+    <p class="el">Πιο συγκεκριμένα, η ομάδα μας αναλαμβάνει:</p>
+      <ul class="el">
       <li>Τον σχεδιασμό και την υλοποίηση φεστιβάλ και εκδηλώσεων για παιδιά και γονείς στο δημόσιο χώρο,</li>
       <li>Σχεδιασμό και υλοποίηση παιδαγωγικών προγραμμάτων για παιδιά, εφήβους/ες και νέους/ες σε σχολεία, μουσεία κτλ.,</li>
       <li>Σχεδιασμό εκπαιδευτικού υλικού,</li>
       <li>Σχεδιασμό και υλοποίηση εκπαιδεύσεων "train the trainers" σε εκπαιδευτικούς και εμψυχωτές/ριες.</li>
     </ul>
+    <p class="en" style="display: none;">With experiential learning as the main axis in all the programs we implement, we use various useful tools and forms of expression, such as different forms of art (drama, visual expression, cinema, photography, etc.), children's literature, creative writing, and, of course, lots and lots of play and imagination!</p>
+
+<p class="en" style="display: none;">Specifically, our team undertakes:</p>
+
+<ul class="en" style="display: none;">
+  <li>The design and implementation of festivals and events for children and parents in public spaces,</li>
+  <li>The design and implementation of educational programs for children, adolescents, and young people in schools, museums, etc.,</li>
+  <li>The design of educational material,</li>
+  <li>The design and implementation of "train the trainers" training for educators and facilitators.</li>
+</ul>
   </div>
   <img src="ApousiaPhotos/shutterflipped-removebg.png" class="footer-image" alt="">
   </div>

@@ -90,6 +90,8 @@ a:active {
   margin: 0;
 }
 
+
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -125,16 +127,27 @@ a:active {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a, .dropdown .dropbtn {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
   }
   .topnav a.nav-icon {
     float: right;
-    display: block;
+    display: block !important;
     position: absolute;
     right: 1px;
     top: 20px;
     font-size:20px;
+  }
+
+  .heading .en {
+    padding-right: 100px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav:not(.responsive) .el,
+  .topnav:not(.responsive) .en {
+    display: none !important;
   }
 }
 
@@ -307,35 +320,41 @@ a:active {
   background-size: cover;
   width: 100%;
   padding: 200px 0;
-  text-align: center; position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
-.btn-draseis1 {
-  background-color: #d6cabcc0  !important;
-  border-color:  #d6cabc ! important;
-  color:white !important;
-  padding: 10px 20px!important;
-  font-family:  "Manrope", sans-serif !important ;
-  font-size: 18px !important;
+
+
+.el.btn-draseis1,
+.en.btn-draseis1,
+.el.btn-draseis2,
+.en.btn-draseis2 {
+  display: inline-block;
+  margin: 3px;
+  padding: 10px 20px;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  color: white;
 }
 
-.btn-draseis2 {
-  background-color: #b22dd3b9!important;
-  border-color: #b22dd3b9! important;
-  color:white !important;
-  padding: 10px 20px!important;
-  font-family:  "Manrope", sans-serif !important ;
-  font-size: 18px !important;
+.el.btn-draseis1,
+.en.btn-draseis1 {
+  background-color: #d6cabcc0;
+  border-color: #d6cabc;
 }
 
-.btn-draseis3 {
-  background-color: #b22dd3b9!important;
-  border-color: #b22dd3b9! important;
-  color:white !important;
-  padding: 10px !important;
-  font-family:  "Manrope", sans-serif !important ;
-  font-size: 18px !important;
+.el.btn-draseis2,
+.en.btn-draseis2 {
+  background-color: #b22dd3b9;
+  border-color: #b22dd3b9;
+}
+
+.btn-draseis2:hover {
+  background-color: #b22dd3e7 !important;
+  border-color: #b22dd3e7 !important;
 }
 
 /* Current Events */
@@ -676,7 +695,7 @@ footer {
    .resp-image {
       background-position: 0 20%;
     } 
-  .btn-draseis1, .btn-draseis2, .btn-draseis3 {
+  .btn-draseis1, .btn-draseis2 {
     font-size: 16px !important;
     padding: 7px !important;
   }

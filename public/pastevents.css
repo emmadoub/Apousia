@@ -97,9 +97,15 @@ a:visited {
   text-decoration: none;
 }
 
-a:hover {
-  color: lightgrey;
+.navbar a:hover {
+  color: grey !important;
   text-decoration: none;
+} 
+
+.text a.en:hover, .text a.el:hover {
+  color: white !important;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 a:active {
@@ -147,7 +153,7 @@ a:active {
   margin: 0;
 }
 
-.dropdown-content {
+.dropdown-content.menu {
   display: none;
   position: absolute;
   top: 100%;
@@ -155,6 +161,17 @@ a:active {
   z-index: 1000;
   background-color: #f9f9f9;
   min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content.lang{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  background-color: #f9f9f9;
+  width: 67px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
@@ -216,6 +233,13 @@ a:active {
       vertical-align: middle;
       width: 100%;
     }
+
+    @media screen and (max-width: 600px) {
+      .topnav:not(.responsive) .el,
+      .topnav:not(.responsive) .en {
+        display: none !important;
+      }
+    }
     
     /* Responsive layout - makes a two column-layout instead of four columns */
     @media screen and (max-width: 800px) {
@@ -237,6 +261,10 @@ a:active {
       .title {
         padding-top: 15%;
         padding-bottom: 10%;
+      }
+
+      .heading .en {
+        padding-right: 100px !important;
       }
     }
 

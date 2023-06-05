@@ -23,9 +23,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   observer.observe(synergatesBees);
   
 });
-
-// var lang = 'GR';
-
 // if (window.innerWidth < 600) {
   
 // }
@@ -67,14 +64,23 @@ x.innerHTML = "Browser width: " + w + ", height: " + h + ".";
   };
 
   function showOptionsLang() {
-    var content = document.getElementById("dropdown-content-lang");
-    var caret_en = document.getElementById("caret-down-en");
-    var caret_gr = document.getElementById("caret-down-gr");
-    if (content.style.display === "block") {
-      content.style.display = "none";
+    var contentLang = document.getElementById("dropdown-content-lang");
+    if (contentLang.style.display === "block") {
+      contentLang.style.display = "none";
     } else {
-      content.style.display = "block";
+      contentLang.style.display = "block";
     }
+  }
+
+  // function showOptionsLang() {
+  //   var content = document.getElementById("dropdown-content-lang");
+  //   var caret_en = document.getElementById("caret-down-en");
+  //   var caret_gr = document.getElementById("caret-down-gr");
+  //   if (content.style.display === "block") {
+  //     content.style.display = "none";
+  //   } else {
+  //     content.style.display = "block";
+  //   }
   //   if (document.getElementById("dropbtn2").innerHTML==='GR'){
   //   if (caret_en.style.display === "block") {
   //     caret_en.style.display = "none";
@@ -87,42 +93,177 @@ x.innerHTML = "Browser width: " + w + ", height: " + h + ".";
   //     caret_gr.style.display = "block";
   //   }
   // }
-  };
+  // };
 
-    function EN_selected() {
-    var drop = document.getElementById("dropbtn2");
-    var drop2 = document.getElementById("en");
-    class_el = document.getElementsByClassName("el");
-    class_en = document.getElementsByClassName("en");
-    if (lang==='GR'){
-    drop.innerHTML = 'EN <i class="fa fa-caret-down" id="caret-down-en"></i>';
-    drop2.innerHTML='GR';
-    lang='EN';
+  
+  //   function EN_selected() {
+  //   var drop = document.getElementById("dropbtn2");
+  //   var drop2 = document.getElementById("en");
+  //   class_el = document.getElementsByClassName("el");
+  //   class_en = document.getElementsByClassName("en");
+  //   if (lang==='GR'){
+  //   drop.innerHTML = 'EN <i class="fa fa-caret-down" id="caret-down-en"></i>';
+  //   drop2.innerHTML='GR';
+  //   lang='EN';
     
 
-  for (let i = 0; i < class_el.length; i++) {
-      class_el[i].style.display='none';
-  }
+  // for (let i = 0; i < class_el.length; i++) {
+  //     class_el[i].style.display='none';
+  // }
 
-  for (let i = 0; i < class_en.length; i++) {
-    class_en[i].style.display='block';
+  // for (let i = 0; i < class_en.length; i++) {
+  //   class_en[i].style.display='block';
+  // }
+  // }
+  // else {
+  //   drop.innerHTML = 'GR <i class="fa fa-caret-down" id="caret-down-en"></i>';
+  //   drop2.innerHTML='EN';
+  //   lang='GR';
+  //   for (let i = 0; i < class_el.length; i++) {
+  //     class_el[i].style.display='block';
+  //   }
+
+  // for (let i = 0; i < class_en.length; i++) {
+  //   class_en[i].style.display='none';
+  // }
+  // }
+  // }
+
+  // ;
+
+  var selectedLanguage = localStorage.getItem('selectedLanguage') || 'GR';
+
+  // function getLang(){
+  // var lang = localStorage.getItem('selectedLanguage') || selectedLanguage;
+  // var class_el = document.getElementsByClassName("el");
+  // var class_en = document.getElementsByClassName("en");
+  // var drop = document.getElementById("dropbtn2");
+  // var drop2 = document.getElementById("en");
+  //     if (lang==='EN'){
+  //       drop.innerHTML = 'EN <i class="fa fa-caret-down" id="caret-down-en"></i>';
+  //       drop2.innerHTML = 'GR';
+  //       for (let i = 0; i < class_el.length; i++) {
+  //         class_el[i].style.display = 'none';
+  //       }
+    
+  //       for (let i = 0; i < class_en.length; i++) {
+  //         class_en[i].style.display = 'block';
+  //       }
+  //     }
+  //     else {
+  //   drop.innerHTML = 'GR <i class="fa fa-caret-down" id="caret-down-en"></i>';
+  //   drop2.innerHTML = 'EN';
+  //   for (let i = 0; i < class_el.length; i++) {
+  //     class_el[i].style.display = 'block';
+  //   }
+
+  //   for (let i = 0; i < class_en.length; i++) {
+  //     class_en[i].style.display = 'none';
+  //   }
+  //     }
+  // }
+
+  function getLang() {
+    var lang = localStorage.getItem('selectedLanguage') || selectedLanguage;
+    var class_el = document.getElementsByClassName("el");
+    var class_en = document.getElementsByClassName("en");
+    var class_el_marker = document.querySelectorAll(".marker.under.el"); // Target elements with classes "marker", "under", and "el"
+    var class_en_marker = document.querySelectorAll(".marker.under.en"); // Target elements with classes "marker", "under", and "en"
+    var drop = document.getElementById("dropbtn2");
+    var drop2 = document.getElementById("en");
+  
+    if (lang === 'EN') {
+      drop.innerHTML = 'EN <i class="fa fa-caret-down" id="caret-down-en"></i>';
+      drop2.innerHTML = 'GR';
+      for (let i = 0; i < class_el.length; i++) {
+        class_el[i].style.display = 'none';
+      }
+      for (let i = 0; i < class_en.length; i++) {
+        class_en[i].style.display = 'block';
+      }
+      for (let i = 0; i < class_el_marker.length; i++) {
+        class_el_marker[i].style.display = 'none';
+      }
+      for (let i = 0; i < class_en_marker.length; i++) {
+        class_en_marker[i].style.display = 'inline-block'; // Set display to inline-block for elements with classes "marker", "under", and "en"
+      }
+    } else {
+      drop.innerHTML = 'GR <i class="fa fa-caret-down" id="caret-down-en"></i>';
+      drop2.innerHTML = 'EN';
+      for (let i = 0; i < class_el.length; i++) {
+        class_el[i].style.display = 'block';
+      }
+      for (let i = 0; i < class_en.length; i++) {
+        class_en[i].style.display = 'none';
+      }
+      for (let i = 0; i < class_el_marker.length; i++) {
+        class_el_marker[i].style.display = 'inline-block'; // Set display to inline-block for elements with classes "marker", "under", and "el"
+      }
+      for (let i = 0; i < class_en_marker.length; i++) {
+        class_en_marker[i].style.display = 'none';
+      }
+    }
   }
+  
+function showOptionsLang() {
+  var content = document.getElementById("dropdown-content-lang");
+  if (content.style.display === "block") {
+    content.style.display = "none";
+  } else {
+    content.style.display = "block";
   }
-  else {
-    drop.innerHTML = 'GR <i class="fa fa-caret-down" id="caret-down-en"></i>';
-    drop2.innerHTML='EN';
-    lang='GR';
+}
+
+function changeLanguage() {
+  var drop = document.getElementById("dropbtn2");
+  var drop2 = document.getElementById("en");
+  var class_el = document.getElementsByClassName("el");
+  var class_en = document.getElementsByClassName("en");
+  var class_el_marker = document.querySelectorAll(".marker.under.el"); // Target elements with classes "marker", "under", and "el"
+  var class_en_marker = document.querySelectorAll(".marker.under.en"); // Target elements with classes "marker", "under", and "en"
+
+  if (selectedLanguage === 'GR') {
+    drop.innerHTML = 'EN <i class="fa fa-caret-down" id="caret-down-en"></i>';
+    drop2.innerHTML = 'GR';
+    selectedLanguage = 'EN';
+
     for (let i = 0; i < class_el.length; i++) {
-      class_el[i].style.display='block';
+      class_el[i].style.display = 'none';
     }
 
-  for (let i = 0; i < class_en.length; i++) {
-    class_en[i].style.display='none';
-  }
-  }
-  }
+    for (let i = 0; i < class_en.length; i++) {
+      class_en[i].style.display = 'block';
+    }
+    for (let i = 0; i < class_el_marker.length; i++) {
+      class_el_marker[i].style.display = 'none';
+    }
+    for (let i = 0; i < class_en_marker.length; i++) {
+      class_en_marker[i].style.display = 'inline-block'; // Set display to inline-block for elements with classes "marker", "under", and "en"
+    }
+    
+  } else {
+    drop.innerHTML = 'GR <i class="fa fa-caret-down" id="caret-down-en"></i>';
+    drop2.innerHTML = 'EN';
+    selectedLanguage = 'GR';
 
-  ;
+    for (let i = 0; i < class_el.length; i++) {
+      class_el[i].style.display = 'block';
+    }
+
+    for (let i = 0; i < class_en.length; i++) {
+      class_en[i].style.display = 'none';
+    }
+    for (let i = 0; i < class_el_marker.length; i++) {
+      class_el_marker[i].style.display = 'inline-block'; // Set display to inline-block for elements with classes "marker", "under", and "el"
+    }
+    for (let i = 0; i < class_en_marker.length; i++) {
+      class_en_marker[i].style.display = 'none';
+    }
+  }
+  localStorage.setItem('selectedLanguage', selectedLanguage);
+}
+  
+
   function openModal() {
     if (window.matchMedia("(min-width: 600px)").matches) {
     document.getElementById("ModalApousia").style.display = "block";

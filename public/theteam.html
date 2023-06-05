@@ -16,35 +16,57 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="index.js"></script>
   </head>
-  <body>
+  <body onload="getLang()">
     <div class="heading">
       <a href="index.html"><img src="apousia_logo2.png" class="logo"></a>
       <div class="topnav" id="myTopnav">
         <div class="dropdown">
-            <button class="dropbtn" id="dropbtn" onclick="showOptions()">απ'Ουσία 
+            <button class="el dropbtn" style="color: #707070;" id="dropbtn_el" onclick="showOptions()">απ'Ουσία 
               <i class="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content" id="dropdown-content">
-              <a href="apousia.html">Η Ομάδα μας</a>
-              <a href="theteam.html">Ποιές Είμαστε</a>
+            <button class="en dropbtn" style="color: #707070; display: none;" id="dropbtn_en" onclick="showOptions()">ap'Ousia
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content menu" id="dropdown-content">
+              <a href="apousia.html" class="el">Η Ομάδα μας</a>
+              <a href="theteam.html" class="el">Ποιές Είμαστε</a>
+              <a href="apousia.html" class="en" style="display: none;">Our Team</a>
+              <a href="theteam.html" class="en" style="display: none;">About Us</a>
             </div>
           </div> 
-          <a href="services.html">Υπηρεσίες</a>
-          <a href="pastevents.html">Προηγούμενες Δράσεις</a>
-          <a href="contact.html">Επικοινωνία</a>
-          <a href="javascript:void(0);" style="font-size:15px;" class="nav-icon" onclick="myFunction()">&#9776;</a>
+          <a href="services.html" class="el">Υπηρεσίες</a>
+          <a href="pastevents.html"  class="el">Προηγούμενες Δράσεις</a>
+          <a href="contact.html"  class="el">Επικοινωνία</a>
+          <a href="services.html" class="en" style="display: none;">Services</a>
+          <a href="pastevents.html"  class="en" style="display: none;">Past Events</a>
+          <a href="contact.html"  class="en" style="display: none;">Contact</a>
+          <div class="dropdown">
+          <button class="dropbtn" style="color: #707070;" id="dropbtn2" onclick="showOptionsLang()">GR 
+          <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content lang" id="dropdown-content-lang">
+            <a href="javascript:void(0);" id="en" onclick="changeLanguage()">EN</a>
+            
+          </div>
+        </div> 
+          <a href="javascript:void(0);" class="nav-icon" onclick="myFunction()">&#9776;</a>
         </div>
         </div>
    <div class="omada">
     <div>
       <div class="title">
-    <h2 class="marker under" style="color:#eff0eb">Ποιές Είμαστε
+    <h2 class="marker under el" style="color:#eff0eb">Ποιές Είμαστε
+    </h2>
+    <h2 class="marker under en" style="color:#eff0eb; display: none;">About Us
     </h2>
   </div>
 </div>
   <div class="details">
-    <p>H ομάδα μας έχει επιλέξει να λειτουργεί με οριζόντιες διαδικασίες, στα πλαίσια των οποίων τα μέλη της αναλαμβάνουν πολλαπλούς ρόλους, συμμετέχοντας ισότιμα σε όλα τα στάδια του σχεδιασμού, της διοργάνωσης και υλοποίησης των προγραμμάτων μας.</p>
-    <p>Παράλληλα, στόχος είναι η διαθεματική προσέγγιση όλων των προγραμμάτων μας, αξιοποιώντας την ξεχωριστή εμπειρία και τα διαφορετικά πεδία ενδιαφέροντος των μελών της απ’Ουσία. Αντλώντας πολύτιμη γνώση και ποικίλα εργαλεία, από τις κοινωνικές και ανθρωπιστικές επιστήμες, την ιστορία της τέχνης, την πολιτιστική διαχείριση και την επανοικειοποίηση του δημόσιου χώρου, στόχος μας είναι να σχεδιάζουμε ένα πολυσύνθετο εκπαιδευτικό υλικό, το οποίο να προσφέρει γνώση και εμπειρία σε πολλά διαφορετικά επίπεδα. </p>
+    <p class="el">H ομάδα μας έχει επιλέξει να λειτουργεί με οριζόντιες διαδικασίες, στα πλαίσια των οποίων τα μέλη της αναλαμβάνουν πολλαπλούς ρόλους, συμμετέχοντας ισότιμα σε όλα τα στάδια του σχεδιασμού, της διοργάνωσης και υλοποίησης των προγραμμάτων μας.</p>
+    <p class="el">Παράλληλα, στόχος είναι η διαθεματική προσέγγιση όλων των προγραμμάτων μας, αξιοποιώντας την ξεχωριστή εμπειρία και τα διαφορετικά πεδία ενδιαφέροντος των μελών της απ’Ουσία. Αντλώντας πολύτιμη γνώση και ποικίλα εργαλεία, από τις κοινωνικές και ανθρωπιστικές επιστήμες, την ιστορία της τέχνης, την πολιτιστική διαχείριση και την επανοικειοποίηση του δημόσιου χώρου, στόχος μας είναι να σχεδιάζουμε ένα πολυσύνθετο εκπαιδευτικό υλικό, το οποίο να προσφέρει γνώση και εμπειρία σε πολλά διαφορετικά επίπεδα. </p>
+    
+<p class="en" style="display: none;">Our team has chosen to operate through horizontal processes, in which members take on multiple roles, participating equally in all stages of our programs' design, organization, and implementation.</p>
+<p class="en" style="display: none;">At the same time, our goal is the interdisciplinary approach of all our programs, leveraging the unique experience and different fields of interest of the Ap'Ousia members. Drawing valuable knowledge and diverse tools from social and human sciences, art history, cultural management, and the reappropriation of public space, our aim is to design a multifaceted educational material that offers knowledge and experience at various levels.</p>
     <img src="ApousiaPhotos/line-separator-removebg-preview.png" style="display: block;
     margin-left: auto;
     margin-right: auto; margin-top:4%;"alt="">
@@ -55,24 +77,35 @@
     <img class="bio-image" src="ApousiaPhotos/Georgia.jpg" alt="">
   </div>
   <div class="bio-description-section">
-    <h3 class="marker-h3">Γεωργία Αβαταγγέλου
+    <h3 class="marker-h3 el">Γεωργία Αβαταγγέλου
+    </h3>
+    <h3 class="marker-h3 en" style="display: none;">Georgia Avatagelou
     </h3>
     <div class="justify">
-    <p>Απόφοιτη του τμήματος Κοινωνιολογίας του Παντείου Πανεπιστημίου. Μεταπτυχιακές σπουδές σε ψυχοκοινωνικές σπουδές στην Αγγλία. Συμμετοχή σε Μη Κυβερνητικές Οργανώσεις στο σχεδιασμό, συντονισμό και υλοποίηση ποικίλων ψυχο-κοινωνικών και εκπαιδευτικών προγραμμάτων για παιδιά και εφήβους καθώς και σε ερευνητικά προγράμματα σε θεματικές γύρω από τα δικαιώματα του παιδιού και τις συνθήκες διαβίωσης σε διαφορετικά πλαίσια. 
+    <p class="el">Απόφοιτη του τμήματος Κοινωνιολογίας του Παντείου Πανεπιστημίου. Μεταπτυχιακές σπουδές σε ψυχοκοινωνικές σπουδές στην Αγγλία. Συμμετοχή σε Μη Κυβερνητικές Οργανώσεις στο σχεδιασμό, συντονισμό και υλοποίηση ποικίλων ψυχο-κοινωνικών και εκπαιδευτικών προγραμμάτων για παιδιά και εφήβους καθώς και σε ερευνητικά προγράμματα σε θεματικές γύρω από τα δικαιώματα του παιδιού και τις συνθήκες διαβίωσης σε διαφορετικά πλαίσια. 
     </p>
-    <p><span style="color:rgba(206, 16, 89, 0.836); font-weight: 600;font-family: 'Manrope', sans-serif;">​Πεδία ενδιαφέροντος:</span> ανθρώπινα δικαιώματα, βιωματικές εκπαιδεύσεις για ενηλίκους, σχεδιασμός ευρωπαϊκών και διακρατικών προγραμμάτων.</p>
+    <p class="el"><span style="color:rgba(206, 16, 89, 0.836); font-weight: 600;font-family: 'Manrope', sans-serif;">​Πεδία ενδιαφέροντος:</span> ανθρώπινα δικαιώματα, βιωματικές εκπαιδεύσεις για ενηλίκους, σχεδιασμός ευρωπαϊκών και διακρατικών προγραμμάτων.</p>
+  
+<p class="en" style="display: none;">Graduate of the Department of Sociology at Panteion University. Postgraduate studies in psychosocial studies in England. Participation in Non-Governmental Organizations in the design, coordination, and implementation of various psychosocial and educational programs for children and adolescents, as well as research programs on children's rights and living conditions in different contexts.</p>
+<p class="en" style="display: none;"><span style="color:rgba(206, 16, 89, 0.836); font-weight: 600;font-family: 'Manrope', sans-serif;">Areas of interest:</span> human rights, experiential training for adults, design of European and cross-border programs.</p>
   </div>
   </div>
 </div>
 <div class="bio-verse">
   <div class="bio-description-section mobile-order-2">
-    <h3 class="marker-h3">Ζωή Δάβαρη
+    <h3 class="marker-h3 el">Ζωή Δάβαρη
+    </h3>
+    <h3 class="marker-h3 en" style="display: none;">Zoi Davari
     </h3>
     <div class="justify">
-      <P>Απόφοιτη Ιστορίας της τέχνης με μεταπτυχιακές σπουδές στον «Σχεδιασμό εκπαιδευτικών και πολιτιστικών προγραμμάτων» στη Γαλλία. Με πολυετή εμπειρία σε παιδαγωγικά προγράμματα σε μουσεία στην Ελλάδα και το εξωτερικό. Συνεργασία με πολιτιστικούς φορείς και ιδρύματα στον σχεδιασμό παιδαγωγικών προγραμμάτων με θέματα: δημιουργική γραφή, ιστορία της τέχνης για παιδιά και εφήβους. Σχεδιασμός και υλοποίηση βιωματικών εργαστηρίων για ενήλικες.
+      <P class="el">Απόφοιτη Ιστορίας της τέχνης με μεταπτυχιακές σπουδές στον «Σχεδιασμό εκπαιδευτικών και πολιτιστικών προγραμμάτων» στη Γαλλία. Με πολυετή εμπειρία σε παιδαγωγικά προγράμματα σε μουσεία στην Ελλάδα και το εξωτερικό. Συνεργασία με πολιτιστικούς φορείς και ιδρύματα στον σχεδιασμό παιδαγωγικών προγραμμάτων με θέματα: δημιουργική γραφή, ιστορία της τέχνης για παιδιά και εφήβους. Σχεδιασμός και υλοποίηση βιωματικών εργαστηρίων για ενήλικες.
       </p>
-      <p><span style="color:rgba(206, 16, 89, 0.836); font-weight: 600;font-family: 'Manrope', sans-serif;">Πεδία ενδιαφέροντος:</span> δημιουργική γραφή, παιδική και εφηβική λογοτεχνία, σύγχρονη τέχνη.</p>
-  </div>
+      <p class="el"><span style="color:rgba(206, 16, 89, 0.836); font-weight: 600;font-family: 'Manrope', sans-serif;">Πεδία ενδιαφέροντος:</span> δημιουργική γραφή, παιδική και εφηβική λογοτεχνία, σύγχρονη τέχνη.</p>
+  
+<p class="en" style="display: none;">Graduate in Art History with postgraduate studies in "Educational and Cultural Program Design" in France. Extensive experience in educational programs in museums in Greece and abroad. Collaboration with cultural organizations and institutions in the design of educational programs on topics such as creative writing, art history for children and adolescents. Design and implementation of experiential workshops for adults.</p>
+<p class="en" style="display: none;"><span style="color:rgba(206, 16, 89, 0.836); font-weight: 600;font-family: 'Manrope', sans-serif;">Areas of interest:</span> creative writing, children's and adolescent literature, contemporary art.</p>
+  
+    </div>
   </div>
   <div class="bio-image-section mobile-order-1">
     <img class="bio-image" src="ApousiaPhotos/Zoi.jpg" alt="">
@@ -83,15 +116,21 @@
     <img class="bio-image-m" src="ApousiaPhotos/Martha.jpg" alt="">
   </div>
   <div class="bio-description-section">
-    <h3 class="marker-h3">Μάρθα Ρούσσου
+    <h3 class="marker-h3 el">Μάρθα Ρούσσου
+    </h3>
+    <h3 class="marker-h3 en" style="display: none;">Martha Roussou
     </h3>
     <div class="justify-m">
-      <P>Απόφοιτη του τμήματος Μάρκετινγκ και Επικοινωνίας του Οικονομικού Πανεπιστημίου Αθηνών. Μεταπτυχιακές σπουδές στη Διαχείριση πολιτιστικών και εκπαιδευτικών προγραμμάτων στη Γαλλία.  Συνεργασία με πολιτιστικούς φορείς και φεστιβάλ στην Ελλάδα και το εξωτερικό στο σχεδιασμό και τη διοργάνωση.
+      <P class="el">Απόφοιτη του τμήματος Μάρκετινγκ και Επικοινωνίας του Οικονομικού Πανεπιστημίου Αθηνών. Μεταπτυχιακές σπουδές στη Διαχείριση πολιτιστικών και εκπαιδευτικών προγραμμάτων στη Γαλλία.  Συνεργασία με πολιτιστικούς φορείς και φεστιβάλ στην Ελλάδα και το εξωτερικό στο σχεδιασμό και τη διοργάνωση.
       </p>
-      <p>Πολυετής εμπειρία στον σχεδιασμό και την υλοποίηση εκπαιδευτικών και πολιτιστικών προγραμμάτων για ευάλωτες κοινωνικές ομάδες. Εμπειρία στο συμμετοχικό σχεδιασμό διαδραστικών προγραμμάτων στον δημόσιο χώρο για μικρούς και μεγάλους.</p>
+      <p class="el">Πολυετής εμπειρία στον σχεδιασμό και την υλοποίηση εκπαιδευτικών και πολιτιστικών προγραμμάτων για ευάλωτες κοινωνικές ομάδες. Εμπειρία στο συμμετοχικό σχεδιασμό διαδραστικών προγραμμάτων στον δημόσιο χώρο για μικρούς και μεγάλους.</p>
 
-      <p><span style="color:rgba(206, 16, 89, 0.836); font-weight: 600; font-family: 'Manrope', sans-serif;">​Πεδία ενδιαφέροντος:</span> μη τυπική εκπαίδευση, η τέχνη ως μέσο ένταξης κοινωνικά αποκλεισμένων ομάδων, φεστιβάλ και διοργανώσεις στο δημόσιο χώρο.</p>
-  </div>
+      <p class="el"><span style="color:rgba(206, 16, 89, 0.836); font-weight: 600; font-family: 'Manrope', sans-serif;">​Πεδία ενδιαφέροντος:</span> μη τυπική εκπαίδευση, η τέχνη ως μέσο ένταξης κοινωνικά αποκλεισμένων ομάδων, φεστιβάλ και διοργανώσεις στο δημόσιο χώρο.</p>
+  
+<p class="en" style="display: none;">Graduate of the Marketing and Communication Department at the Athens University of Economics and Business. Postgraduate studies in Cultural and Educational Program Management in France. Collaboration with cultural organizations and festivals in Greece and abroad in the field of design and organization.</p>
+<p class="en" style="display: none;">Extensive experience in designing and implementing educational and cultural programs for vulnerable social groups. Experience in participatory design of interactive programs in public spaces for children and adults.</p>
+<p class="en" style="display: none;"><span style="color:rgba(206, 16, 89, 0.836); font-weight: 600; font-family: 'Manrope', sans-serif;">Areas of interest:</span> non-formal education, art as a means of social inclusion for marginalized groups, festivals and events in public space.</p>    
+</div>
   </div>
 </div>
 <!-- <i class="fa-solid fa-arrows-to-dot" style="color:rgba(206, 16, 89, 0.836); font-size: 20px;"></i> -->

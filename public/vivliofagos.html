@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Light the city</title>
+    <title>Βιβλιοφάγοι</title>
 <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge" /> -->
@@ -16,58 +16,93 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="index.js"></script>
   </head>
-  <body>
+  <body onload="getLang()">
     <div class="heading">
       <a href="index.html"><img src="apousia_logo2.png" class="logo"></a>
+      <!-- <h4 id="width"></h4> -->
       <div class="topnav" id="myTopnav">
         <div class="dropdown">
-            <button class="dropbtn" id="dropbtn" onclick="showOptions()">απ'Ουσία 
+            <button class="el dropbtn" style="color: #707070;" id="dropbtn_el" onclick="showOptions()">απ'Ουσία 
               <i class="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content" id="dropdown-content">
-              <a href="apousia.html">Η Ομάδα μας</a>
-              <a href="theteam.html">Ποιές Είμαστε</a>
+            <button class="en dropbtn" style="color: #707070; display: none;" id="dropbtn_en" onclick="showOptions()">ap'Ousia
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content menu" id="dropdown-content">
+              <a href="apousia.html" class="el">Η Ομάδα μας</a>
+              <a href="theteam.html" class="el">Ποιές Είμαστε</a>
+              <a href="apousia.html" class="en" style="display: none;">Our Team</a>
+              <a href="theteam.html" class="en" style="display: none;">About Us</a>
             </div>
           </div> 
-          <a href="services.html">Υπηρεσίες</a>
-          <a href="pastevents.html">Προηγούμενες Δράσεις</a>
-          <a href="contact.html">Επικοινωνία</a>
-          <a href="javascript:void(0);" style="font-size:15px;" class="nav-icon" onclick="myFunction()">&#9776;</a>
+          <a href="services.html" class="el">Υπηρεσίες</a>
+          <a href="pastevents.html"  class="el">Προηγούμενες Δράσεις</a>
+          <a href="contact.html"  class="el">Επικοινωνία</a>
+          <a href="services.html" class="en" style="display: none;">Services</a>
+          <a href="pastevents.html"  class="en" style="display: none;">Past Events</a>
+          <a href="contact.html"  class="en" style="display: none;">Contact</a>
+          <div class="dropdown">
+          <button class="dropbtn" style="color: #707070;" id="dropbtn2" onclick="showOptionsLang()">GR 
+          <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content lang" id="dropdown-content-lang">
+            <a href="javascript:void(0);" id="en" onclick="changeLanguage()">EN</a>
+            
+          </div>
+        </div> 
+          <a href="javascript:void(0);" class="nav-icon" onclick="myFunction()">&#9776;</a>
         </div>
-        </div>
+      </div>
    <div class="omada">
    
       <div class="title">
-        <h2 style="font-weight: 600;"><i class="fa-solid fa-circle circle-left fairytale"></i>Βιβλιοφάγοι<i class="fa-solid fa-circle circle-right fairytale"></i>
+        <h2 class="el" style="font-weight: 600;"><i class="fa-solid fa-circle circle-left fairytale"></i>Βιβλιοφάγοι<i class="fa-solid fa-circle circle-right fairytale"></i>
 
-    <h4 style="font-weight:500;">Τρεις μέρες αφιερωμένες στο παιδικό βιβλίο
+    <h4 class="el" style="font-weight:500;">Τρεις μέρες αφιερωμένες στο παιδικό βιβλίο
       
       
     </h4>
-    <h5 style="font-style: italic;">Εργαστήρια-βιβλιοπαρουσιάσεις-διαδραστικές αφηγήσεις</h5>
-    <h5>Οι Βιβλιοφάγοι ταξιδεύουν από το 2019 σε όλη την Ελλάδα!
+    <h5 class="el" style="font-style: italic;">Εργαστήρια-βιβλιοπαρουσιάσεις-διαδραστικές αφηγήσεις</h5>
+    <h5 class="el">Οι Βιβλιοφάγοι ταξιδεύουν από το 2019 σε όλη την Ελλάδα!
     </h5>
-   
+    <h2 class="en" style="font-weight: 600;"><i class="fa-solid fa-circle circle-left fairytale"></i>Book Eaters<i class="fa-solid fa-circle circle-right fairytale"></i></h2>
+    <h4 class="en" style="font-weight:500;">Three days dedicated to children's books</h4>
+    <h5 class="en" style="font-style: italic;">Workshops - Book presentations - Interactive storytelling</h5>
+    <h5 class="en">The Book Eaters have been traveling throughout Greece since 2019!</h5>
+    
   </div>
   <div class="details">
-  <p style="font-weight: 800;">Πώς ξεκίνησαν οι Βιβλιοφάγοι...</p>
-  <p>Οι “Βιβλιοφάγοι είναι ένα 3ήμερο φεστιβάλ αφιερωμένο στην παιδική λογοτεχνία. Η απ’Ουσία φτάνει σε κάθε προορισμό, στήνει την κινητή της βιβλιοθήκη και μέσα από εργαστήρια, παιχνίδι και workshop καλεί μικρούς και μεγάλες να ανακαλύψουν τον ονειρικό και μαγευτικό κόσμο του βιβλίου. 
+  <p class="el" style="font-weight: 800;">Πώς ξεκίνησαν οι Βιβλιοφάγοι...</p>
+  <p class="el">Οι “Βιβλιοφάγοι είναι ένα 3ήμερο φεστιβάλ αφιερωμένο στην παιδική λογοτεχνία. Η απ’Ουσία φτάνει σε κάθε προορισμό, στήνει την κινητή της βιβλιοθήκη και μέσα από εργαστήρια, παιχνίδι και workshop καλεί μικρούς και μεγάλες να ανακαλύψουν τον ονειρικό και μαγευτικό κόσμο του βιβλίου. 
    
     </p>
-    <p> Στόχος μας η ανάδειξη της ψυχαγωγικής διάστασης του βιβλίου!</p>
-    <p style="font-weight: 800;">Κάθε μέρα το πρόγραμμα περιλαμβάνει:  </p>
-    <ul>
+    <p class="el"> Στόχος μας η ανάδειξη της ψυχαγωγικής διάστασης του βιβλίου!</p>
+    <p class="el" style="font-weight: 800;">Κάθε μέρα το πρόγραμμα περιλαμβάνει:  </p>
+    <ul class="el">
     <li>3 διαδραστικά εργαστήρια για διαφορετικές ηλικιακές ομάδες</li>
     <li>1 διαδραστικό εργαστήριο για γονείς με θέμα με τίτλο «Πώς βοηθάμε τα παιδιά να
       αγαπήσουν το βιβλίο!»
     </li>
       <li>1 βιβλιοπαρουσίαση ενός νέου παιδικού βιβλίου </li>
     </ul>
-      <p>Η απΌυσία έως τώρα, ταξίδεψε στους Δήμους Τρίπολης, Κιλελέρ, Ξάνθης, Λάρισας, Άγιος Ευστράτιος και στο φεστιβάλ της Τήνου διοργανώνοντας του Βιβλιοφάγους. 
+      <p class="el">Η απΌυσία έως τώρα, ταξίδεψε στους Δήμους Τρίπολης, Κιλελέρ, Ξάνθης, Λάρισας, Άγιος Ευστράτιος και στο φεστιβάλ της Τήνου διοργανώνοντας του Βιβλιοφάγους. 
         Σε κάθε πόλη, είτε σε δημόσιο χώρο, είτε στη δημοτική βιβλιοθήκη, για 3 μέρες μικροί και μεγάλες είχαν την ευκαιρία να «βουτήξουν» στο μαγικό κόσμο του βιβλίου. 
         </p>
-        <p>Οι θεματικές των βιβλίων και των εργαστηρίων ήταν διαφορετικές σε κάθε διοργάνωση, περιβαλλοντικά δικαιώματα, συναισθήματα, λαϊκά παραμύθια!</p>
-        <p>Οι Βιβλιοφάγοι συνεχίζουν να ταξιδεύουν σε νέους προορισμούς φέρνοντας παιδιά και μεγάλους σε επαφή με τον μαγικό κόσμο του βιβλίου!</p>
+        <p class="el">Οι θεματικές των βιβλίων και των εργαστηρίων ήταν διαφορετικές σε κάθε διοργάνωση, περιβαλλοντικά δικαιώματα, συναισθήματα, λαϊκά παραμύθια!</p>
+        <p class="el">Οι Βιβλιοφάγοι συνεχίζουν να ταξιδεύουν σε νέους προορισμούς φέρνοντας παιδιά και μεγάλους σε επαφή με τον μαγικό κόσμο του βιβλίου!</p>
+        <p class="en" style="font-weight: 800; display:none;">How did the Book Eaters start...</p>
+<p class="en" style="display:none;">The "Book Eaters" is a 3-day festival dedicated to children's literature. Ap'Ousia travels to each destination, sets up its mobile library, and invites children and adults to discover the dreamy and magical world of books through workshops, games, and workshops.</p>
+<p class="en" style="display:none;">Our goal is to highlight the entertaining dimension of books!</p>
+<p class="en" style="font-weight: 800; display:none;">Each day the program includes:</p>
+<ul class="en" style="display:none;">
+  <li>3 interactive workshops for different age groups</li>
+  <li>1 interactive workshop for parents titled "How to help children love books!"</li>
+  <li>1 presentation of a new children's book</li>
+</ul>
+<p class="en" style="display:none;">So far, Ap'Ousia has traveled to the municipalities of Tripoli, Kileler, Xanthi, Larissa, Agios Eustratios, and the festival in Tinos, organizing the Book Eaters. In each city, whether in a public space or at the municipal library, children and adults had the opportunity to "dive" into the magical world of books for 3 days.</p>
+<p class="en" style="display:none;">The themes of the books and workshops varied in each event, including environmental rights, emotions, and folk tales!</p>
+<p class="en" style="display:none;">The Book Eaters continue to travel to new destinations, bringing children and adults in touch with the magical world of books!</p>
+
 </div>
 
 </div>

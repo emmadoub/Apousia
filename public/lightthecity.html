@@ -16,41 +16,73 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="index.js"></script>
   </head>
-  <body>
+  <body onload="getLang()">
     <div class="heading">
       <a href="index.html"><img src="apousia_logo2.png" class="logo"></a>
+      <!-- <h4 id="width"></h4> -->
       <div class="topnav" id="myTopnav">
         <div class="dropdown">
-            <button class="dropbtn" id="dropbtn" onclick="showOptions()">απ'Ουσία 
+            <button class="el dropbtn" style="color: #707070;" id="dropbtn_el" onclick="showOptions()">απ'Ουσία 
               <i class="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content" id="dropdown-content">
-              <a href="apousia.html">Η Ομάδα μας</a>
-              <a href="theteam.html">Ποιές Είμαστε</a>
+            <button class="en dropbtn" style="color: #707070; display: none;" id="dropbtn_en" onclick="showOptions()">ap'Ousia
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content menu" id="dropdown-content">
+              <a href="apousia.html" class="el">Η Ομάδα μας</a>
+              <a href="theteam.html" class="el">Ποιές Είμαστε</a>
+              <a href="apousia.html" class="en" style="display: none;">Our Team</a>
+              <a href="theteam.html" class="en" style="display: none;">About Us</a>
             </div>
           </div> 
-          <a href="services.html">Υπηρεσίες</a>
-          <a href="pastevents.html">Προηγούμενες Δράσεις</a>
-          <a href="contact.html">Επικοινωνία</a>
-          <a href="javascript:void(0);" style="font-size:15px;" class="nav-icon" onclick="myFunction()">&#9776;</a>
+          <a href="services.html" class="el">Υπηρεσίες</a>
+          <a href="pastevents.html"  class="el">Προηγούμενες Δράσεις</a>
+          <a href="contact.html"  class="el">Επικοινωνία</a>
+          <a href="services.html" class="en" style="display: none;">Services</a>
+          <a href="pastevents.html"  class="en" style="display: none;">Past Events</a>
+          <a href="contact.html"  class="en" style="display: none;">Contact</a>
+          <div class="dropdown">
+          <button class="dropbtn" style="color: #707070;" id="dropbtn2" onclick="showOptionsLang()">GR 
+          <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content lang" id="dropdown-content-lang">
+            <a href="javascript:void(0);" id="en" onclick="changeLanguage()">EN</a>
+            
+          </div>
+        </div> 
+          <a href="javascript:void(0);" class="nav-icon" onclick="myFunction()">&#9776;</a>
         </div>
-        </div>
+      </div>
    <div class="omada">
    
       <div class="title">
-    <h2 style="font-weight: 600;"><i class="fa-solid fa-circle circle-left experience"></i>Light the city<i class="fa-solid fa-circle circle-right experience"></i>
+    <h2 class="el" style="font-weight: 600;"><i class="fa-solid fa-circle circle-left experience"></i>Light the city<i class="fa-solid fa-circle circle-right experience"></i>
 
-    <h3 style="font-weight: 500;">Σε συνεργασία με το Impact Hub και το meet and code
+    <h3 class="el" style="font-weight: 500;">Σε συνεργασία με το Impact Hub και το meet and code
     </h3>
-    <h5>Ένα βιωματικό εργαστήριο που συνδυάζει τις νέες τεχνολογίες με τις εικαστικές δημιουργίες για παιδιά Λυκείου. </h5>
-    <h5 style="font-style:italic">Πώς θα θέλαμε να είναι η πόλη που ζούμε; Πώς είναι τα πάρκα, οι δρόμοι και τα σπίτια;  Πώς ζουν οι κάτοικοί ; </h5>
+    <h5 class="el">Ένα βιωματικό εργαστήριο που συνδυάζει τις νέες τεχνολογίες με τις εικαστικές δημιουργίες για παιδιά Λυκείου. </h5>
+    <h5 class="el" style="font-style:italic">Πώς θα θέλαμε να είναι η πόλη που ζούμε; Πώς είναι τα πάρκα, οι δρόμοι και τα σπίτια;  Πώς ζουν οι κάτοικοί ; </h5>
+    <h2 class="en" style="font-weight: 600; display: none;"><i class="fa-solid fa-circle circle-left experience"></i>Light the city<i class="fa-solid fa-circle circle-right experience"></i></h2>
+
+<h3 class="en" style="font-weight: 500; display: none;">In collaboration with Impact Hub and meet and code</h3>
+
+<h5 class="en" style="display: none;">An experiential workshop that combines new technologies with artistic creations for high school students.</h5>
+
+<h5 class="en" style="font-style:italic; display: none;">How would we like our city to be? What are the parks, streets, and houses like? How do the residents live?</h5>
+
   </div>
   <div class="details">
- <p>Το συγκεκριμένο εργαστήριο είχε ως στόχο να δημιουργήσει ένα πλαίσιο συζήτησης με τους μαθητές/τριες σχετικά με τον δημόσιο χώρο και τις γειτονιές τους, συνδυάζοντας  τις νέες τεχνολογίες με την εικαστική δημιουργία. </p>
-<p>Με αφετηρία μας το βιβλίο του Ιτάλο Καλβίνο “Οι αόρατες πόλεις”, εμπνευστήκαμε και σχεδιάσαμε με τα παιδιά την φανταστική μας πόλη σε μακέτα με ανακυκλώσιμα υλικά και όχι μόνο. Φτιάξαμε τα μέρη της πόλης που φανταστήκαμε, σπίτια, δρόμους, πάρκα, δημόσια κτίρια κλπ. και συζητήσαμε όλοι/ες μαζί ποιά στοιχεία είναι απαραίτητα σε μια ιδανική πόλη και άμεσα συνδεδεμένα με τα δικαιώματά μας. </p> 
-<p>Στη συνέχεια, με τη βοήθεια της ανοικτού κώδικα πλατφόρμας arduino ζωντανέψαμε την πόλη μας με ποικίλους φωτισμούς και μοτέρ που δίνουν κίνηση στα αντικείμενα που κατασκευάσαμε. 
+ <p class="el">Το συγκεκριμένο εργαστήριο είχε ως στόχο να δημιουργήσει ένα πλαίσιο συζήτησης με τους μαθητές/τριες σχετικά με τον δημόσιο χώρο και τις γειτονιές τους, συνδυάζοντας  τις νέες τεχνολογίες με την εικαστική δημιουργία. </p>
+<p class="el">Με αφετηρία μας το βιβλίο του Ιτάλο Καλβίνο “Οι αόρατες πόλεις”, εμπνευστήκαμε και σχεδιάσαμε με τα παιδιά την φανταστική μας πόλη σε μακέτα με ανακυκλώσιμα υλικά και όχι μόνο. Φτιάξαμε τα μέρη της πόλης που φανταστήκαμε, σπίτια, δρόμους, πάρκα, δημόσια κτίρια κλπ. και συζητήσαμε όλοι/ες μαζί ποιά στοιχεία είναι απαραίτητα σε μια ιδανική πόλη και άμεσα συνδεδεμένα με τα δικαιώματά μας. </p> 
+<p class="el">Στη συνέχεια, με τη βοήθεια της ανοικτού κώδικα πλατφόρμας arduino ζωντανέψαμε την πόλη μας με ποικίλους φωτισμούς και μοτέρ που δίνουν κίνηση στα αντικείμενα που κατασκευάσαμε. 
   Έγινε μια εισαγωγή στον κώδικα, από εξειδικευμένο συνεργάτη,  και προετοιμάσαμε τη συνδεσμολογία των λαμπτήρων και των μοτέρ κίνησης σε δοκιμαστικές πλακέτες. 
   </p>
+  <p class="en" style="display: none;">The aim of this workshop was to create a framework for discussion with students about public space and their neighborhoods, combining new technologies with artistic creation.</p>
+
+<p class="en" style="display: none;">Drawing inspiration from Italo Calvino's book "Invisible Cities," we imagined and designed our own imaginary city with the children, using recyclable materials and more. We built the parts of the city we imagined, such as houses, streets, parks, public buildings, etc., and had a collective discussion about which elements are essential in an ideal city and directly connected to our rights.</p>
+
+<p class="en" style="display: none;">Next, with the help of the open-source Arduino platform, we brought our city to life with various lighting and motor mechanisms that animate the objects we created. We provided an introduction to coding with the assistance of a specialized collaborator and prepared the wiring of the lights and motion motors on prototype boards.</p>
+
 </div>
 
 </div>

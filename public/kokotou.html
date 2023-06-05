@@ -16,40 +16,68 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="index.js"></script>
   </head>
-  <body>
+  <body onload="getLang()">
     <div class="heading">
       <a href="index.html"><img src="apousia_logo2.png" class="logo"></a>
+      <!-- <h4 id="width"></h4> -->
       <div class="topnav" id="myTopnav">
         <div class="dropdown">
-            <button class="dropbtn" id="dropbtn" onclick="showOptions()">απ'Ουσία 
+            <button class="el dropbtn" style="color: #707070;" id="dropbtn_el" onclick="showOptions()">απ'Ουσία 
               <i class="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content" id="dropdown-content">
-              <a href="apousia.html">Η Ομάδα μας</a>
-              <a href="theteam.html">Ποιές Είμαστε</a>
+            <button class="en dropbtn" style="color: #707070; display: none;" id="dropbtn_en" onclick="showOptions()">ap'Ousia
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content menu" id="dropdown-content">
+              <a href="apousia.html" class="el">Η Ομάδα μας</a>
+              <a href="theteam.html" class="el">Ποιές Είμαστε</a>
+              <a href="apousia.html" class="en" style="display: none;">Our Team</a>
+              <a href="theteam.html" class="en" style="display: none;">About Us</a>
             </div>
           </div> 
-          <a href="services.html">Υπηρεσίες</a>
-          <a href="pastevents.html">Προηγούμενες Δράσεις</a>
-          <a href="contact.html">Επικοινωνία</a>
-          <a href="javascript:void(0);" style="font-size:15px;" class="nav-icon" onclick="myFunction()">&#9776;</a>
+          <a href="services.html" class="el">Υπηρεσίες</a>
+          <a href="pastevents.html"  class="el">Προηγούμενες Δράσεις</a>
+          <a href="contact.html"  class="el">Επικοινωνία</a>
+          <a href="services.html" class="en" style="display: none;">Services</a>
+          <a href="pastevents.html"  class="en" style="display: none;">Past Events</a>
+          <a href="contact.html"  class="en" style="display: none;">Contact</a>
+          <div class="dropdown">
+          <button class="dropbtn" style="color: #707070;" id="dropbtn2" onclick="showOptionsLang()">GR 
+          <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content lang" id="dropdown-content-lang">
+            <a href="javascript:void(0);" id="en" onclick="changeLanguage()">EN</a>
+            
+          </div>
+        </div> 
+          <a href="javascript:void(0);" class="nav-icon" onclick="myFunction()">&#9776;</a>
         </div>
-        </div>
+      </div>
    <div class="omada">
    
       <div class="title">
-        <h2 style="font-weight: 600;"><i class="fa-solid fa-circle circle-left fairytale"></i>Βιβλιοφάγοι<i class="fa-solid fa-circle circle-right fairytale"></i>
-    <h3 style="font-weight: 500;">Σε συνεργασία με το κτήμα Κοκοτού 
+        <h2 style="font-weight: 600;" class="el"><i class="fa-solid fa-circle circle-left fairytale"></i>Βιβλιοφάγοι<i class="fa-solid fa-circle circle-right fairytale"></i>
+    <h3 style="font-weight: 500;" class="el">Σε συνεργασία με το κτήμα Κοκοτού 
 
     </h3>
-    <h5>Τρείς μέρες αφιερωμένες στο παιδικό βιβλίο και την περιβαλλοντική εκπαίδευση!
+    <h2 style="font-weight: 600;  display: none;" class="en"><i class="fa-solid fa-circle circle-left fairytale"></i>Book Eaters<i class="fa-solid fa-circle circle-right fairytale"></i></h2>
+<h3 style="font-weight: 500; display: none;" class="en">In collaboration with Kokotou Estate</h3>
+
+    <h5 class="el">Τρείς μέρες αφιερωμένες στο παιδικό βιβλίο και την περιβαλλοντική εκπαίδευση!
     </h5>
-    <h5 style="font-style:italic">Βιωματικά εργαστήρια για μικρούς και μεγάλους, θεατρικά παιχνίδια, δημιουργική γραφή και ομαδικά παιχνίδια.
+    <h5 class="en" style="display: none;">Three days dedicated to children's books and environmental education!</h5>
+
+    <h5 class="el" style="font-style:italic">Βιωματικά εργαστήρια για μικρούς και μεγάλους, θεατρικά παιχνίδια, δημιουργική γραφή και ομαδικά παιχνίδια.
     </h5>
+    <h5 class="en" style="font-style:italic; display: none;">Interactive workshops for young and old, theatrical games, creative writing, and group activities.</h5>
+
   </div>
   <div class="details">
- <p>Μικροί και μεγάλες παρακολούθησαν καθημερινά εργαστήρια αφήγησης, θεατρικού παιχνιδιού και εικαστικών μέσα στο καταπράσινο κτήμα Κοκοτού. Διαβάσαμε βιβλία που αφορούν τα σπίτια των ζώων. Δημιουργήσαμε φωλιές από ανακυκλώσιμα και φυσικά υλικά και συζητήσαμε τους κινδύνους που διατρέχουν τα ζώα.</p>
-<p>Αναρωτηθήκαμε ποια υλικά χρησιμοποιούν τα ζώα για την κατασκευή των φωλιών. Γιατί κάθε ζώο φτιάχνουν διαφορετικές φωλιές; Και περιπλανηθήκαμε στο μαγευτικό κτήμα Κοκοτού, παίξαμε και αναζητήσαμε σημεία-φωλιές του κτήματος. </p>
+ <p class="el">Μικροί και μεγάλες παρακολούθησαν καθημερινά εργαστήρια αφήγησης, θεατρικού παιχνιδιού και εικαστικών μέσα στο καταπράσινο κτήμα Κοκοτού. Διαβάσαμε βιβλία που αφορούν τα σπίτια των ζώων. Δημιουργήσαμε φωλιές από ανακυκλώσιμα και φυσικά υλικά και συζητήσαμε τους κινδύνους που διατρέχουν τα ζώα.</p>
+<p class="el">Αναρωτηθήκαμε ποια υλικά χρησιμοποιούν τα ζώα για την κατασκευή των φωλιών. Γιατί κάθε ζώο φτιάχνουν διαφορετικές φωλιές; Και περιπλανηθήκαμε στο μαγευτικό κτήμα Κοκοτού, παίξαμε και αναζητήσαμε σημεία-φωλιές του κτήματος. </p>
+<p class="en" style="display: none;">Children and adults attended daily storytelling workshops, theatrical games, and visual arts activities in the lush Kokotou Estate. We read books about animal homes. We created nests from recyclable and natural materials and discussed the dangers faced by animals. </p>
+<p class="en" style="display: none;">We wondered what materials animals use to build their nests. Why do different animals make different nests? And we wandered through the enchanting Kokotou Estate, playing and searching for nesting spots on the estate.</p>
+
 </div>
 
 </div>

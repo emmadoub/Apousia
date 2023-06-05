@@ -90,7 +90,7 @@ a:active {
   margin: 0;
 }
 
-.dropdown-content {
+.dropdown-content.menu {
   display: none;
   position: absolute;
   top: 100%;
@@ -98,6 +98,17 @@ a:active {
   z-index: 1000;
   background-color: #f9f9f9;
   min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content.lang{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  background-color: #f9f9f9;
+  width: 67px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
@@ -173,8 +184,13 @@ a:active {
     }
 
     ::marker { 
-      color: rgba(206, 16, 89, 0.836);
-      font-size: 23px;
+      color: rgba(206, 16, 89, 0.836) !important;
+      font-size: 23px !important;
+    }
+
+    h2.marker.under.el,  h2.marker.under.en {
+      color: #eff0eb !important;
+      /* Add any other desired styles */
     }
 
 .marker {
@@ -267,6 +283,17 @@ a:active {
       right: 1px;
       top: 20px;
       font-size:20px;
+    }
+
+    .heading .en {
+      padding-right: 100px !important;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav:not(.responsive) .el,
+    .topnav:not(.responsive) .en {
+      display: none !important;
     }
   }
 

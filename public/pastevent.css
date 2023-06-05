@@ -113,7 +113,7 @@ a:active {
   margin: 0;
 }
 
-.dropdown-content {
+.dropdown-content.menu {
   display: none;
   position: absolute;
   top: 100%;
@@ -121,6 +121,17 @@ a:active {
   z-index: 1000;
   background-color: #f9f9f9;
   min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content.lang{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  background-color: #f9f9f9;
+  width: 67px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
@@ -490,7 +501,9 @@ a:active {
       top: 20px;
       font-size:20px;
     }
-
+    .heading .en {
+      padding-right: 100px !important;
+    }
     
     .photo-land-end, .photo-land-start {
       align-self: center;

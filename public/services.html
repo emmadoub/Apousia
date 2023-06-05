@@ -16,41 +16,50 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="index.js"></script>
   </head>
-  <body>
+  <body onload="getLang()">
     <div class="heading">
       <a href="index.html"><img src="apousia_logo2.png" class="logo"></a>
       <div class="topnav" id="myTopnav">
         <div class="dropdown">
-            <button class="dropbtn" id="dropbtn" onclick="showOptions()">απ'Ουσία 
+            <button class="el dropbtn" style="color: #707070;" id="dropbtn_el" onclick="showOptions()">απ'Ουσία 
               <i class="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content" id="dropdown-content">
-              <a href="apousia.html">Η Ομάδα μας</a>
-              <a href="theteam.html">Ποιές Είμαστε</a>
+            <button class="en dropbtn" style="color: #707070; display: none;" id="dropbtn_en" onclick="showOptions()">ap'Ousia
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content menu" id="dropdown-content">
+              <a href="apousia.html" class="el">Η Ομάδα μας</a>
+              <a href="theteam.html" class="el">Ποιές Είμαστε</a>
+              <a href="apousia.html" class="en" style="display: none;">Our Team</a>
+              <a href="theteam.html" class="en" style="display: none;">About Us</a>
             </div>
           </div> 
-          <a href="services.html">Υπηρεσίες</a>
-          <a href="pastevents.html">Προηγούμενες Δράσεις</a>
-          <a href="contact.html">Επικοινωνία</a>
-          <a href="javascript:void(0);" style="font-size:15px;" class="nav-icon" onclick="myFunction()">&#9776;</a>
+          <a href="services.html" class="el">Υπηρεσίες</a>
+          <a href="pastevents.html"  class="el">Προηγούμενες Δράσεις</a>
+          <a href="contact.html"  class="el">Επικοινωνία</a>
+          <a href="services.html" class="en" style="display: none;">Services</a>
+          <a href="pastevents.html"  class="en" style="display: none;">Past Events</a>
+          <a href="contact.html"  class="en" style="display: none;">Contact</a>
+          <div class="dropdown">
+          <button class="dropbtn" style="color: #707070;" id="dropbtn2" onclick="showOptionsLang()">GR 
+          <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content lang" id="dropdown-content-lang">
+            <a href="javascript:void(0);" id="en" onclick="changeLanguage()">EN</a>
+            
+          </div>
+        </div> 
+          <a href="javascript:void(0);" class="nav-icon" onclick="myFunction()">&#9776;</a>
         </div>
         </div>
    <div class="omada">
     <div>
       <div class="title">
-        <h2><i class="fa-solid fa-circle icon-title" style="font-size: 10px; color: #edbaba; position:relative; bottom:5px; right:4px;"></i>Οι Υπηρεσίες μας<i class="fa-solid fa-circle" style="font-size: 10px; color: #edbaba; position:relative; bottom:5px; left:2px;"></i></h2>
-    <!-- <h2 class="">Οι Υπηρεσίες μας 
-    </h2> -->
+        <h2 class="el"><i class="fa-solid fa-circle icon-title" style="font-size: 10px; color: #edbaba; position:relative; bottom:5px; right:4px;"></i>Οι Υπηρεσίες μας<i class="fa-solid fa-circle" style="font-size: 10px; color: #edbaba; position:relative; bottom:5px; left:2px;"></i></h2>
+        <h2 class="en" style="display: none;"><i class="fa-solid fa-circle icon-title" style="font-size: 10px; color: #edbaba; position:relative; bottom:5px; right:4px;"></i>Our Services<i class="fa-solid fa-circle" style="font-size: 10px; color: #edbaba; position:relative; bottom:5px; left:2px;"></i></h2>
   </div>
 </div>
 </div>
-  <!-- <div class="details">
-    <p>H ομάδα μας έχει επιλέξει να λειτουργεί με οριζόντιες διαδικασίες, στα πλαίσια των οποίων τα μέλη της αναλαμβάνουν πολλαπλούς ρόλους, συμμετέχοντας ισότιμα σε όλα τα στάδια του σχεδιασμού, της διοργάνωσης και υλοποίησης των προγραμμάτων μας.</p>
-    <p>Παράλληλα, στόχος είναι η διαθεματική προσέγγιση όλων των προγραμμάτων μας, αξιοποιώντας την ξεχωριστή εμπειρία και τα διαφορετικά πεδία ενδιαφέροντος των μελών της απ’Ουσία. Αντλώντας πολύτιμη γνώση και ποικίλα εργαλεία, από τις κοινωνικές και ανθρωπιστικές επιστήμες, την ιστορία της τέχνης, την πολιτιστική διαχείριση και την επανοικειοποίηση του δημόσιου χώρου, στόχος μας είναι να σχεδιάζουμε ένα πολυσύνθετο εκπαιδευτικό υλικό, το οποίο να προσφέρει γνώση και εμπειρία σε πολλά διαφορετικά επίπεδα. </p>
-    <img src="ApousiaPhotos/line-separator.png" style="display: block;
-    margin-left: auto;
-    margin-right: auto; margin-top:4%;"alt="">
-  </div> -->
 
 <div class="services">
   <div class="service-row">
@@ -61,11 +70,16 @@
         </div>
       </div>
       <div class="service-description">
-        <h3><i class="fa-solid fa-circle left-circle" style="font-size: 10px; color: blueviolet; position:relative; right: 1px;"></i>Διοργάνωση Εκδηλώσεων<i class="fa-solid fa-circle right-circle" style="font-size: 10px; color:blueviolet; position:relative; left:2px;"></i></h3>
+        <h3 class="el"><i class="fa-solid fa-circle left-circle" style="font-size: 10px; color: blueviolet; position:relative; right: 1px;"></i>Διοργάνωση Εκδηλώσεων<i class="fa-solid fa-circle right-circle" style="font-size: 10px; color:blueviolet; position:relative; left:2px;"></i></h3>
+        <h3 class="en" style="display:none;"><i class="fa-solid fa-circle left-circle" style="font-size: 10px; color: blueviolet; position:relative; right: 1px;"></i>Event Organization<i class="fa-solid fa-circle right-circle" style="font-size: 10px; color:blueviolet; position:relative; left:2px;"></i></h3>
+
+        
         <!-- <div class="party line"></div>  -->
         <!-- <div class="bordered b-party"> -->
-        <p>Η απ’Ουσία διοργανώνει εκδηλώσεις και φεστιβάλ σε δημόσιους και ιδιωτικούς χώρους σε συνεργασία με δήμους σε όλη την Ελλάδα και ιδιώτες φορείς. Τα μέλη της απ’Ουσία ειδικεύονται στη σύλληψη, παραγωγή και υλοποίηση ενός ευρέως φάσματος ψυχαγωγικών και πολιτιστικών εκδηλώσεων. Μέχρι σήμερα έχουν υλοποιηθεί φεστιβάλ παιδικής λογοτεχνίας, χριστουγεννιάτικες εκδηλώσεις, καλοκαιρινές δράσεις, θεματικά φεστιβάλ.  </p>
+        <p class="el">Η απ’Ουσία διοργανώνει εκδηλώσεις και φεστιβάλ σε δημόσιους και ιδιωτικούς χώρους σε συνεργασία με δήμους σε όλη την Ελλάδα και ιδιώτες φορείς. Τα μέλη της απ’Ουσία ειδικεύονται στη σύλληψη, παραγωγή και υλοποίηση ενός ευρέως φάσματος ψυχαγωγικών και πολιτιστικών εκδηλώσεων. Μέχρι σήμερα έχουν υλοποιηθεί φεστιβάλ παιδικής λογοτεχνίας, χριστουγεννιάτικες εκδηλώσεις, καλοκαιρινές δράσεις, θεματικά φεστιβάλ.  </p>
       <!-- </div> -->
+      <p class="en" style="display:none;">Ap'Ousia organizes events and festivals in public and private spaces in collaboration with municipalities throughout Greece and private entities. Its members specialize in the conception, production, and implementation of a wide range of entertainment and cultural events. So far, they have realized festivals of children's literature, Christmas events, summer activities, and thematic festivals.</p>
+
     </div>
     </div>
   <!-- </div>
@@ -77,12 +91,17 @@
         </div>
       </div>
       <div class="service-description">
-        <h3><i class="fa-solid fa-circle left-circle" style="font-size: 10px; color: rgb(17, 173, 235); position:relative; right: 2px;"></i>Παιδική Λογοτεχνία<i class="fa-solid fa-circle right-circle" style="font-size: 10px; color:rgb(17, 173, 235); position:relative; left:2px;"></i></h3>
+        <h3 class="el"><i class="fa-solid fa-circle left-circle" style="font-size: 10px; color: rgb(17, 173, 235); position:relative; right: 2px;"></i>Παιδική Λογοτεχνία<i class="fa-solid fa-circle right-circle" style="font-size: 10px; color:rgb(17, 173, 235); position:relative; left:2px;"></i></h3>
+        <h3 class="en" style="display:none;" ><i class="fa-solid fa-circle left-circle" style="font-size: 10px; color: rgb(17, 173, 235); position:relative; right: 2px;"></i>Children's Literature<i class="fa-solid fa-circle right-circle" style="font-size: 10px; color:rgb(17, 173, 235); position:relative; left:2px;"></i></h3>
+
         <!-- <h3>Παιδική Λογοτεχνία</h3> -->
         <!-- <div class="fairytale line"></div>  -->
         <!-- <div class="bordered b-fairytale"> -->
-        <p>Η αγάπη μας για την παιδική λογοτεχνία μας οδήγησε στη συνεργασία με εκδοτικούς οίκους και στον σχεδιασμό εργαστηρίων βασισμένα σε παιδικά βιβλία. Πραγματοποιούμε αυτοτελή εργαστήρια ή κύκλους συναντήσεων μέσα από τα οποία εξερευνούμε διαφορετικές θεματικές  με αφορμή το βιβλίο. Τα προγράμματα απευθύνονται σε μαθητές/τριες προσχολικής ηλικίες και δημοτικού. Σκοπός των εργαστηρίων είναι η καλλιέργεια της αναγνωστικής συνήθειας, η δημιουργία αναγνωστικών μονοπατιών και η εξοικείωση με τη λογοτεχνία από μικρή ηλικία</p>
-        <p>Από το 2019, συνεργαζόμαστε με τις Εκδόσεις Μεταίχμιο, Ψυχογιός, Καλειδοσκόπιο, Παπαδόπουλος, Φουρφούρι, Κέδρος, Oposito και οι Ακυβέρνητες Πολιτείες.</p>
+        <p class="el">Η αγάπη μας για την παιδική λογοτεχνία μας οδήγησε στη συνεργασία με εκδοτικούς οίκους και στον σχεδιασμό εργαστηρίων βασισμένα σε παιδικά βιβλία. Πραγματοποιούμε αυτοτελή εργαστήρια ή κύκλους συναντήσεων μέσα από τα οποία εξερευνούμε διαφορετικές θεματικές  με αφορμή το βιβλίο. Τα προγράμματα απευθύνονται σε μαθητές/τριες προσχολικής ηλικίες και δημοτικού. Σκοπός των εργαστηρίων είναι η καλλιέργεια της αναγνωστικής συνήθειας, η δημιουργία αναγνωστικών μονοπατιών και η εξοικείωση με τη λογοτεχνία από μικρή ηλικία</p>
+        <p class="el">Από το 2019, συνεργαζόμαστε με τις Εκδόσεις Μεταίχμιο, Ψυχογιός, Καλειδοσκόπιο, Παπαδόπουλος, Φουρφούρι, Κέδρος, Oposito και οι Ακυβέρνητες Πολιτείες.</p>
+        <p class="en" style="display:none;">Our love for children's literature has led us to collaborate with publishing houses and design workshops based on children's books. We conduct independent workshops or series of meetings through which we explore different themes inspired by the book. The programs are aimed at preschool and elementary school students. The purpose of the workshops is to cultivate reading habits, create reading paths, and familiarize children with literature from a young age.</p>
+        <p class="en" style="display:none;">Since 2019, we have been collaborating with publishing houses such as Metaichmio, Psychogios, Kaleidoskopio, Papadopoulos, Fourfouris, Kedros, Oposito, and Akivernitite Politeies.</p>
+
       </div>
     <!-- </div> -->
     </div>
@@ -95,12 +114,16 @@
         </div>
       </div>
       <div class="service-description exp-padding">
-        <h3><i class="fa-solid fa-circle left-circle" style="font-size: 10px; color: #ffcc00; position:relative; right: 2px;"></i>Custom Εργαστήρια<i class="fa-solid fa-circle right-circle" style="font-size: 10px; color:#ffcc00; position:relative; left:2px;"></i></h3>
+        <h3 class="el"><i class="fa-solid fa-circle left-circle" style="font-size: 10px; color: #ffcc00; position:relative; right: 2px;"></i>Custom Εργαστήρια<i class="fa-solid fa-circle right-circle" style="font-size: 10px; color:#ffcc00; position:relative; left:2px;"></i></h3>
+        <h3 class="en" style="display:none;"><i class="fa-solid fa-circle left-circle" style="font-size: 10px; color: #ffcc00; position:relative; right: 2px;"></i>Custom Workshops<i class="fa-solid fa-circle right-circle" style="font-size: 10px; color:#ffcc00; position:relative; left:2px;"></i></h3>
+
         <!-- <div class="experience line"></div> -->
         <!-- <div class="bordered b-experience"> -->
-<p>Πείτε μας την ιδέα σας και αναλαμβάνουμε εξ'ολοκλήρου το στήσιμο του προγράμματος που επιθυμείτε να δημιουργήσετε. <br>
+<p class="el">Πείτε μας την ιδέα σας και αναλαμβάνουμε εξ'ολοκλήρου το στήσιμο του προγράμματος που επιθυμείτε να δημιουργήσετε. <br>
 H απ'Ουσία αναλαμβάνει τον σχεδιασμό custom βιωματικών προγραμμάτων για ποικίλους φορείς., πιο συγκεκριμένα αναλαμβάνουμε το περιεχόμενο των δραστηριοτήτων,το θεωρητικό πλαίσιο, την αναλυτική δομή των εργαστηρίων, αναλυτικούς οδηγούς για τους/τις εμψυχώτες.τριες καθώς και τη γενική γραφιστική επιμέλεια. Η απΌυσία έχει σχεδιάσει βιωματικά προγράμματα στα πλαίσια μουσειακών εκθέσεων, εργαστήρια δεξιοτήτων για Ι.Ε.Π, Erasmus+ προγράμματα.</p>
-        </div>
+<p class="en" style="display:none;">Tell us your idea, and we will fully undertake the development of the program you wish to create. Ap'Ousia team specializes in designing custom experiential programs for various organizations. Specifically, we take care of the activity content, the theoretical framework, the detailed structure of the workshops, detailed guides for facilitators, and overall graphic design. Ap'Ousia has designed experiential programs for museum exhibitions, skills workshops for NGOs, and Erasmus+ programs.</p>       
+
+</div>
       <!-- </div> -->
     </div>
     </div>
@@ -112,11 +135,15 @@ H απ'Ουσία αναλαμβάνει τον σχεδιασμό custom βιω
           </div>
         </div>
         <div class="service-description">
-          <h3><i class="fa-solid fa-circle left-circle" style="font-size: 10px; color: #c0d332; position:relative; right: 2px;"></i>Περιβαλλοντική Εκπαίδευση<i class="fa-solid fa-circle right-circle" style="font-size: 10px; color:#c0d332; position:relative; left:2px;"></i></h3>
-           <!-- <div class="nature line"></div>  -->
+          <h3 class="el"><i class="fa-solid fa-circle left-circle" style="font-size: 10px; color: #c0d332; position:relative; right: 2px;"></i>Περιβαλλοντική Εκπαίδευση<i class="fa-solid fa-circle right-circle" style="font-size: 10px; color:#c0d332; position:relative; left:2px;"></i></h3>
+          <h3 class="en" style="display:none;"><i class="fa-solid fa-circle left-circle" style="font-size: 10px; color: #c0d332; position:relative; right: 2px;"></i>Environmental Education<i class="fa-solid fa-circle right-circle" style="font-size: 10px; color:#c0d332; position:relative; left:2px;"></i></h3>
+
+          <!-- <div class="nature line"></div>  -->
           <!-- <div class="bordered b-nature"> -->
-          <p>Το πρόγραμμα “Σχολείο χωρίς τοίχους” αποτελείται από 6 αυτοτελή εργαστήρια | 6 διαφορετικές θεματικές (φωλιές των ζώων, ταξίδι των σπόρων, δικαιώματα των ζώων, δικαίωμα στο νερό, προστασία των μελισσών, γνωριμία με το δάσος!)</p>
-          <p>Οι μαθητές/τριες έρχονται σε επαφή με τις ποικίλες πτυχές του φυσικού περιβάλλοντος. Γνωρίζοντας τον κόσμο των ζώων, των δέντρων και τα οικοσυστήματα που μας περιβάλλουν, θεωρούμε ότι οι μαθητές/τριες θα αποκτήσουν μια πιο σφαιρική εικόνα για τα στοιχεία που συνθέτουν το περιβάλλον. Η προσέγγιση που ακολουθούμε βασίζεται στη συλλογική μάθηση καθώς καλούμε τα παιδιά να αλληλεπιδράσουν σε ομάδες, να μάθουν και να ανακαλύψουν από κοινού και να συνεργαστούν. Σκοπός είναι να δημιουργηθούν στοχευμένες μαθησιακές εμπειρίες που καθιστούν τα παιδιά ικανά να δράσουν.</p>
+          <p class="el">Το πρόγραμμα “Σχολείο χωρίς τοίχους” αποτελείται από 6 αυτοτελή εργαστήρια | 6 διαφορετικές θεματικές (φωλιές των ζώων, ταξίδι των σπόρων, δικαιώματα των ζώων, δικαίωμα στο νερό, προστασία των μελισσών, γνωριμία με το δάσος!)</p>
+          <p class="el">Οι μαθητές/τριες έρχονται σε επαφή με τις ποικίλες πτυχές του φυσικού περιβάλλοντος. Γνωρίζοντας τον κόσμο των ζώων, των δέντρων και τα οικοσυστήματα που μας περιβάλλουν, θεωρούμε ότι οι μαθητές/τριες θα αποκτήσουν μια πιο σφαιρική εικόνα για τα στοιχεία που συνθέτουν το περιβάλλον. Η προσέγγιση που ακολουθούμε βασίζεται στη συλλογική μάθηση καθώς καλούμε τα παιδιά να αλληλεπιδράσουν σε ομάδες, να μάθουν και να ανακαλύψουν από κοινού και να συνεργαστούν. Σκοπός είναι να δημιουργηθούν στοχευμένες μαθησιακές εμπειρίες που καθιστούν τα παιδιά ικανά να δράσουν.</p>
+          <p class="en" style="display:none;">The "School without Walls" program consists of 6 independent workshops | 6 different themes (animal nests, seed journey, animal rights, right to water, bee protection, getting to know the forest!)</p>
+          <p class="en" style="display:none;">Students come into contact with the various aspects of the natural environment. By learning about the world of animals, trees, and the ecosystems that surround us, we believe that students will gain a more comprehensive understanding of the elements that make up the environment. Our approach is based on collaborative learning, as we encourage children to interact in groups, learn and discover together, and collaborate. The goal is to create targeted learning experiences that empower children to take action.</p>
         </div>
         <!-- </div> -->
       </div>
@@ -131,8 +158,10 @@ H απ'Ουσία αναλαμβάνει τον σχεδιασμό custom βιω
           <!-- <h3>Train the Trainers</h3> -->
           <!-- <div class="trainer line"></div> -->
           <!-- <div class="bordered b-trainer"> -->
-          <p>Ως αποτέλεσμα της χρόνιας εμπειρίας μας είτε ως μεμονωμένες ατομικότητες, είτε ως ομάδα, αξιοποιούμε την πρακτική και θεωρητική μας γνώση και πραγματοποιούμε σεμινάρια που απευθύνονται σε εκπαιδευτικούς, παιδαγωγούς, εμψυχωτές/τριες αλλά και γονείς. Χάρη στον βιωματικό χαρακτήρα του workshop, οι συμμετέχοντες/ουσες θα έχουν την ευκαιρία να έρθουν σε επαφή και να πειραματιστούν σε πρακτικό επίπεδο με διάφορα εργαλεία και μεθόδους αλλά και να δημιουργήσουν τις δικές τους παραλλαγές.</p>
-          <p>Μέσα από σεμινάρια train the trainers παρουσιάζουμε τη θεωρητική προσέγγιση της βιωματικής μάθησης, εργαλεία που μπορούν να χρησιμοποιηθούν στον σχεδιασμό ενός βιωματικού προγράμματος, και πρακτική εμπειρία αναφορικά με τον τρόπο που δομείται ένα βιωματικό πρόγραμμα. Τα σεμινάρια train the trainers στοχεύουν στην ενδυνάμωση των συμμετεχόντων, την ενίσχυση της συμμετοχικότητας στην εκπαιδευτική διαδικασία, τη δημιουργία ευνοϊκού κλίματος, καθώς και την κατανόηση και αποδοχή της διαφορετικότητας από όλα τα μέλη κάθε ομάδας. </p>
+          <p class="el">Ως αποτέλεσμα της χρόνιας εμπειρίας μας είτε ως μεμονωμένες ατομικότητες, είτε ως ομάδα, αξιοποιούμε την πρακτική και θεωρητική μας γνώση και πραγματοποιούμε σεμινάρια που απευθύνονται σε εκπαιδευτικούς, παιδαγωγούς, εμψυχωτές/τριες αλλά και γονείς. Χάρη στον βιωματικό χαρακτήρα του workshop, οι συμμετέχοντες/ουσες θα έχουν την ευκαιρία να έρθουν σε επαφή και να πειραματιστούν σε πρακτικό επίπεδο με διάφορα εργαλεία και μεθόδους αλλά και να δημιουργήσουν τις δικές τους παραλλαγές.</p>
+          <p class="el">Μέσα από σεμινάρια train the trainers παρουσιάζουμε τη θεωρητική προσέγγιση της βιωματικής μάθησης, εργαλεία που μπορούν να χρησιμοποιηθούν στον σχεδιασμό ενός βιωματικού προγράμματος, και πρακτική εμπειρία αναφορικά με τον τρόπο που δομείται ένα βιωματικό πρόγραμμα. Τα σεμινάρια train the trainers στοχεύουν στην ενδυνάμωση των συμμετεχόντων, την ενίσχυση της συμμετοχικότητας στην εκπαιδευτική διαδικασία, τη δημιουργία ευνοϊκού κλίματος, καθώς και την κατανόηση και αποδοχή της διαφορετικότητας από όλα τα μέλη κάθε ομάδας. </p>
+          <p class="en" style="display:none;">As a result of our years of experience, both as individuals and as a team, we utilize our practical and theoretical knowledge to conduct seminars targeting educators, teachers, facilitators, as well as parents. Thanks to the experiential nature of the workshop, participants will have the opportunity to engage and experiment with various tools and methods on a practical level, as well as create their own variations.</p>
+          <p class="en" style="display:none;">Through train-the-trainer seminars, we present the theoretical approach to experiential learning, tools that can be used in designing an experiential program, as well as practical experience regarding the structure of an experiential program. The train-the-trainer seminars aim to empower participants, enhance participation in the educational process, create a favorable climate, and promote understanding and acceptance of diversity among all members of the group.</p>
         </div>
         <!-- </div> -->
       </div>

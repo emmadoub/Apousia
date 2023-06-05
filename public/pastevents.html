@@ -16,28 +16,47 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="index.js"></script>
   </head>
-  <body>
+  <body onload="getLang()">
     <div class="heading">
       <a href="index.html"><img src="apousia_logo2.png" class="logo"></a>
+      <!-- <h4 id="width"></h4> -->
       <div class="topnav" id="myTopnav">
         <div class="dropdown">
-            <button class="dropbtn" id="dropbtn" onclick="showOptions()">απ'Ουσία 
+            <button class="el dropbtn" style="color: #707070;" id="dropbtn_el" onclick="showOptions()">απ'Ουσία 
               <i class="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content" id="dropdown-content">
-              <a href="apousia.html">Η Ομάδα μας</a>
-              <a href="theteam.html">Ποιές Είμαστε</a>
+            <button class="en dropbtn" style="color: #707070; display: none;" id="dropbtn_en" onclick="showOptions()">ap'Ousia
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content menu" id="dropdown-content">
+              <a href="apousia.html" class="el">Η Ομάδα μας</a>
+              <a href="theteam.html" class="el">Ποιές Είμαστε</a>
+              <a href="apousia.html" class="en" style="display: none;">Our Team</a>
+              <a href="theteam.html" class="en" style="display: none;">About Us</a>
             </div>
           </div> 
-          <a href="services.html">Υπηρεσίες</a>
-          <a href="pastevents.html">Προηγούμενες Δράσεις</a>
-          <a href="contact.html">Επικοινωνία</a>
-          <a href="javascript:void(0);" style="font-size:15px;" class="nav-icon" onclick="myFunction()">&#9776;</a>
+          <a href="services.html" class="el">Υπηρεσίες</a>
+          <a href="pastevents.html"  class="el">Προηγούμενες Δράσεις</a>
+          <a href="contact.html"  class="el">Επικοινωνία</a>
+          <a href="services.html" class="en" style="display: none;">Services</a>
+          <a href="pastevents.html"  class="en" style="display: none;">Past Events</a>
+          <a href="contact.html"  class="en" style="display: none;">Contact</a>
+          <div class="dropdown">
+          <button class="dropbtn" style="color: #707070;" id="dropbtn2" onclick="showOptionsLang()">GR 
+          <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content lang" id="dropdown-content-lang">
+            <a href="javascript:void(0);" id="en" onclick="changeLanguage()">EN</a>
+            
+          </div>
+        </div> 
+          <a href="javascript:void(0);" class="nav-icon" onclick="myFunction()">&#9776;</a>
         </div>
-        </div>
+      </div>
    
       <div class="title">
-    <h2 class="marker under">Προηγούμενες Δράσεις</h2>
+    <h2 class="marker under el">Προηγούμενες Δράσεις</h2>
+    <h2 class="marker under en" style="display:none;">Past Events</h2>
   
   </div>
     <div class="row details"> 
@@ -45,23 +64,28 @@
         <div class="container">
         <img src="ApousiaPhotos/Past Events/clouds/clouds.jpg" class="image" style="width:100%;">
         <div class="overlay party">
-          <div class="text"><a href="clouds.html" style="color: white">Clouds <br> Σε συνεργασία με την LUDD Makerspace</div></a>
+          <div class="text"><a href="clouds.html" class="el"style="color: white">Clouds <br> Σε συνεργασία με την LUDD Makerspace</div></a>
+          <div class="text"><a href="clouds.html" class="en" style="color: white">Clouds <br> In collaboration with LUDD Makerspace</div></a>
         </div>
       </div>
       <div class="container">
         <img src="ApousiaPhotos/Past Events/apo tis lekseis/apo-tis-lekseis.jpg" class="image" style="width:100%">
         <div class="overlay experience">
-          <div class="text"><a href="apotislekseis.html" style="color: white;">Από τις λέξεις στις εικόνες<br>
+          <div class="text"><a href="apotislekseis.html" class="el" style="color: white;">Από τις λέξεις στις εικόνες<br>
             Εργαστήριο ανάπτυξης σεναρίου στα πλαίσια του Παιδικού και εφηβικού διεθνές φεστιβάλ κινηματογράφου Αθήνας.<br>
-            Σε συνεργασία με την Anemon Productions</a>
+            Σε συνεργασία με την Anemon Productions</a><a href="apotislekseis.html" class="en" style="color: white;">From words to images<br>
+              Workshop on script development within the framework of the Athens International Children and Youth Film Festival.<br>
+              In collaboration with Anemon Productions</a>
+              
             </div>
         </div>
       </div>
         <div class="container">
         <img src="ApousiaPhotos/Past Events/kalotexnies/kalotexnies.jpeg" class="image" style="width:100%">
         <div class="overlay experience">
-          <div class="text"><a href="kalotexnieskaikakotexnies.html" style="color: white;"> Καλοτεχνίες και κακοτεχνίες <br>
-            Σε συνεργασία με την Άγονη Γραμμή Γόνιμη</a>
+          <div class="text"><a href="kalotexnieskaikakotexnies.html" class="el" style="color: white;"> Καλοτεχνίες και κακοτεχνίες <br>
+            Σε συνεργασία με την Άγονη Γραμμή Γόνιμη</a><a href="kalotexnieskaikakotexnies.html" class="en" style="color: white;">Arts and misarts<br>
+              In collaboration with Agoni Grammi Gonimi</a>
             
             </div>
         </div>
@@ -70,8 +94,9 @@
     <div class="container">
       <img src="ApousiaPhotos/Past Events/tavivlia/1.jpg" class="image" style="width:100%">
       <div class="overlay fairytale">
-        <div class="text"><a href="tavivliataksidevoun.html" style="color: white;">Τα βιβλία ταξιδεύουν<br>
-          Σε συνεργασία με συλλόγους γονέων, παιδιά και γονείς</a>
+        <div class="text"><a href="tavivliataksidevoun.html" class="el" style="color: white;">Τα βιβλία ταξιδεύουν<br>
+          Σε συνεργασία με συλλόγους γονέων, παιδιά και γονείς</a><a href="tavivliataksidevoun.html" class="en" style="color: white;">Books travel<br>
+            In collaboration with parent associations, children, and parents</a>
           </div>
       </div>
     </div>
@@ -81,8 +106,9 @@
         <div class="container">
           <img src="ApousiaPhotos/Past Events/tavivliataksidevoun/DSC06766.jpg" class="image" style="width:100%">
           <div class="overlay fairytale">
-            <div class="text"><a href="tavivliataksideuounfokionos.html" style="color: white;">Τα βιβλία ταξιδεύουν<br>
-              3 Σάββατα, 9 ώρες, ένα καθιστικό με πολύγλωσση βιβλιοθήκη στη Φωκίωνος Νέγρη</a>
+            <div class="text"><a href="tavivliataksideuounfokionos.html" class="el" style="color: white;">Τα βιβλία ταξιδεύουν<br>
+              3 Σάββατα, 9 ώρες, ένα καθιστικό με πολύγλωσση βιβλιοθήκη στη Φωκίωνος Νέγρη</a><a href="tavivliataksideuounfokionos.html" class="en" style="color: white;">Books travel<br>
+                3 Saturdays, 9 hours, a cozy space with a multilingual library at Fokionos Negri</a>
               </div>
           </div>
        
@@ -90,17 +116,20 @@
         <div class="container">
         <img src="ApousiaPhotos/Past Events/kokoutou/kokoutou.JPG" class="image" style="width:100%">
         <div class="overlay fairytale">
-          <div class="text"><a href="kokotou.html" style="color: white;">Βιβλιοφάγοι <br>
+          <div class="text"><a href="kokotou.html" class="el" style="color: white;">Βιβλιοφάγοι <br>
             Σε συνεργασία με το κτήμα Κοκοτού <br>
-            Τρείς μέρες αφιερωμένες στο παιδικό βιβλίο και την περιβαλλοντική εκπαίδευση!</a>
+            Τρείς μέρες αφιερωμένες στο παιδικό βιβλίο και την περιβαλλοντική εκπαίδευση!</a><a href="kokotou.html" class="en" style="color: white;">Book-eaters<br>
+              In collaboration with Kokotou Estate<br>
+              Three days dedicated to children's books and environmental education!</a>
             </div>
         </div>
       </div>
         <div class="container">
         <img src="ApousiaPhotos/Past Events/kropia/kropia.jpg" class="image" style="width:100%">
         <div class="overlay nature">
-          <div class="text"> <a href="kropiagi.html" style="color: white;">Εργαστήρια στο Βοτανικό πάρκο Αττικής
-            σε συνεργασία με το κτήμα Κρωπία Γη </a>
+          <div class="text"> <a href="kropiagi.html" class="el" style="color: white;">Εργαστήρια στο Βοτανικό πάρκο Αττικής
+            σε συνεργασία με το κτήμα Κρωπία Γη </a><a href="kropiagi.html" class="en" style="color: white;">Workshops at the Attica Botanical Park
+              in collaboration with Kropia Earth Estate</a>
             </div>
         </div>
       </div>
@@ -112,24 +141,27 @@
         <div class="container">
         <img src="ApousiaPhotos/Past Events/minas-tou-karidiou/minas-tou-karidiou.jpg" class="image" style="width:100%">
         <div class="overlay nature">
-          <div class="text"><a href="minastoukaridiou.html" style="color: white;"> Μήνας Καρυδιού <br>
-            Σε συνεργασία με τη Vamvakou Revival</a>
+          <div class="text"><a href="minastoukaridiou.html" class="el" style="color: white;"> Μήνας Καρυδιού <br>
+            Σε συνεργασία με τη Vamvakou Revival</a><a href="minastoukaridiou.html" class="en" style="color: white;">Month of Walnut<br>
+              In collaboration with Vamvakou Revival</a>
             </div>
         </div>
       </div>
         <div class="container">
         <img src="ApousiaPhotos/Past Events/mikres-istories-texnis/mikres-istories-texnis.jpg" class="image" style="width:100%">
         <div class="overlay experience">
-          <div class="text"><a href="mikresistoriestexnis.html" style="color: white;"> Μικρές Ιστορίες Τέχνης <br>
-            Σε συνεργασία με το Γαλλικό Ινστιτούτο Λάρισας</a>
+          <div class="text"><a href="mikresistoriestexnis.html" class="el" style="color: white;"> Μικρές Ιστορίες Τέχνης <br>
+            Σε συνεργασία με το Γαλλικό Ινστιτούτο Λάρισας</a><a href="mikresistoriestexnis.html" class="en" style="color: white;">Small Stories of Art<br>
+              In collaboration with the French Institute of Larissa</a>
             </div>
         </div>
       </div>
         <div class="container">
         <img src="ApousiaPhotos/Past Events/light the city/light-the-city.jpg" class="image" style="width:100%">
         <div class="overlay experience">
-          <div class="text"><a href="lightthecity.html" style="color: white;">Light the city <br>
-            Σε συνεργασία με το Impact Hub και το meet and code</a> 
+          <div class="text"><a href="lightthecity.html" class="el" style="color: white;">Light the city <br>
+            Σε συνεργασία με το Impact Hub και το meet and code</a><a href="lightthecity.html" class="en" style="color: white;">Light the city<br>
+              In collaboration with Impact Hub and meet and code</a>
             </div>
         </div>
       </div>
@@ -141,26 +173,31 @@
         <div class="container">
         <img src="ApousiaPhotos/Past Events/paidiko-vivlio/tavivlia.jpg" class="image" style="width:100%">
         <div class="overlay fairytale">
-          <div class="text"><a href="paidikovivlio.html" style="color: white">Παιδικό βιβλίο και ανάγνωση στο σπίτι! <br>
-            Σε συνεργασία με τον εκδοτικό οίκο Μεταίχμιο </a>
+          <div class="text"><a href="paidikovivlio.html" class="el" style="color: white">Παιδικό βιβλίο και ανάγνωση στο σπίτι! <br>
+            Σε συνεργασία με τον εκδοτικό οίκο Μεταίχμιο </a><a href="paidikovivlio.html" class="en" style="color: white;">Children's book and reading at home!<br>
+              In collaboration with Metaichmio Publishing House</a>
             </div>
         </div>
       </div>
       <div class="container">
          <img src="ApousiaPhotos/Past Events/routes/routes.png" class="image" style="width:100%"> 
          <div class="overlay experience">
-          <div class="text"><a href="routes.html" style="color: white">RO(U)T_E_S (routes/roots) <br>
+          <div class="text"><a href="routes.html" class="el" style="color: white">RO(U)T_E_S (routes/roots) <br>
             Experiencing the unseen side of the city <br>
-            Σε συνεργασία με το Ίδρυμα Goethe</a>
+            Σε συνεργασία με το Ίδρυμα Goethe</a><a href="routes.html" class="en" style="color: white">RO(U)T_E_S (routes/roots) <br>
+              Experiencing the unseen side of the city <br>
+              In collaboration with Goethe Institute</a>
             </div>
         </div>
         </div>
          <div class="container">
           <img src="ApousiaPhotos/Past Events/vivliofagos/vivliofagos.jpg" class="image" style="width:100%">
           <div class="overlay fairytale">
-            <div class="text"><a href="vivliofagos.html" style="color: white"> Βιβλιοφάγοι <br>
+            <div class="text"><a href="vivliofagos.html" class="el" style="color: white"> Βιβλιοφάγοι <br>
               Τρεις μέρες αφιερωμένες στο παιδικό βιβλίο <br>
-              Eργαστήρια-Βιβλιοπαρουσιάσεις-Διαδραστικές αφηγήσεις</a>
+              Eργαστήρια-Βιβλιοπαρουσιάσεις-Διαδραστικές αφηγήσεις</a><a href="vivliofagos.html" class="en" style="color: white">Book-eaters<br>
+                Three days dedicated to children's books<br>
+                Workshops-Book presentations-Interactive storytelling</a>
               </div>
           </div>
         </div>

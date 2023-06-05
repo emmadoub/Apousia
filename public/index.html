@@ -17,16 +17,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="index.js"></script>
   </head>
-  <body onload="getwidth()">
+  <body onload="getLang()">
     <div class="heading">
     <a href="index.html"><img src="apousia_logo2.png" class="logo"></a>
     <!-- <h4 id="width"></h4> -->
     <div class="topnav" id="myTopnav">
       <div class="dropdown">
-          <button class="el dropbtn" style="color: #707070;" id="dropbtn" onclick="showOptions()">απ'Ουσία 
+          <button class="el dropbtn" style="color: #707070;" id="dropbtn_el" onclick="showOptions()">απ'Ουσία 
             <i class="fa fa-caret-down"></i>
           </button>
-          <button class="en dropbtn" style="color: #707070; display: none;" id="dropbtn" onclick="showOptions()">ap'Ousia
+          <button class="en dropbtn" style="color: #707070; display: none;" id="dropbtn_en" onclick="showOptions()">ap'Ousia
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content" id="dropdown-content">
@@ -42,15 +42,15 @@
         <a href="services.html" class="en" style="display: none;">Services</a>
         <a href="pastevents.html"  class="en" style="display: none;">Past Events</a>
         <a href="contact.html"  class="en" style="display: none;">Contact</a>
-        <!-- <div class="dropdown">
+        <div class="dropdown">
         <button class="dropbtn" style="color: #707070;" id="dropbtn2" onclick="showOptionsLang()">GR 
         <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content" id="dropdown-content-lang">
-          <a href="javascript:void(0);" id="en" onclick="EN_selected()">EN</a>
+          <a href="javascript:void(0);" id="en" onclick="changeLanguage()">EN</a>
           
         </div>
-      </div> -->
+      </div> 
         <a href="javascript:void(0);" class="nav-icon" onclick="myFunction()">&#9776;</a>
       </div>
     </div>
@@ -69,34 +69,50 @@
                 <source src="ApousiaPhotos/TaVivliaTaksidevoun.mp4" type="video/mp4" class="ratio ratio-21x9"/>
               </video>
               <div class="carousel-caption d-none d-md-block">
-                <h4>Τα βιβλία Ταξιδεύουν</h4>
-                <h5>Σε δήμους σε όλη την Ελλάδα!</h5>
-                <p>Μια σειρά δράσεων αφιερωμένες στην παιδική λογοτεχνία, στον δημόσιο χώρο.</p>
+                <h4 class="el">Τα βιβλία Ταξιδεύουν</h4>
+                <h5 class="el">Σε δήμους σε όλη την Ελλάδα!</h5>
+                <p class="el">Μια σειρά δράσεων αφιερωμένες στην παιδική λογοτεχνία, στον δημόσιο χώρο.</p>
                 </p>
+                <h4 class="en">Travelling Books</h4>
+<h5 class="en">All over Greece!</h5>
+<p class="en">A series of actions dedicated to literature for children in public spaces.</p>
+</p>
               </div>
             </div>
             <div class="carousel-item carousel-image bg-img-1" data-bs-interval="8500">
               <div class="carousel-caption d-none d-md-block">
-                <h4>Απoυσία</h4>
-                <h5 class="italic">Oυσιαστικό, γένους θηλυκού</h5>
-                <p>Tο να μην παρευρίσκεται
+                <h4 class="el">Απoυσία</h4>
+                <h5 class="italic el">Oυσιαστικό, γένους θηλυκού</h5>
+                <p class="el">Tο να μην παρευρίσκεται
                   κάποιος/α ή κάτι εκεί όπου θα έπρεπε ή θα αναμενόταν να είναι.</p>
-                <h4>Απ'Ουσία</h4>
-                <h5 class="italic">[από ουσία]</h5>
-                <p>Ό,τι προκύπτει από αληθινό περιεχόμενο, από τον πυρήνα ή το σημαντικότερο στοιχείο μιας συζήτησης, μιας κατάστασης ή ενός πράγματος. </p>
+                <h4 class="el">Απ'Ουσία</h4>
+                <h5 class="italic el">[από ουσία]</h5>
+                <p class="el">Ό,τι προκύπτει από αληθινό περιεχόμενο, από τον πυρήνα ή το σημαντικότερο στοιχείο μιας συζήτησης, μιας κατάστασης ή ενός πράγματος. </p>
+                <h4 class="en">Apousia</h4>
+<h5 class="italic en">Noun, feminine gender</h5>
+<p class="en">The state of not being present where one should be or would be expected to be.</p>
+<h4 class="en">Ap'Ousia</h4>
+<h5 class="italic en">[from essence]</h5>
+<p class="en">What emerges from genuine content, from the core or the most significant element of a discussion, a situation, or a thing.</p>
               </div>
             </div>
             <div class="carousel-item carousel-image bg-img-2" data-bs-interval="5000">
               <div class="carousel-caption d-none d-md-block">
-                <h4>Περιβαλλοντική εκπαίδευση</h4>
-                <p>6 αυτοτελή εργαστήρια | 6 διαφορετικές θεματικές</p>
+                <h4 class="el">Περιβαλλοντική εκπαίδευση</h4>
+                <p class="el">6 αυτοτελή εργαστήρια | 6 διαφορετικές θεματικές</p>
                 </p>
+                <h4 class="en">Environmental Education</h4>
+<p class="en">6 independent workshops | 6 different themes</p>
+</p>
               </div>
             </div>
             <div class="carousel-item carousel-image resp-image bg-img-3" data-bs-interval="5000">
               <div class="carousel-caption d-none d-md-block">
-                <h4>Παιδική λογοτεχνία</h4>
-                <p>Συνεργασία με εκδοτικούς οίκους και σχεδιασμός εργαστηρίων βασισμένα σε παιδικά βιβλία.</p>
+                <h4 class="el">Παιδική λογοτεχνία</h4>
+                <p class="el">Συνεργασία με εκδοτικούς οίκους και σχεδιασμός εργαστηρίων βασισμένα σε παιδικά βιβλία.</p>
+                <h4 class="en">Children's Literature</h4>
+<p class="en">Collaboration with publishing houses and design of workshops based on children's books.</p>
+
               </div>
             </div>
           <!-- <div class="carousel-item carousel-image bg-img-4" data-bs-interval="3000">
@@ -107,8 +123,11 @@
             </div> -->
           <div class="carousel-item carousel-image bg-img-5" data-bs-interval="6000">
               <div class="carousel-caption d-none d-md-block">
-                <h4>Custom Εργαστήρια</h4>
-                <p>Πρωτότυπα βιωματικά προγράμματα!</p>
+                <h4 class="el">Custom Εργαστήρια</h4>
+                <p class="el">Πρωτότυπα βιωματικά προγράμματα!</p>
+                <h4 class="en">Custom Workshops</h4>
+<p class="en">Original experiential programs!</p>
+
               </div>
             </div>
           </div>
@@ -123,33 +142,33 @@
         </div>
       </div>
       <div class="div-services">
-        <h2><span><i class="fa-solid fa-circle circle-left"></i>Yπηρεσίες</span><i class="fa-solid fa-circle circle-right"></i></h2>
-        
+        <h2 class="el"><span><i class="fa-solid fa-circle circle-left"></i>Yπηρεσίες</span><i class="fa-solid fa-circle circle-right"></i></h2>
+        <h2 class="en" style="display: none;"><span><i class="fa-solid fa-circle circle-left"></i>Services</span><i class="fa-solid fa-circle circle-right"></i></h2>
         <div class="services">
           
         <div class="container-service service-nature ">
         <div class="section-service nature">
           <a href="services.html#service-nature"><img src="nature.png" class="image-service" alt=""></a>
         </div>
-        </a><p class="p-services-p">Περιβαλλοντική Εκπαίδευση</p>
+        </a><p class="p-services-p el">Περιβαλλοντική Εκπαίδευση</p><p class="p-services-p en" style="display: none;">Environmental Education</p>
       </div>
       <div class="container-service service-party bottom ">
           <div class="section-service party">
             <a href="services.html#service-party"><img src="party.png" class="image-service" alt=""></a>
           </div>
-          <p class="p-services">Διοργάνωση Εκδηλώσεων</p>
+          <p class="p-services el">Διοργάνωση Εκδηλώσεων</p><p class="p-services en" style="display: none;">Event Organization</p>
         </div>
         <div class="container-service service-experience">
           <div class="section-service experience">
             <a href="services.html#service-experience"><img src="experience.png" class="image-service" alt=""></a>
           </div>
-          <p class="p-services">Custom Εργαστήρια</p>
+          <p class="p-services el">Custom Εργαστήρια</p><p class="p-services en" style="display: none;">Custom Workshops</p>
         </div>
         <div class="container-service service-fairytale bottom ">
           <div class="section-service fairytale">
             <a href="services.html#service-fairytale"><img src="fairytale.png" class="image-service" alt=""></a>
           </div>
-          <p class="p-services">Παιδική Λογοτεχνία</p>
+          <p class="p-services el">Παιδική Λογοτεχνία</p><p class="p-services en" style="display: none;">Children's Literature</p>
         </div>
         <div class="container-service service-trainer ">
           <div class="section-service trainer">
@@ -164,18 +183,25 @@
         </div>
       </div>
       <div class="balloons">
-        <button type="button" class="btn btn-light btn-lg btn-draseis1"><a href="apousia.html" style="color:white">Η ομάδα μας</a></button>
-        <button type="button" class="btn btn-primary btn-lg btn-draseis2"><a href="pastevents.html" style="color:white"> Προηγούμενες Δράσεις</button></a>
+     
+
+        <button type="button" class="btn btn-light btn-lg btn-draseis1 el"><a href="apousia.html" style="color:white">Η ομάδα μας</a></button>
+        <button type="button" class="btn btn-primary btn-lg btn-draseis2 el"><a href="pastevents.html" style="color:white">Προηγούμενες Δράσεις</a></button>
+<button type="button" class="btn btn-light btn-lg btn-draseis1 en"><a href="apousia.html" style="color:white">Our Team</a></button>
+<button type="button" class="btn btn-primary btn-lg btn-draseis2 en"><a href="pastevents.html" style="color:white">Past Events</a></button>
+
+        
         <!-- <button type="button" class="btn btn-light btn-lg btn-draseis2"><a href="theteam.html" style="color:white"> Ποιές είμαστε</button></a> -->
       </div>
 
       <div class="current">
-        <h2><span><i class="fa-solid fa-circle circle-left"></i>Τρέχουσες Εκδηλώσεις</span><i class="fa-solid fa-circle circle-right"></i></h2>
-
+        <h2 class="el"><span><i class="fa-solid fa-circle circle-left"></i>Τρέχουσες Εκδηλώσεις</span><i class="fa-solid fa-circle circle-right"></i></h2>
+        <h2 class="en"><span><i class="fa-solid fa-circle circle-left"></i>Current Events</span><i class="fa-solid fa-circle circle-right"></i></h2>
         <div class="current-description">
-          <p style="font-weight: 500;">Τους επόμενους μήνες η απΌυσία θα ταξιδεύει σε δήμους σε όλη την Ελλάδα με τα προγράμματα "Καλοκαίρι στην πλατεία" και "Τα βιβλία ταξιδεύουν"!</p>
-          <p style="font-weight: 500;">Για περισσότερες πληροφορίες <span style="font-weight: 700;"><a href="#contact">επικοινωνήστε</a></span> με την ομάδα.</p>
-         
+          <p class="el" style="font-weight: 500;">Τους επόμενους μήνες η απΌυσία θα ταξιδεύει σε δήμους σε όλη την Ελλάδα με τα προγράμματα "Καλοκαίρι στην πλατεία" και "Τα βιβλία ταξιδεύουν"!</p>
+          <p  class="el" style="font-weight: 500;">Για περισσότερες πληροφορίες <span style="font-weight: 700;"><a href="#contact">επικοινωνήστε</a></span> με την ομάδα.</p>
+          <p class="en" style="font-weight: 500;">In the upcoming months, ap'Ousia will be traveling to various locations across Greece with the programs "Summer in the Square" and "Travelling Books!"</p>
+          <p class="en" style="font-weight: 500;">For more information, please feel free to <span style="font-weight: 700;"><a href="#contact">contact</a></span> the team.</p>
         </div>
 
       <!-- <div class="row">
@@ -256,7 +282,8 @@
 
     <div class="bees-back">
     <div class="synergates-bees">
-      <img src="ApousiaPhotos/bee1.png" class="beeNo1" alt=""><h2 style="color:	#606060;">Οι συνεργάτες μας</h2>
+      <img src="ApousiaPhotos/bee1.png" class="beeNo1" alt=""><h2 class="el"style="color:	#606060;">Οι συνεργάτες μας</h2>
+      <h2 class="en" style="color: #606060;">Our Partners</h2>
       <img src="ApousiaPhotos/bee2.png" class="beeNo2" alt="">
     </div>
   </div>
@@ -301,7 +328,8 @@
 
     <div class="contact" id="contact">
       <div class="contact-container">
-      <h2><span><i class="fa-solid fa-circle circle-left"></i>Επικοινωνήστε μαζί μας!</span><i class="fa-solid fa-circle circle-right"></i></h2>
+      <h2 class="el"><span><i class="fa-solid fa-circle circle-left"></i>Επικοινωνήστε μαζί μας!</span><i class="fa-solid fa-circle circle-right"></i></h2>
+      <h2 class="en"><span><i class="fa-solid fa-circle circle-left"></i>Contact us!</span><i class="fa-solid fa-circle circle-right"></i></h2>
    
       <div class="contact-details">
         <h6 class="contact-text details" style="white-space: nowrap">

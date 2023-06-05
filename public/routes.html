@@ -16,50 +16,82 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="index.js"></script>
   </head>
-  <body>
+  <body onload="getLang()">
     <div class="heading">
       <a href="index.html"><img src="apousia_logo2.png" class="logo"></a>
+      <!-- <h4 id="width"></h4> -->
       <div class="topnav" id="myTopnav">
         <div class="dropdown">
-            <button class="dropbtn" id="dropbtn" onclick="showOptions()">απ'Ουσία 
+            <button class="el dropbtn" style="color: #707070;" id="dropbtn_el" onclick="showOptions()">απ'Ουσία 
               <i class="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content" id="dropdown-content">
-              <a href="apousia.html">Η Ομάδα μας</a>
-              <a href="theteam.html">Ποιές Είμαστε</a>
+            <button class="en dropbtn" style="color: #707070; display: none;" id="dropbtn_en" onclick="showOptions()">ap'Ousia
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content menu" id="dropdown-content">
+              <a href="apousia.html" class="el">Η Ομάδα μας</a>
+              <a href="theteam.html" class="el">Ποιές Είμαστε</a>
+              <a href="apousia.html" class="en" style="display: none;">Our Team</a>
+              <a href="theteam.html" class="en" style="display: none;">About Us</a>
             </div>
           </div> 
-          <a href="services.html">Υπηρεσίες</a>
-          <a href="pastevents.html">Προηγούμενες Δράσεις</a>
-          <a href="contact.html">Επικοινωνία</a>
-          <a href="javascript:void(0);" style="font-size:15px;" class="nav-icon" onclick="myFunction()">&#9776;</a>
+          <a href="services.html" class="el">Υπηρεσίες</a>
+          <a href="pastevents.html"  class="el">Προηγούμενες Δράσεις</a>
+          <a href="contact.html"  class="el">Επικοινωνία</a>
+          <a href="services.html" class="en" style="display: none;">Services</a>
+          <a href="pastevents.html"  class="en" style="display: none;">Past Events</a>
+          <a href="contact.html"  class="en" style="display: none;">Contact</a>
+          <div class="dropdown">
+          <button class="dropbtn" style="color: #707070;" id="dropbtn2" onclick="showOptionsLang()">GR 
+          <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content lang" id="dropdown-content-lang">
+            <a href="javascript:void(0);" id="en" onclick="changeLanguage()">EN</a>
+            
+          </div>
+        </div> 
+          <a href="javascript:void(0);" class="nav-icon" onclick="myFunction()">&#9776;</a>
         </div>
-        </div>
+      </div>
    <div class="omada">
    
       <div class="title">
     <h2><i class="fa-solid fa-circle circle-left experience"></i><span style="font-weight: 800;">RO(U)T_E_S</span> (routes/roots)<i class="fa-solid fa-circle circle-right experience"></i>
 
-    <h3 style="font-weight: 600;">Experiencing the unseen side of the city 
+    <h3 class="el" style="font-weight: 600;">Experiencing the unseen side of the city 
     </h3>
-    <h4>Σε συνεργασία με το Ίδρυμα Goethe</h4>
+    <h4 class="el">Σε συνεργασία με το Ίδρυμα Goethe</h4>
+    <h4 class="en">In collaboration with Goethe Foundation</h4>
+
   </div>
   <div class="details">
-    <p>Στα πλαίσια της έκθεσης <span style="font-weight: 800;"><a href="https://www.goethe.de/ins/gr/en/kul/ges/aor.html" target="_blank">Archive of Refuge</a>,η ομάδα μας σχεδίασε μια παράλλληλη εκπαιδευτική δράση για νέους και νέες από 18 έως 25 ετών η οποία υλοποιήθηκε στο ROMANTSO.</span></p>
-<p style="font-style: italic;">Τρία άτομα επιλέγουν να ακολουθήσουν την ίδια διαδρομή με το μετρό,
+    <p class="el">Στα πλαίσια της έκθεσης <span style="font-weight: 800;"><a href="https://www.goethe.de/ins/gr/en/kul/ges/aor.html" target="_blank">Archive of Refuge</a>,η ομάδα μας σχεδίασε μια παράλλληλη εκπαιδευτική δράση για νέους και νέες από 18 έως 25 ετών η οποία υλοποιήθηκε στο ROMANTSO.</span></p>
+<p class="el" style="font-style: italic;">Τρία άτομα επιλέγουν να ακολουθήσουν την ίδια διαδρομή με το μετρό,
   το πρώτο διαβάζει και μιλάει Ελληνικά, το δεύτερο μόνο διαβάζει, το τρίτο τίποτα από τα δύο. Πόσο διαφορετική μπορεί να είναι η συγκεκριμένη εμπειρία για κάθε έναν/μία από αυτούς/ες;
   </p>
-<p style="font-weight: 800;">Σκοπός του προγράμματος ήταν  η εξερεύνηση της αόρατης πλευράς της πόλης, όλα όσα είναι μπροστά μας αλλά δεν τα παρατηρούμε.</p>    
-<p>Ποιές είναι οι αφηγήσεις των ανθρώπων που μόλις φτάνουν στην πόλη από μια άλλη χώρα;
+<p class="el" style="font-weight: 800;">Σκοπός του προγράμματος ήταν  η εξερεύνηση της αόρατης πλευράς της πόλης, όλα όσα είναι μπροστά μας αλλά δεν τα παρατηρούμε.</p>    
+<p class="el">Ποιές είναι οι αφηγήσεις των ανθρώπων που μόλις φτάνουν στην πόλη από μια άλλη χώρα;
   Ποιες είναι οι δυσκολίες που βιώνει ένα άτομο που μόλις έχει φτάσει στην πόλη, που δεν μιλά τη γλώσσα; Tι διαδρομές ακολουθεί για να βρει τις απαραίτητες δημόσιες υπηρεσίες; Πόσα φιλικά είναι τα ΜΜΜ σε ένα αλλόφωνο άτομο; Ποια η έννοια της διαδρομής και της περιπλάνησης στο μεταναστευτικό και προσφυγικό πλαίσιο; 
   </p>    
-<p>Μια ομάδα 15 ατόμων 18 με 25 ετών, παρακολούθησε 3 εργαστήρια τα οποία υλοποιήθηκαν στο ROMANTSO με στόχο της χαρτογράφησης της αθέατης πλευράς της πόλης. 
+<p class="el">Μια ομάδα 15 ατόμων 18 με 25 ετών, παρακολούθησε 3 εργαστήρια τα οποία υλοποιήθηκαν στο ROMANTSO με στόχο της χαρτογράφησης της αθέατης πλευράς της πόλης. 
   Στην πρώτη συνάντηση η ομάδα παρακολούθησε ένα <span style="font-weight: 800;">βιωματικό εργαστήριο με θέμα τα δικαιώματα και τις έννοιες της προσφυγιάς και της μετανάστευσης.</span>
   Στη δεύτερη συνάντηση περιπλανηθήκαμε και χαρτογραφήσαμε τη γειτονιά γύρω από το ROMANTSO και τέλος στην τρίτη συνάντηση, έγινε η  <span style="font-weight: 800;">δημιουργία του δικού μας αρχείου. </span>
   Δημιουργήσαμε ένα παράλληλο αρχείο για την έκθεση <span style="font-weight: 800;">Archive of Refuge</span>
   Οι φωτογραφίες, οι μαρτυρίες και οι εντυπώσεις των συμμετεχόντων καταγράφηκαν με διαφορετικά οπτικοακουστικά μέσα δημιουργήθηκε ένα αποτύπωμα του εργαστηρίου.
   </p>
-  <p>Το αρχείο του <span style="font-weight: 800;">RO(U)T_E_S παρουσιάστηκε στην εκδήλωση παρουσίασης της έκθεσης Archive of Refuge, στο Ινστιτούτο Goethe.</span></p>
+  <p class="el">Το αρχείο του <span style="font-weight: 800;">RO(U)T_E_S παρουσιάστηκε στην εκδήλωση παρουσίασης της έκθεσης Archive of Refuge, στο Ινστιτούτο Goethe.</span></p>
+  <p class="en">As part of the <span style="font-weight: 800;"><a href="https://www.goethe.de/ins/gr/en/kul/ges/aor.html" target="_blank">Archive of Refuge</a> exhibition</span>, our team designed a parallel educational activity for young people aged 18 to 25, which took place at ROMANTSO.</p>
+<p class="en" style="font-style: italic;">Three individuals choose to take the same metro route: the first one reads and speaks Greek, the second one only reads, and the third one neither reads nor speaks Greek. How different can this experience be for each of them?</p>
+<p class="en" style="font-weight: 800;">The aim of the program was to explore the invisible side of the city, everything that is in front of us but we don't observe.</p>
+<p class="en">What are the narratives of people who have just arrived in the city from another country? What difficulties does a person experience when they have just arrived in a city where they don't speak the language? What routes do they follow to find essential public services? How welcoming are public transportation systems to non-Greek speakers? What is the concept of journey and wandering in the context of migration and refuge?</p>
+<p class="en">A group of 15 people aged 18 to 25 attended three workshops held at ROMANTSO with the aim of mapping the invisible side of the city.
+During the first meeting, the group participated in an <span style="font-weight: 800;">experiential workshop on rights and the concepts of refuge and migration.</span>
+In the second meeting, we wandered around and mapped the neighborhood around ROMANTSO, and finally, in the third meeting, we created our own <span style="font-weight: 800;">archive.</span>
+We created a parallel archive for the <span style="font-weight: 800;">Archive of Refuge exhibition.</span>
+The photos, testimonies, and impressions of the participants were recorded using various audiovisual means, creating a representation of the workshop.</p>
+<p class="en">The archive of <span style="font-weight: 800;">RO(U)T_E_S</span> was presented at the exhibition presentation event at the Goethe Institute.</p>
+
+
   </div>
 
 </div>
