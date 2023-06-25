@@ -239,6 +239,15 @@ a:active {
     background-image: url('ApousiaPhotos/5-routes.jpg');
 }
 
+.bg-img-6 {
+  background-image: url('ApousiaPhotos/18.jpg');
+}
+.bg-img-7 {
+  background-image: url('ApousiaPhotos/15.jpg');
+}
+.bg-img-8 {
+  background-image: url('ApousiaPhotos/13.jpg');
+}
 
 .nature {
     background-color:#c0d332;
@@ -366,7 +375,7 @@ a:active {
 
 .card-title-section {
   padding: 10px 5px;
-  background-color: #e7eef8;
+  background-color: rgba(207, 192, 221, 0.349);
 
   display: flex;
 }
@@ -388,7 +397,7 @@ a:active {
 }
 
 .card {
-  width: 18rem; margin-left: 25%;
+  width: 18rem; margin-left: 0%;
 }
 
 
@@ -400,7 +409,7 @@ a:active {
   top: 5%; 
   left: 10%; 
   transform: translate(-50%, -50%);
-  background-color:  #e7eef8c5;
+  background-color:  rgba(207, 192, 221, 0.719);
   width: 50px;
   height: 50px;
   border-radius: 10%;
@@ -583,7 +592,16 @@ footer {
 
 
 .current-events {
-  margin-bottom: 7%;
+  margin-bottom: 3%;
+  
+
+}
+
+.current-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 100px;
 }
 
 @media screen and (min-width: 1360px) and (max-width: 1600px) {
@@ -652,6 +670,14 @@ footer {
       display: block;
     }
 
+    .current-cards {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+    }
+    
+
     .circle-left {
       font-size: 7px; color: #c0d332af; position:relative; bottom:5px;
     }
@@ -673,14 +699,17 @@ footer {
     }
 
     .carousel-image {
-      background-position: center;
-      background-size: cover;
+      background-position: center !important;
+      background-size:cover;
       background-repeat: no-repeat;
   }
 
+   
+   
    .carousel-item {
-    height: 25.5vh;
-  } 
+    height: 45vh;
+  }  
+
 
   .p-services {
     padding: 0 5%;

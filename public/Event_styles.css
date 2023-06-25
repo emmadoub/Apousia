@@ -246,7 +246,8 @@
 }
   .icon-set-location {
     display: flex;
-    flex-direction: column;}
+    flex-direction: column;
+  padding-top: 1.5%;}
   
   footer {
     text-align: center;
@@ -275,6 +276,10 @@
 
   
   @media screen and (max-width: 600px) {
+
+    .p-grey {
+      text-align: center;
+    }
     .topnav.responsive {position: relative;}
     .topnav.responsive .nav-icon {
       position: absolute;
@@ -304,6 +309,8 @@
   }
 
   @media screen and (min-width: 600px) and (max-width: 1600px) {
+
+
  
     .tavivliaphoto {
       padding-top: 15%;
