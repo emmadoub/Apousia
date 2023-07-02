@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Φωλιές των Ζώων
+    </title>
+<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge" /> -->
+    <link rel="icon" type="image/x-icon" href="apousia_logo2.png">
+    <link rel="stylesheet" href="pastevent.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Inter+Tight:wght@200;300;500;600&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/1480679c4a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script src="slides.js"></script>
+  </head>
+  <body onload="getLang()">
+    <div class="heading">
+      <a href="index.html"><img src="apousia_logo2.png" class="logo"></a>
+      <!-- <h4 id="width"></h4> -->
+      <div class="topnav" id="myTopnav">
+        <div class="dropdown">
+            <button class="el dropbtn" style="color: #707070;" id="dropbtn_el" onclick="showOptions()">απ'Ουσία 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <button class="en dropbtn" style="color: #707070; display: none;" id="dropbtn_en" onclick="showOptions()">ap'Ousia
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content menu" id="dropdown-content">
+              <a href="apousia.html" class="el">Η Ομάδα μας</a>
+              <a href="theteam.html" class="el">Ποιές Είμαστε</a>
+              <a href="apousia.html" class="en" style="display: none;">Our Team</a>
+              <a href="theteam.html" class="en" style="display: none;">About Us</a>
+            </div>
+          </div> 
+          <a href="services.html" class="el">Υπηρεσίες</a>
+          <a href="pastevents.html"  class="el">Προηγούμενες Δράσεις</a>
+          <a href="contact.html"  class="el">Επικοινωνία</a>
+          <a href="services.html" class="en" style="display: none;">Services</a>
+          <a href="pastevents.html"  class="en" style="display: none;">Past Events</a>
+          <a href="contact.html"  class="en" style="display: none;">Contact</a>
+          <div class="dropdown">
+          <button class="dropbtn" style="color: #707070;" id="dropbtn2" onclick="showOptionsLang()">GR 
+          <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content lang" id="dropdown-content-lang">
+            <a href="javascript:void(0);" id="en" onclick="changeLanguage()">EN</a>
+            
+          </div>
+        </div> 
+          <a href="javascript:void(0);" class="nav-icon" onclick="myFunction()">&#9776;</a>
+        </div>
+      </div>
+   <div class="omada">
+   
+      <div class="title">
+    <h2 class="el" style="font-weight: 600;"><i class="fa-solid fa-circle circle-left nature"></i>Φωλιές των Ζώων<i class="fa-solid fa-circle circle-right nature"></i>
+    </h2>
+    <h5 class="el"> Σε συνεργασία με την  <span style="font-weight: 700;"><a href="https://www.facebook.com/OrganizationEarth">Οργάνωση ΓΗ</a></span></h5>
+   
+<h2 class="en" style="font-weight: 600;"><i class="fa-solid fa-circle circle-left nature"></i>Animal Nests<i class="fa-solid fa-circle circle-right nature"></i>
+</h2>
+<h5 class="en">In collaboration with <span style="font-weight: 700;"><a href="https://www.facebook.com/OrganizationEarth">Organization Earth</a></span></h5>
+  
+  </div>
+  <div class="details">
+  <p class="el">Την Παρασκευή 16/6 σε συνεργασία με την  <span style="font-weight: 700;"><a href="https://www.facebook.com/OrganizationEarth">Οργάνωση ΓΗ-Organization Earth </a></span>  υλοποιήσαμε το εργαστήριο "Φωλιές των ζώων" για παιδιά από 4 έως 12 ετών στο camp προσφύγων του Σχιστού.</p>
+<p class="el">🦜Πως κατασκευάζουν τα ζώα τις φωλιές τους;</p>
+<p class="el">🐌Ποια σημεία επιλέγουν;</p>
+<p class="el">🐞Πως τις προστατεύουν; </p>
+<p class="el">Στόχος του προγράμματος είναι τα παιδιά να γνωρίσουν τα διαφορετικά σημεία που επιλέγει το κάθε ζώο για τη φωλιά του, τα υλικά που χρησιμοποιεί αλλά και τους τρόπους που χρησιμοποιεί για να προστάζει τη φωλιά του. </p>
+<p class="el">Γνωρίζοντας τον κόσμο των ζώων, των δέντρων και τα οικοσυστήματα που μας περιβάλλουν, θεωρούμε ότι παιδιά αποκτούν μια πιο σφαιρική εικόνα για τα στοιχεία που συνθέτουν το περιβάλλον. Στοχεύουμε να καταρρίψουμε την ανθρωποκεντρική προσέγγιση που επικρατεί απέναντι στο περιβάλλον και να εισάγουμε τα παιδιά σε μια οικοκεντρική προσέγγιση. Να επισημάνουμε ότι η φύση αυτή καθαυτή έχει εγγενή αξία.  Η προσέγγιση που ακολουθούμε βασίζεται στη συλλογική μάθηση καθώς καλούμε τα παιδιά να αλληλεπιδράσουν σε ομάδες, να μάθουν και να ανακαλύψουν από κοινού και να συνεργαστούν. Θεωρούμε απαραίτητη τη βιωματική προσέγγιση στην περιβαλλοντική εκπαίδευση, καθώς συνδυάζει τη γνώση και τη συναισθηματική σύνδεση, μέσω της εμπειρίας, δημιουργώντας στα παιδιά έναν ολοκληρωμένο αντίκτυπο. </p>
+
+<p class="en">On Friday 16/6, in collaboration with <span style="font-weight: 700;"><a href="https://www.facebook.com/OrganizationEarth">Organization Earth</a></span>, we conducted the workshop "Animal Nests" for children aged 4 to 12 at the refugee camp in Schisto.</p>
+<p class="en">🦜How do animals build their nests?</p>
+<p class="en">🐌What locations do they choose?</p>
+<p class="en">🐞How do they protect them?</p>
+<p class="en">The goal of the program is for children to learn about the different locations chosen by each animal for its nest, the materials they use, and the ways they protect their nests.</p>
+<p class="en">By getting to know the world of animals, trees, and the ecosystems that surround us, we believe that children gain a more holistic understanding of the elements that make up the environment. We aim to challenge the anthropocentric approach that prevails towards the environment and introduce children to an ecocentric approach. It is worth noting that nature itself has inherent value. The approach we follow is based on collective learning, as we invite children to interact in groups, learn and discover together, and collaborate. We consider experiential learning essential in environmental education, as it combines knowledge and emotional connection through experience, creating a comprehensive impact on children.</p>
+
+
+</div>
+
+
+</div>
+  
+<div class="div-photos">
+    <div class="photos">
+      <img src="ApousiaPhotos/Past Events/fwliestwnzwwn/IMG-36618030c7e6ea3b21bd6a6f3b2699c6-V.jpg"  onclick="openModal();currentSlide(1)" class="hover-shadow cursor photo">
+      <img src="ApousiaPhotos/Past Events/fwliestwnzwwn/IMG-8f5e2321174dc383c0fdf965e48af87b-V.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor photo">
+    </div>
+    <div class="photos">
+      <img src="ApousiaPhotos/Past Events/fwliestwnzwwn/IMG-90ba5b8a19b7313bcd666828d93ef326-V.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor photo">
+      <img src="ApousiaPhotos/Past Events/fwliestwnzwwn/IMG-e10b93b3e5bf57c0d4e4f87a3341fb86-V.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor photo">
+    </div>
+   <div class="photos">
+      <img src="ApousiaPhotos/Past Events/fwliestwnzwwn/IMG-e12122fa84de0fcda7c6345400643320-V.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor photo">
+      <img src="ApousiaPhotos/Past Events/fwliestwnzwwn/IMG-e43af0e479469187f73404e3874f350b-V.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor photo">
+    </div>
+
+  </div> 
+  
+  <div id="ModalApousia" class="modal">
+    <span class="close cursor" onclick="closeModal()"><i class="fa-solid fa-circle-xmark"></i></span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="ApousiaPhotos/Past Events/fwliestwnzwwn/IMG-36618030c7e6ea3b21bd6a6f3b2699c6-V.jpg"  class="image-modal">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="ApousiaPhotos/Past Events/fwliestwnzwwn/IMG-8f5e2321174dc383c0fdf965e48af87b-V.jpg" class="image-modal">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="ApousiaPhotos/Past Events/fwliestwnzwwn/IMG-90ba5b8a19b7313bcd666828d93ef326-V.jpg" class="image-modal">
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="ApousiaPhotos/Past Events/fwliestwnzwwn/IMG-e10b93b3e5bf57c0d4e4f87a3341fb86-V.jpg" class="image-modal">
+      </div>
+  
+   <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="ApousiaPhotos/Past Events/fwliestwnzwwn/IMG-e12122fa84de0fcda7c6345400643320-V.jpg" class="image-modal">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="ApousiaPhotos/Past Events/fwliestwnzwwn/IMG-e43af0e479469187f73404e3874f350b-V.jpg" class="image-modal">
+      </div> 
+      
+        
+     
+      <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i></a>
+      <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></a>
+    </div>
+  </div>
+    
+    
+      <footer>
+        <p style="margin-bottom: 0; color:white;  font-size: 14px;">Copyright ApOusia 2023. Made by E.D. with <i class="fa-solid fa-heart" style="color:white"></i></p>
+      </footer>
+    </body>
+  </html>
