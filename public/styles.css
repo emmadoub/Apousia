@@ -249,6 +249,19 @@ a:active {
   background-image: url('ApousiaPhotos/13.jpg');
 }
 
+.bg-img-9 {
+  background-image: url('ApousiaPhotos/arisokapetanios.jpg');
+}
+
+.carousel-item h4 {
+  font-weight: 700;
+  font-size: 27px;
+}
+
+.carousel-item p {
+  font-weight: 600;
+  font-size: 20px;
+}
 .nature {
     background-color:#c0d332;
 }
