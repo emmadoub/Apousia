@@ -717,6 +717,10 @@ footer {
       background-repeat: no-repeat;
   }
 
+  .bg-img-9 {
+    background-position: 0 10% !important;
+  }
+
    
    
    .carousel-item {
