@@ -228,25 +228,21 @@ a:active {
 }
 
 .bg-img-3 {
-    background-image: url('ApousiaPhotos/3-books.jpg');
-}
-
-.bg-img-4 {
-    background-image: url('ApousiaPhotos/4-playground.jpg');
+    background-image: url('ApousiaPhotos/carusel-viomatika.jpg');
 }
 
 .bg-img-5 {
-    background-image: url('ApousiaPhotos/5-routes.jpg');
+    background-image: url('ApousiaPhotos/carusel-custom.jpg');
 }
 
 .bg-img-6 {
-  background-image: url('ApousiaPhotos/18.jpg');
+  background-image: url('ApousiaPhotos/library.jpg');
 }
 .bg-img-7 {
-  background-image: url('ApousiaPhotos/15.jpg');
+  background-image: url('ApousiaPhotos/library1.jpg');
 }
 .bg-img-8 {
-  background-image: url('ApousiaPhotos/13.jpg');
+  background-image: url('ApousiaPhotos/library2.jpg');
 }
 
 .bg-img-9 {
@@ -878,6 +874,11 @@ footer {
 .votaniko {
   width: 120px;
   height: 114px;
+}
+
+.OGI {
+  width: 130px;
+  height: 203px;
 }
 .psihogios {
   width: 115px;

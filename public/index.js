@@ -36,16 +36,16 @@ function myFunction() {
     }
   }
 
-  var class_el = document.getElementsByClassName("el");
-var class_en = document.getElementsByClassName("en");
-var class_el_marker = document.querySelectorAll(".marker.under.el");
-var class_en_marker = document.querySelectorAll(".marker.under.en");
+// var class_el = document.getElementsByClassName("el");
+// var class_en = document.getElementsByClassName("en");
+// var class_el_marker = document.querySelectorAll(".marker.under.el");
+// var class_en_marker = document.querySelectorAll(".marker.under.en");
 
-function toggleElementDisplay(elements, displayValue) {
-  for (let i = 0; i < elements.length; i++) {
-    elements[i].style.display = displayValue;
-  }
-}
+// function toggleElementDisplay(elements, displayValue) {
+//   for (let i = 0; i < elements.length; i++) {
+//     elements[i].style.display = displayValue;
+//   }
+// }
 
 function getLang() {
   var lang = localStorage.getItem('selectedLanguage') || selectedLanguage;
